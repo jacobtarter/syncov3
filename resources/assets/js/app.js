@@ -13,6 +13,11 @@ synco.config(['$routeProvider', '$locationProvider',
 			controller: 'showController'
 		});
 
+		$routeProvider.when('/comment/:id', {
+			templateUrl: 'templates/comment.html',
+			controller: 'commentController'
+		});
+
 		$routeProvider.when('/login', {
 			templateUrl: 'templates/login.html',
 			controller: 'userController'

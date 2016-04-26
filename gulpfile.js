@@ -22,7 +22,8 @@ elixir(function(mix) {
     mix.scripts([
     		'controllers/userController.js',
             'controllers/editController.js',
-            'controllers/showController.js'
+            'controllers/showController.js',
+            'controllers/commentController.js'
     	], 'public/js/controllers.js');
 
     mix.version([

@@ -16,6 +16,14 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 		}).error(function(response) {
 			alert("error getting your json");
 		});
+
+		$scope.addComment = function(id) 
+		{
+			console.log('comment' + id);
+
+			$location.path('/comment/' + id );
+			
+		}
 	
 
 }]);
