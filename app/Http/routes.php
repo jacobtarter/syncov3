@@ -29,6 +29,10 @@ Route::get( '/api/v1/posts/{pid?}', 'PostController@index' );
 Route::get( '/api/v1/posts/test/{pid}', 'PostController@test');
 //$router->post('/api/v1/posts', 'PostController@store', ['middleware' => 'JsonApiMiddleware']);
 
+
+Route::get( '/api/v1/comments/{pid}', 'CommentController@getCommentsByPost');
+
+
 Route::group(['middleware' => ['web']], function () {
 
 	
