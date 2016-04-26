@@ -34,3 +34,27 @@
 
 	</tbody>
 </table>
+<table class= "table">
+	<thead>
+		<tr>
+			<th>The Comments</th>
+			<th>
+				<button class="btn btn-default btn-xs btn-addComment" ng-click="addComment(post[0].about.id)">Add Comment</button>
+			</th>
+		</tr>
+		<tr>
+			<th>User</th>
+			<th>Comment</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	<tbody class = "botComment">		
+		<tr ng-repeat="x in comments">
+		    
+		    <td>{{ x.name }}</td>
+		    <td>{{ x.ctext }}</td>
+		    <td>{{ x.created_at }}</td>
+		    
+		</tr>
+	</tbody>
+</table>

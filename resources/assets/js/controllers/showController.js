@@ -8,6 +8,14 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 		}).error(function(response) {
 			alert("error getting your json");
 		});
+
+		$http.get(baseUrl + api + "comments/" + $scope.id)
+		.success(function(response){
+			$scope.comments= response;
+			
+		}).error(function(response) {
+			alert("error getting your json");
+		});
 	
 
 }]);
