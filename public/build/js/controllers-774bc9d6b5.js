@@ -172,7 +172,7 @@ synco.controller('commentController', ['$scope', '$http', '$location', '$routePa
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			url: baseUrl + api + "comment",
+			url: baseUrl + api + "comments",
 			method: "POST",
 			data: {
 				ctext: $scope.post.ctext
