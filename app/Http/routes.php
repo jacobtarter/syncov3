@@ -31,6 +31,8 @@ Route::get( '/api/v1/posts/test/{pid}', 'PostController@test');
 
 
 Route::get( '/api/v1/comments/{pid}', 'CommentController@getCommentsByPost');
+Route::post('/api/v1/comments', 'CommentController@store' );
+
 
 
 Route::group(['middleware' => ['web']], function () {
