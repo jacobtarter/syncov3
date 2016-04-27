@@ -17,6 +17,7 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				console.log(response);
 				$cookies.put('auth', response);
 				$cookies.put('userName', response.name);
+				$cookies.put('id', response.id);
 				console.log($cookies.get('userName'));
 			}).error(function(data,status,headers) {
 				console.log(data,status,headers);
@@ -43,9 +44,20 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 		}
 	}
 
+	userModel.getId = function() {
+		var id = $cookies.get('id');
+		if (id) {
+			return id;
+		}
+		else {
+			return null;
+		}
+	}
+
 	userModel.doUserLogout = function() {
 		$cookies.remove('auth');
 		$cookies.remove('userName');
+		$cookies.remove('id');
 	}
 
 	return userModel;

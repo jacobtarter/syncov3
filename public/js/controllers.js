@@ -113,7 +113,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			method: "POST",
 			data: {
 				v_pid: id,
-				votescore: 1
+				votescore: 1,
+				uid: userModel.getId();
 			}
 		}).success(function(response) {
 			console.log("vote created, redirecting to home");
@@ -135,7 +136,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			method: "POST",
 			data: {
 				v_pid: id,
-				votescore: -1
+				votescore: -1,
+				uid: userModel.getId();
 			}
 		}).success(function(response) {
 			console.log("vote created, redirecting to home");

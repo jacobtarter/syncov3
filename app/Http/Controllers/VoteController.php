@@ -27,6 +27,7 @@ class VoteController extends Controller
         
         $vote->v_pid = $request->input('v_pid');
         $vote->votescore = $request->input('votescore');
+        $vote->uid = $request->input('uid');
         $vote->save();
     }
 }
