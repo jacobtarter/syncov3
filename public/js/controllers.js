@@ -75,7 +75,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		doLogout: function() {
 			userModel.doUserLogout();
 			$location.path('/');
-		}
+		},
 		doRegister: function(registerForm) {
 			var data = {
 				email: $scope.login.email,
