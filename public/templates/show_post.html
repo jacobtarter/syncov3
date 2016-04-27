@@ -19,13 +19,13 @@
 		    	<button class="btn btn-default btn-xs btn-up" >Upvote</button>
 		    	<button class="btn btn-default btn-xs btn-down" >Downvote</button>
 		    </td>
-		    <td>{{ post[0].about.post_score }}</td>
-		    <td>{{ post[0].about.upvotes }}</td>
-		    <td>{{ post[0].about.downvotes }}</td>
-		    <td>{{ post[0].about.title }}</td>
-		    <td>{{ post[0].about.ptext }}</td>
-		    <td>{{ post[0].about.num_comments }}</td>
-		    <td>{{ post[0].about.name }}</td>
+		    <td>{{ post[0].vote_score }}</td>
+		    <td>{{ post[0].upvotes }}</td>
+		    <td>{{ post[0].downvotes }}</td>
+		    <td>{{ post[0].title }}</td>
+		    <td>{{ post[0].ptext }}</td>
+		    <td>{{ post[0].comment_count }}</td>
+		    <td>{{ post[0].name }}</td>
 		    <td>
 		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.about.id)">Edit</button>		 
 		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.about.id)">Delete</button>

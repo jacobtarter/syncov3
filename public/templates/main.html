@@ -16,12 +16,12 @@
 		    	<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.about.id)" > Upvote </button>
 		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.about.id)" > Downvote </button>
 		    </td>
-		    <td>{{ x.about.post_score }}</td>
-		    <td>{{ x.about.upvotes }}</td>
-		    <td>{{ x.about.downvotes }}</td>
-		    <td>{{ x.about.title }}</td>
-		    <td>{{ x.about.num_comments }}</td>
-		    <td>{{ x.about.name }}</td>
+		    <td>{{ x.vote_score }}</td>
+		    <td>{{ x.upvotes }}</td>
+		    <td>{{ x.downvotes }}</td>
+		    <td>{{ x.title }}</td>
+		    <td>{{ x.comment_count }}</td>
+		    <td>{{ x.name }}</td>
 		    <td>
 		    	<button class="btn btn-default btn-xs btn-view" ng-click="viewPost(x.about.id)">View/Comment</button>
 		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.about.id)">Edit</button>		    
