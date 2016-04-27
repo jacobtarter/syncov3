@@ -203,7 +203,7 @@ synco.controller('editController', ['$scope', '$http', '$location', '$routeParam
 	
 
 }]);
-synco.controller('showController', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
+synco.controller('showController', ['$scope', '$http', '$location', '$routeParams', 'userModel', function($scope, $http, $location, $routeParams, userModel) {
 
 		//load in route param for post id
 		$scope.id = $routeParams.id;
