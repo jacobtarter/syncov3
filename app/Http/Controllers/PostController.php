@@ -149,7 +149,15 @@ class PostController extends Controller
         //echo json_encode($DATA);
         */
 
-        $DATA = (array)DB::select( "SELECT * FROM posts" );
+        if(!is_null($pid))
+        {
+            $DATA = (array)DB::select( "SELECT * FROM posts WHERE id = '$pid'");
+        }
+        else
+        {
+           $DATA = (array)DB::select( "SELECT * FROM posts" ); 
+        }
+
         $responseArray=[];
         foreach($DATA as $row){
             $current = [];
