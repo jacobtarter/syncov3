@@ -1,36 +1,28 @@
-<table class="table">
-	
-	<p>EDIT POST PAGE</p>
+<html class = "wrapper">
+<link rel="stylesheet" href="http://jmurray.altervista.org/Synco/SyncoCss2.2.css">
 
-	<thead>
-		<tr>
-			<th></th>
-			<th>Score</th>
-			<th>Upvotes</th>
-			<th>Downvotes</th>
-			<th>Title</th>
-			<th>Post Text</th>
-			<th>Comments</th>
-		</tr>
-	</thead>
-	<tbody>
-		    <td>
-		    	<button class="btn btn-default btn-xs btn-up" >Upvote</button>
-		    	<button class="btn btn-default btn-xs btn-down" >Downvote</button>
-		    </td>
-		    <td>{{ post[0].about.post_score }}</td>
-		    <td>{{ post[0].about.upvotes }}</td>
-		    <td>{{ post[0].about.downvotes }}</td>
-		    <td>{{ post[0].about.title }}</td>
-		    <td>{{ post[0].about.ptext }}</td>
-		    <td>{{ post[0].about.num_comments }}</td>
-		    <td>
-		    	<button class="btn btn-default btn-xs btn-view" ng-click="viewPost(x.about.id)">View/Comment</button>
-		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.about.id)">Edit</button>		    
-		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.about.id)">Delete</button>
+<div>
+	<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" alt="Synco" height ="100" width="200">
+</div>
+<div class="row">
+	<div class="col-sm-3 col-xs-0"></div>
+	<div class="col-sm-6 col-xs-12 well" >
+		<hi>Edit Post</h1>
+			<form name="editForm" ng-submit="editPost(editForm)">
 
-		    </td>
+				<div class="form-group">
+					<input type="text" name="Title" ng-model ="post[0].about.title"
+					required placeholder="Title of your post" class="form-control">
+				</div>
 
+				<div class="form-group">
+					<input type="text" name="Body" ng-model="post[0].about.ptext"
+					required placeholder="Enter your post text" class="form-control">
+				</div>
 
-	</tbody>
-</table>
+				<input type="submit" name="save" value="Post" class="btn btn-success">
+			</form>
+	</div>
+	<div class="col-sm-3 col-xs-0"></div>
+</div>
+</html>

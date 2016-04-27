@@ -194,7 +194,7 @@ class PostController extends Controller
         $post->title = $request->input('title');
         $post->ptext = $request->input('ptext');
         $post->save();
-        return redirect('/');	
+        //return redirect('/');	
     }
 
     /**
@@ -217,7 +217,13 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $post = Post::find($id);
+
+        $post->title = $request->input('title');
+        $post->ptext = $request->input('ptext');
+        $post->save();
+
+        return "Sucess updating post #" . $post->id;
     }
 
     /**

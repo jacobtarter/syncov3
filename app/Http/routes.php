@@ -13,28 +13,37 @@
 
 
 
+//Resource routes, will probably be deleted
 Route::resource('posts', 'PostController');
 Route::resource('user', 'UserController');
 
+//Home route, directs to main template page
 Route::get('/', 'PageController@getMaster');
 
+//Route for checking authorization on login
 Route::post('/auth', 'UserController@checkAuth');
 
-
+//--Posts
+//Create
 Route::post( '/api/v1/posts', 'PostController@store' );
-Route::delete( '/api/v1/posts/{pid}', 'PostController@destroy' );
-Route::get ('/api/v1/posts/view', 'PageController@getView' );
-
+//Read
 Route::get( '/api/v1/posts/{pid?}', 'PostController@index' );
-Route::get( '/api/v1/posts/test/{pid}', 'PostController@test');
-//$router->post('/api/v1/posts', 'PostController@store', ['middleware' => 'JsonApiMiddleware']);
-
-
+//Update
+Route::post ( 'api/v1/posts/{id}', 'PostController@update' );
+//Destroy
+Route::delete( '/api/v1/posts/{pid}', 'PostController@destroy' );
+//--Comments
+//Create
+Route::post( '/api/v1/comments', 'CommentController@store' );
+//Read
 Route::get( '/api/v1/comments/{pid}', 'CommentController@getCommentsByPost');
-Route::post('/api/v1/comments', 'CommentController@store' );
 
 
 
+
+//$router->post('/api/v1/posts', 'PostController@store', ['middleware' => 'JsonApiMiddleware']);
+//Route::get( '/api/v1/posts/test/{pid}', 'PostController@test');
+//Route::get ('/api/v1/posts/view', 'PageController@getView' );
 Route::group(['middleware' => ['web']], function () {
 
 	
