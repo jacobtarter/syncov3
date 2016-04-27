@@ -15,7 +15,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr ng-repeat="x in posts | orderBy : 'vote_score'">
+		<tr ng-repeat="x in posts | orderBy : '-vote_score'">
 		    <td>
 		    	<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()"> Upvote </button>
 		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()"> Downvote </button>
