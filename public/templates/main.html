@@ -17,8 +17,8 @@
 	<tbody>
 		<tr ng-repeat="x in posts ">
 		    <td>
-		    	<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" > Upvote </button>
-		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" > Downvote </button>
+		    	<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()"> Upvote </button>
+		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()"> Downvote </button>
 		    </td>
 		    <td>{{ x.vote_score }}</td>
 		    <td>{{ x.upvotes }}</td>
