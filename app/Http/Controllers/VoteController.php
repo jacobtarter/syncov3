@@ -15,9 +15,10 @@ use DB;
 class VoteController extends Controller
 {
 
-	 public function store(Request $request)
+	public function store(Request $request)
     {
-       
+       	$DATA = (array)DB::select( "SELECT * FROM votes WHERE id = 'input('uid')'");
+       	return $DATA;
         $this->validate($request, array(
             'v_pid' => 'required',
             'votescore' => 'required'
