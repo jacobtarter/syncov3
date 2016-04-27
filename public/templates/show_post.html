@@ -11,6 +11,7 @@
 			<th>Title</th>
 			<th>Post Text</th>
 			<th>Comments</th>
+			<th>User</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -24,6 +25,7 @@
 		    <td>{{ post[0].about.title }}</td>
 		    <td>{{ post[0].about.ptext }}</td>
 		    <td>{{ post[0].about.num_comments }}</td>
+		    <td>{{ post[0].about.name }}</td>
 		    <td>
 		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.about.id)">Edit</button>		 
 		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.about.id)">Delete</button>

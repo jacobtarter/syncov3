@@ -7,6 +7,7 @@
 			<th>Downvotes</th>
 			<th>Title</th>
 			<th>Comments</th>
+			<th>User</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -20,6 +21,7 @@
 		    <td>{{ x.about.downvotes }}</td>
 		    <td>{{ x.about.title }}</td>
 		    <td>{{ x.about.num_comments }}</td>
+		    <td>{{ x.about.name }}</td>
 		    <td>
 		    	<button class="btn btn-default btn-xs btn-view" ng-click="viewPost(x.about.id)">View/Comment</button>
 		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.about.id)">Edit</button>		    
