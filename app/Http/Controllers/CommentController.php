@@ -31,12 +31,14 @@ class CommentController extends Controller
     {
        
         $this->validate($request, array(
-            'ctext' => 'required'
+            'ctext' => 'required',
+            'c_pid' => 'required'
         ));
 
         $comment = new Comment;
         
         $comment->ctext = $request->input('ctext');
+        $comment->c_pid = $request->input('c_pid');
         $comment->save();
     }
 }

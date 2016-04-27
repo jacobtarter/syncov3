@@ -175,7 +175,8 @@ synco.controller('commentController', ['$scope', '$http', '$location', '$routePa
 			url: baseUrl + api + "comments",
 			method: "POST",
 			data: {
-				ctext: $scope.post.ctext
+				ctext: $scope.post.ctext,
+				c_pid: $scope.id
 			}
 		}).success(function(response) {
 			console.log("comment created, redirecting to home");
