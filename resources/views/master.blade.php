@@ -12,7 +12,7 @@
 
 	<h1> TEST </h1>
 
-<div class="wrapper>"
+<div class="wrapper">
 	<div class="container">
 		<div ng-view></div>
 
