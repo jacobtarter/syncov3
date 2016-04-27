@@ -12,8 +12,8 @@
 
 	<h1> TEST </h1>
 
-<div class="row">
-	<div class = "col-sm-8">
+
+
 		<div class="wrapper">
 			<div class="container">
 				<div ng-view></div>
