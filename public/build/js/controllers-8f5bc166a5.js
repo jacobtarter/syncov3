@@ -116,6 +116,28 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 	}
 	});
 
+	angular.extend($scope, {
+	downVote: function(id) {
+		$http({	
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			url: baseUrl + api + "votes",
+			method: "POST",
+			data: {
+				v_pid: id,
+				votescore: -1
+			}
+		}).success(function(response) {
+			console.log("vote created, redirecting to home");
+			location.reload();
+		}).error(function(data,status,headers) {
+			console.log(data);
+			alert("Error Making Vote - Make sure form is filled.");
+		});
+	}
+	});
+
 	//Load the show_post page
 
 	angular.extend($scope, {
