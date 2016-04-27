@@ -150,7 +150,7 @@ class PostController extends Controller
         */
 
         $DATA = (array)DB::select( "SELECT * FROM posts" );
-        responseArray=[];
+        $responseArray=[];
         foreach($DATA as $row){
             $current = [];
             $id = $row->id;
