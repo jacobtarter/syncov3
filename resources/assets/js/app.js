@@ -26,6 +26,7 @@ synco.config(['$routeProvider', '$locationProvider',
 		$routeProvider.when('/post', {
 			templateUrl: 'templates/post.html',
 			controller: 'userController'
+			authenticated: true
 		});
 
 		$routeProvider.when('/post/:id', {
@@ -38,3 +39,23 @@ synco.config(['$routeProvider', '$locationProvider',
 	}
 
 	]);
+
+synco.run(["$rootScope", "$location", 'userModel',
+	function($rootScope, $location, userModel) {
+		$rootScope.$on("$routeChangeStart",
+			function(event, next, current) {
+				if (next.$$route.authenticated) {
+					if (!userModel.getAuthStatus()) {
+						$location.path('/login');
+					}
+				}
+
+				if (next.$$route.originalPath == '/login') {
+					console.log('login page');
+					if (userModel.getAuthStatus()) {
+						$location.path(current.$$route.originalPath);
+					}
+				}
+			});
+	}	
+]);
