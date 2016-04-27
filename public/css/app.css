@@ -28,7 +28,10 @@ h2
   display:flex;
 
 }
-
+.wrapper
+{
+  background-color: white;
+}
 a, a:visited
 {
   color:white;

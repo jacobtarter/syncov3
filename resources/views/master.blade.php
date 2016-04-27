@@ -12,7 +12,7 @@
 
 	<h1> TEST </h1>
 
-
+<div class="wrapper>"
 	<div class="container">
 		<div ng-view></div>
 
@@ -24,4 +24,5 @@
 	<script type="text/javascript" src="{{asset('js/controllers.js')}}"></script>
 
 </body>
+</div>
 </html>
