@@ -50,7 +50,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	angular.extend($scope, {
 		doLogin: function(loginForm) 
 		{
-			var data: {
+			var data = {
 					email: $scope.login.username,
 					password: $scope.login.password
 				}

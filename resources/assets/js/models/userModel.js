@@ -1,7 +1,7 @@
 synco.factory('userModel', ['http', function($http) {
 	var userModel = {};
 
-	userModel.doLogin: function(data) 
+	userModel.doLogin = function(loginData) 
 		{
 			return $http({	
 				headers: {
@@ -10,8 +10,8 @@ synco.factory('userModel', ['http', function($http) {
 				url: baseUrl + 'auth',
 				method: "POST",
 				data: {
-					email: data.username,
-					password: data.password
+					email: loginData.email,
+					password: loginData.password
 				}
 			}).success(function(response) {
 				console.log(response);
