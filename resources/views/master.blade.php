@@ -10,7 +10,7 @@
 
 <body>
 
-	<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" alt="SYNCO SYNCO SYNCO">
+	<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" alt="SYNCO SYNCO SYNCO"></img>
 			<div ng-view></div>
 
 	</div>
