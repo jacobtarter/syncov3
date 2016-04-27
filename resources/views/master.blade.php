@@ -5,12 +5,15 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
 	<script>var baseUrl = "{{ url('/') }}/";</script>
 	<script>var api = "api/v1/"; </script>
+	<link href="{{ asset('css/app.min.css') }}" media="all" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
+	<h1> TEST </h1>
+
 	<!-- <p style="font-size: 24px"><b>Synco!</b></p> -->
-	<!-- <a href = "#/post"><button class="btn btn-default btn-xs btn-post" >New Post</button></a> --> 
+	<!-- <a href = "#/post"><button class="btn btn-default btn-xs btn-post" >New Post</button></a> -->
 
 	<div class="container">
 		<div ng-view></div>
