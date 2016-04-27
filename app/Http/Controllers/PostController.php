@@ -150,7 +150,46 @@ class PostController extends Controller
         */
 
         $DATA = (array)DB::select( "SELECT * FROM posts" );
-        echo json_encode($DATA);
+        responseArray=[];
+        foreach($DATA as $row){
+            $current = [];
+            $id = $row->id;
+            $COMMENTS = (array)DB::select( "SELECT * FROM comments WHERE c_pid = '$id'");
+            $commentCount=0;
+            foreach($COMMENTS as $commentRow)
+            {
+                $commentCount++;
+            }
+            $VOTES = (array)DB::select( "SELECT * FROM votes WHERE v_pid = '$id'");
+            $upvotes=0;
+            $downvotes=0;
+            foreach($VOTES as $voteRow)
+            {
+                if($voteRow->votescore == 1)
+                {
+                    $upvotes++;
+                }
+                if($voteRow->votescore == -1)
+                {
+                    $downvotes++;
+                }
+            }
+            $current['id']=$row->id;
+            $current['title']=$row->title;
+            $current['ptext']=$row->ptext;
+            $current['name']=$row->name;
+            $current['created_at']=$row->created_at;
+            $current['updated_at']=$row->updated_at;
+            $current['comment_count']=$commentCount;
+            $current['upvotes']=$upvotes;
+            $current['downvotes']=$downvotes;
+            $current['vote_score']=$upvotes-$downvotes;
+            $responseArray[] = $current;
+
+        }
+
+
+        echo json_encode($responseArray);
     }
 
     /**
