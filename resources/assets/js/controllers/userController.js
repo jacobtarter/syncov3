@@ -150,6 +150,7 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 
 }]);
 
+/*
 synco.filter('byScore', function() {
  return function(items) {  
     items.sort(function(a,b){   
@@ -159,3 +160,4 @@ synco.filter('byScore', function() {
             return -1;         
         return 0; })
 });
+*/
