@@ -22,6 +22,7 @@ Route::get('/', 'PageController@getMaster');
 
 //Route for checking authorization on login
 Route::post('/auth', 'UserController@checkAuth');
+Route::post('/register', 'UserController@register');
 
 //--Posts
 //Create

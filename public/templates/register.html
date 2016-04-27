@@ -7,12 +7,17 @@
 <div class="row">
 	<div class="col-sm-3 col-xs-0"></div>
 	<div class="col-sm-6 col-xs-12 well" >
-		<hi>Login</h1>
-			<form name="loginForm" ng-submit="doLogin(loginForm)">
+		<hi>Register</h1>
+			<form name="loginForm" ng-submit="doRegister(registerForm)">
 
 				<div class="form-group">
 					<input type="email" name="email" ng-model ="login.email"
 					required placeholder="Enter your email" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<input type="text" name="username" ng-model ="login.username"
+					required placeholder="Enter your username" class="form-control">
 				</div>
 
 				<div class="form-group">

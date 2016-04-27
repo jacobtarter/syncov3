@@ -54,7 +54,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	//Autofill login for testing
 	angular.extend($scope, {
 		login: {
-			username: 'syncoserver@gmail.com',
+			email: 'syncoserver@gmail.com',
 			password: 'syncosyncosynco'
 		}
 	});
@@ -65,7 +65,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		doLogin: function(loginForm) 
 		{
 			var data = {
-					email: $scope.login.username,
+					email: $scope.login.email,
 					password: $scope.login.password
 				}
 			userModel.doLogin(data).then(function() {
@@ -75,6 +75,18 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		doLogout: function() {
 			userModel.doUserLogout();
 			$location.path('/');
+		}
+		doRegister: function(registerForm) {
+			var data = {
+				email: $scope.login.email,
+				name: $scope.login.username,
+				password: $scope.login.password
+			}
+
+			userModel.register(data).then(function() {
+				$location.path('/');
+			});
+			
 		}
 	});
 

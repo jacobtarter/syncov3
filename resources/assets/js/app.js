@@ -24,6 +24,11 @@ synco.config(['$routeProvider', '$locationProvider',
 			controller: 'userController'
 		});
 
+		$routeProvider.when('/register', {
+			templateUrl: 'templates/register.html',
+			controller: 'userController'
+		})
+
 		$routeProvider.when('/logout', {
 			templateUrl: 'templates/logout.html',
 			controller: 'userController'

@@ -25,6 +25,29 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 			});
 		};
 
+	userModel.register = function(registerData)
+	{
+		return $http({	
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				url: baseUrl + 'register',
+				method: "POST",
+				data: {
+					email: loginData.email,
+					password: loginData.password,
+					name: loginData.name
+				}
+			}).success(function(response) {
+				console.log(response);
+				alert("registered");
+			}).error(function(data,status,headers) {
+				console.log(data,status,headers);
+				alert(data);
+			});
+
+	};
+
 	userModel.getAuthStatus = function() {
 		var status = $cookies.get('auth');
 		if (status) {
