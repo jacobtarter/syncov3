@@ -100,7 +100,7 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			url: baseUrl + api + "votes/" + id,
+			url: baseUrl + api + "votes",
 			method: "POST",
 			data: {
 				v_pid: id,
