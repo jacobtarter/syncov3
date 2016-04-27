@@ -35,6 +35,7 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 		}
 	}
 	
+	//Load edit post page
 	
 	$scope.editPost = function(id) 
 	{
@@ -43,8 +44,8 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 		$location.path('/post/' + id );
 		
 	}
-	
-	
+
+	//Submit login attempt
 
 	angular.extend($scope, {
 		doLogin: function(loginForm) 
@@ -69,6 +70,8 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 		}
 	});
 
+	//Submit make post request
+
 	angular.extend($scope, {
 	makePost: function(postForm) {
 		$http({	
@@ -91,29 +94,10 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 	}
 	});
 
-	/*
-	angular.extend($scope, {
-	editPost: function(id) {
-		alert(id);
-		$http.get($scope.API_URL + "posts" + "/" + id)
-		.success(function(response){
-			$scope.posts = response;
-		}).error(function(response) {
-			alert("error getting your json");
-		});
-
-
-
-		$location.path('/post/' + id );
-	}	
-	});
-*/
+	//Load the show_post page
 
 	angular.extend($scope, {
 	viewPost: function(id) {
-
-
-
 
 		$location.path('/view/' + id );
 	}	
@@ -123,8 +107,10 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 }]);
 synco.controller('editController', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
 
+		//Get route params for post id
 		$scope.id = $routeParams.id;
 
+		//Pull data for given post id
 		$http.get(baseUrl + api + "posts/" + $scope.id )
 		.success(function(response){
 			$scope.post= response;
@@ -132,10 +118,11 @@ synco.controller('editController', ['$scope', '$http', '$location', '$routeParam
 			alert("error getting your json");
 		});
 
-
+		//Function for editing the post that was pulled - use the current value as ng-model of form so that it 
+		//autopopulates with current data
 		angular.extend($scope, {
 		editPost: function(editForm) {
-		alert($scope.post[0].about.title + " , " + $scope.post[0].about.ptext);
+		//alert($scope.post[0].about.title + " , " + $scope.post[0].about.ptext);
 		$http({	
 			headers: {
 				'Content-Type': 'application/json'
@@ -160,8 +147,10 @@ synco.controller('editController', ['$scope', '$http', '$location', '$routeParam
 }]);
 synco.controller('showController', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
 
+		//load in route param for post id
 		$scope.id = $routeParams.id;
 
+		//Pull data for given post id
 		$http.get(baseUrl + api + "posts/" + $scope.id )
 		.success(function(response){
 			$scope.post= response;
@@ -169,6 +158,8 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 			alert("error getting your json");
 		});
 
+
+		//Pull comments for given post id
 		$http.get(baseUrl + api + "comments/" + $scope.id)
 		.success(function(response){
 			$scope.comments= response;
@@ -177,6 +168,7 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 			alert("error getting your json");
 		});
 
+		//Load add comment page
 		$scope.addComment = function(id) 
 		{
 			console.log('comment' + id);
@@ -189,7 +181,10 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 }]);
 synco.controller('commentController', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
 
+	//get route param for post id, so we know what post is being commented on
 	$scope.id = $routeParams.id;
+	
+	//function for making the post request
 	angular.extend($scope, {
 	makeComment: function(commentForm) {
 		$http({	

@@ -1,7 +1,9 @@
 synco.controller('editController', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
 
+		//Get route params for post id
 		$scope.id = $routeParams.id;
 
+		//Pull data for given post id
 		$http.get(baseUrl + api + "posts/" + $scope.id )
 		.success(function(response){
 			$scope.post= response;
@@ -9,10 +11,11 @@ synco.controller('editController', ['$scope', '$http', '$location', '$routeParam
 			alert("error getting your json");
 		});
 
-
+		//Function for editing the post that was pulled - use the current value as ng-model of form so that it 
+		//autopopulates with current data
 		angular.extend($scope, {
 		editPost: function(editForm) {
-		alert($scope.post[0].about.title + " , " + $scope.post[0].about.ptext);
+		//alert($scope.post[0].about.title + " , " + $scope.post[0].about.ptext);
 		$http({	
 			headers: {
 				'Content-Type': 'application/json'

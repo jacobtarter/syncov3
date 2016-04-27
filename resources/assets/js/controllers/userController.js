@@ -35,6 +35,7 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 		}
 	}
 	
+	//Load edit post page
 	
 	$scope.editPost = function(id) 
 	{
@@ -43,8 +44,8 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 		$location.path('/post/' + id );
 		
 	}
-	
-	
+
+	//Submit login attempt
 
 	angular.extend($scope, {
 		doLogin: function(loginForm) 
@@ -69,6 +70,8 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 		}
 	});
 
+	//Submit make post request
+
 	angular.extend($scope, {
 	makePost: function(postForm) {
 		$http({	
@@ -91,29 +94,10 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 	}
 	});
 
-	/*
-	angular.extend($scope, {
-	editPost: function(id) {
-		alert(id);
-		$http.get($scope.API_URL + "posts" + "/" + id)
-		.success(function(response){
-			$scope.posts = response;
-		}).error(function(response) {
-			alert("error getting your json");
-		});
-
-
-
-		$location.path('/post/' + id );
-	}	
-	});
-*/
+	//Load the show_post page
 
 	angular.extend($scope, {
 	viewPost: function(id) {
-
-
-
 
 		$location.path('/view/' + id );
 	}	
