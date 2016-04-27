@@ -31,6 +31,11 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 			
 		}
 		*/
+		angular.extend($scope, {
+			checkAuth: function() {
+				userModel.getAuthStatus();
+			}
+		});
 
 		angular.extend($scope, {
 		makeComment: function(commentForm) {
