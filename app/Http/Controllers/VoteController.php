@@ -12,7 +12,7 @@ use App\Vote;
 
 use DB;
 
-class CommentController extends Controller
+class VoteController extends Controller
 {
 
 	 public function store(Request $request)
