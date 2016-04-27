@@ -44,7 +44,7 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 			}
 		}).success(function(response) {
 			console.log("comment created, redirecting to home");
-			$location.path('/view/' + $scope.id);
+			location.reload();
 		}).error(function(data,status,headers) {
 			console.log(data);
 			alert("Error Making Post - Make sure form is filled.");
