@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="http://jmurray.altervista.org/Synco/SyncoNEWCSS54.css">
+<link rel="stylesheet" type="text/css" href="http://jmurray.altervista.org/Synco/SyncoNEWCSS56.css">
 
 <div class="logBox">
 <div class="buttonNpost"><a href = "#/post"><button class="btn btn-default btn-md btn-post" ng-show="checkAuth()">New Post</button></a></div>
@@ -25,8 +25,7 @@
 		    	<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()"> Upvote </button>
 		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()"> Downvote </button>
 		    </td>
-		    <td><strong>{{ x.vote_score }}</strong>({{ x.upvotes }}/{{ x.downvotes }})</td>
-		    <td>{{ x.title }}</td>
+		  	<td> <div class = "commentHeader"> {{ x.title }} {{ x.name }} {{ x.vote_score }} ({{ x.upvotes }}/{{ x.downvotes }}) </td> </div>
 		    <td>{{ x.comment_count }}</td>
 		    <td>{{ x.name }}</td>
 		    <td>
