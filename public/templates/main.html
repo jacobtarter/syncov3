@@ -26,9 +26,14 @@
 		    	<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()"> Upvote </button>
 		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()"> Downvote </button>
 		    </td>
-		  	<td><div class = "commentHeader"><b>{{ x.title }},  {{ x.name }} </b> <span class="leftAlign"> Score: {{ x.vote_score }} <span class="pos">({{ x.upvotes }} </span>/<span class="neg">{{ x.downvotes }}) </span></span></td> </div>
+		  	<td>
+					<div class = "commentHeader"><b>{{ x.title }},  {{ x.name }} </b>
+						 <span class="leftAlign"> Score: {{ x.vote_score }}
+							 <span class="pos">({{ x.upvotes }} </span>/<span class="neg">{{ x.downvotes }}) </span>
+						 </span>
+					</td>
+				</div>
 		    <td>{{ x.comment_count }}</td>
-		    <td>{{ x.name }}</td>
 		    <td>
 		    	<button class="btn btn-default btn-xs btn-view" ng-click="viewPost(x.id)">View/Comment</button>
 		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.id)">Edit</button>
