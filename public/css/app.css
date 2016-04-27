@@ -1,13 +1,139 @@
-/*<<<<<<< HEAD */
 /*# sourceMappingURL=app.css.map */
+body
+{
+  background-color: #5882FA;
+}
+html
+{
+  box-sizing: border-box;
+}
+*, *:before, *:after
+{
+  box-sizing:inherit;
+}
 h1
 {
-  background-color:blue;
+  text-align: center;
 }
-h2{
+h2
+{
+  text-align: center;
+}
+.flex-nav ul
+{
+  border:1px solid black;
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
 
 }
-/*=======*/
+
+a, a:visited
+{
+  color:white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.4);
+  padding:20px 5px;
+  display:inline-block;
+  width:100%;
+  text-align: center;
+  transition:all 0.5s;
+}
+a:hover
+{
+  background-color:#A9A9F5;
+}
+a.commentReply
+{
+  color: blue;
+
+  font-weight: 100;
+  letter-spacing: 0px;
+  text-decoration: none;
+  background: none;
+  padding-left: 10px;
+  display:inline;
+  width:0;
+  text-align: right;
+  transition: ;
+}
+button
+{
+  margin-left: 5%;
+}
+.main
+{
+  background-color: white;
+}
+.commentMain
+{
+  border: 1px solid black;
+}
+.commentTitle
+{
+  background-color: #ccffff;
+  padding:2px;
+  margin:5px 5px 5px 0px;
+}
+
+.commentTitleForm
+{
+  display: block;
+  background-color: red;
+  padding:2px;
+  margin:5px 5px 5px 0px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.test
+{
+  background-color: red;
+  display: block;
+  color:red;
+}
+
+.commentBody
+{
+  padding-left: 5%;
+  background-color:  #e6ffff;
+}
+.commentFooter
+{
+  padding-left: 50%;
+  font-size: 10px;
+}
+img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-nav li
+{
+  flex:1;
+}
+@media all and (max-width:500px)
+{
+  .flex-nav ul
+  {
+    flex-wrap: wrap;
+  }
+
+  .flex-nav li
+  {
+    flex: 1 1 50%;
+  }
+  .commentFooter
+  {
+    padding-left: 0%;
+    font-size: 10px;
+  }
+}
+
 
 /*# sourceMappingURL=app.css.map */
-/*>>>>>>> origin/master*/
