@@ -10,7 +10,6 @@
 
 <body>
 
-	<h1> TEST </h1>
 	<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" alt="SYNCO SYNCO SYNCO">
 			<div ng-view></div>
 
