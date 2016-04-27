@@ -12,6 +12,9 @@ class PageController extends Controller
 	public function getIndex() {
 		return view('pages.syncohome');
 	}
+	public function getRegister() {
+		return view('auth.register');
+	}
 
 	public function getView() {
 		return view('pages.viewpost');
