@@ -119,11 +119,11 @@ class PostController extends Controller
                 $votes['created_at'] = $row->created_at;
                 $voteBlock[]= $votes;
                 $previousVote = $row->vid;
-                if($row->VoteScore == 1)
+                if($row->votescore == 1)
                 {
                     $upvotes++;
                 }
-                if($row->VoteScore == -1)
+                if($row->votescore == -1)
                 {
                     $downvotes++;
                 }
