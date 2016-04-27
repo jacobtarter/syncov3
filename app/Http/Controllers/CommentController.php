@@ -36,7 +36,7 @@ class CommentController extends Controller
 
         $comment = new Comment;
         
-        $post->ctext = $request->input('ctext');
-        $post->save();
+        $comment->ctext = $request->input('ctext');
+        $comment->save();
     }
 }
