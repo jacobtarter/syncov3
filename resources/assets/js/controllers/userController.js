@@ -48,7 +48,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	//Autofill login for testing
 	angular.extend($scope, {
 		login: {
-			username: 'syncoserver@gmail.com'
+			username: 'syncoserver@gmail.com',
 			password: 'syncosyncosynco'
 		}
 	});
