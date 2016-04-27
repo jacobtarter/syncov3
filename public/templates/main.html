@@ -1,7 +1,10 @@
+<link rel="stylesheet" type="text/css" href="http://jmurray.altervista.org/Synco/SyncoNEWCSS.css">
+<body>
 <a href = "#/post"><button class="btn btn-default btn-xs btn-post" ng-show="checkAuth()">New Post</button></a>
 <a href = "#/login"><button class="btn btn-default btn-xs btn-post" ng-show="!checkAuth()">Login</button></a>
 <a href = "#/logout"><button class="btn btn-default btn-xs btn-post" ng-show="checkAuth()">Logout</button></a>
 
+<div class = "wrapper">
 <table class="table">
 	<thead>
 		<tr>
@@ -24,7 +27,7 @@
 		    <td>{{ x.name }}</td>
 		    <td>
 		    	<button class="btn btn-default btn-xs btn-view" ng-click="viewPost(x.id)">View/Comment</button>
-		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.id)">Edit</button>		    
+		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.id)">Edit</button>
 		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.id)">Delete</button>
 
 		    </td>
@@ -33,3 +36,5 @@
 		</tr>
 	</tbody>
 </table>
+</div>
+</body>
