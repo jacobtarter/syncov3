@@ -1,4 +1,4 @@
-synco.factory('userModel', ['http', function($http) {
+synco.factory('userModel', ['$http', function($http) {
 	var userModel = {};
 
 	userModel.doLogin = function(loginData) 
