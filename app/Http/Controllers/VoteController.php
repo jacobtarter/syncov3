@@ -17,7 +17,7 @@ class VoteController extends Controller
 
 	public function store(Request $request)
     {
-        $voteCount = request->input('uid');
+        $voteCount = $request->input('uid');
        	$DATA = (array)DB::select( "SELECT * FROM votes WHERE id = '$voteCount')'");
        	return $DATA;
         $this->validate($request, array(
