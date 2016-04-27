@@ -23,6 +23,12 @@ synco.config(['$routeProvider', '$locationProvider',
 			controller: 'userController'
 		});
 
+		$routeProvider.when('/logout', {
+			templateUrl: 'templates/logout.html',
+			controller: 'userController',
+			authenticated: true
+		})
+
 		$routeProvider.when('/post', {
 			templateUrl: 'templates/post.html',
 			controller: 'userController',
