@@ -13,8 +13,8 @@
 	<tbody>
 		<tr ng-repeat="x in posts">
 		    <td>
-		    	<button class="btn btn-default btn-xs btn-up" >Upvote</button>
-		    	<button class="btn btn-default btn-xs btn-down" >Downvote</button>
+		    	<button class="btn btn-default btn-xs btn-up ng-click="upVote(x.about.id)" > Upvote </button>
+		    	<button class="btn btn-default btn-xs btn-down ng-click="downVote(x.about.id)" > Downvote </button>
 		    </td>
 		    <td>{{ x.about.post_score }}</td>
 		    <td>{{ x.about.upvotes }}</td>

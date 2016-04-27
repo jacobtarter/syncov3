@@ -32,11 +32,17 @@ Route::get( '/api/v1/posts/{pid?}', 'PostController@index' );
 Route::post ( 'api/v1/posts/{id}', 'PostController@update' );
 //Destroy
 Route::delete( '/api/v1/posts/{pid}', 'PostController@destroy' );
+
 //--Comments
 //Create
 Route::post( '/api/v1/comments', 'CommentController@store' );
 //Read
 Route::get( '/api/v1/comments/{pid}', 'CommentController@getCommentsByPost');
+
+//--Votes
+//Create
+Route::post( '/api/v1/votes', 'VoteController@store' );
+
 
 
 
