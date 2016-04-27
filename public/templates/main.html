@@ -27,7 +27,7 @@
 		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()"> Downvote </button>
 		    </td>
 		  	<td>
-					<div class = "commentHeader"><b>{{ x.title }},  {{ x.name }} </b>
+					<div class = "commentHeader"><b>{{ x.title }} Original Poster: {{ x.name }} </b>
 						 <span class="leftAlign"> Score: {{ x.vote_score }}
 							 <span class="pos">({{ x.upvotes }} </span>/<span class="neg">{{ x.downvotes }}) </span>
 						 </span>
