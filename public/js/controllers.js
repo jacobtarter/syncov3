@@ -224,6 +224,7 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 			alert("error getting your json");
 		});
 
+		/*
 		//Load add comment page
 		$scope.addComment = function(id) 
 		{
@@ -232,6 +233,7 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 			$location.path('/comment/' + id );
 			
 		}
+		*/
 
 		angular.extend($scope, {
 		makeComment: function(commentForm) {
