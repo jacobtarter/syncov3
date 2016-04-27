@@ -33,7 +33,8 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 		*/
 		angular.extend($scope, {
 			checkAuth: function() {
-				userModel.getAuthStatus();
+				console.log(userModel.getAuthStatus());
+				return userModel.getAuthStatus();
 			}
 		});
 
