@@ -108,7 +108,7 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 			}
 		}).success(function(response) {
 			console.log("vote created, redirecting to home");
-			$location.reload();
+			location.reload();
 		}).error(function(data,status,headers) {
 			console.log(data);
 			alert("Error Making Vote - Make sure form is filled.");
