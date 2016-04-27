@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="synco">
 <head>
-	<title>Synco</title>
+	<a href="www.synco.com"><title>Synco</title></a>
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<script>var baseUrl = "http://www.synco.xyz/";</script>
 	<script>var api = "api/v1/"; </script>
