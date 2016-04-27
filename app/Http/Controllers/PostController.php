@@ -144,8 +144,8 @@ class PostController extends Controller
             $postsFinal[] = $currentBlock;
         }
         
-        print (json_encode($postsFinal));
-        //echo json_encode($DATA);
+        //print (json_encode($postsFinal));
+        echo json_encode($DATA);
     }
 
     /**
