@@ -156,6 +156,13 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	}	
 	});
 
+	angular.extend($scope, {
+		checkAuth: function() {
+			//console.log(userModel.getAuthStatus());
+			return userModel.getAuthStatus();
+		}
+	});
+
 
 }]);
 

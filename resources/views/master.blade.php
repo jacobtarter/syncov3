@@ -11,7 +11,7 @@
 <body>
 
 	<h1> TEST </h1>
-	<a href = "#/post"><button class="btn btn-default btn-xs btn-post" >New Post</button></a>
+	
 
 
 
