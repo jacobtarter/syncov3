@@ -48,7 +48,8 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 			method: "POST",
 			data: {
 				ctext: $scope.post.ctext,
-				c_pid: $scope.id
+				c_pid: $scope.id,
+				name: userModel.getUserName()
 			}
 		}).success(function(response) {
 			console.log("comment created, redirecting to home");

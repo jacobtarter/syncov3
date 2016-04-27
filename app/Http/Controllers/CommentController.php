@@ -39,6 +39,7 @@ class CommentController extends Controller
         
         $comment->ctext = $request->input('ctext');
         $comment->c_pid = $request->input('c_pid');
+        $comment->name = $request->input('name');
         $comment->save();
     }
 }
