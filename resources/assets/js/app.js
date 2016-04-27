@@ -16,6 +16,7 @@ synco.config(['$routeProvider', '$locationProvider',
 		$routeProvider.when('/comment/:id', {
 			templateUrl: 'templates/comment.html',
 			controller: 'commentController'
+			authenticated: true
 		});
 
 		$routeProvider.when('/login', {
@@ -26,7 +27,6 @@ synco.config(['$routeProvider', '$locationProvider',
 		$routeProvider.when('/logout', {
 			templateUrl: 'templates/logout.html',
 			controller: 'userController',
-			authenticated: true
 		})
 
 		$routeProvider.when('/post', {
@@ -38,6 +38,7 @@ synco.config(['$routeProvider', '$locationProvider',
 		$routeProvider.when('/post/:id', {
 			templateUrl: 'templates/editPost.html',
 			controller: 'editController'
+			authenticated: true
 
 		});
 
@@ -50,6 +51,12 @@ synco.run(["$rootScope", "$location", 'userModel',
 	function($rootScope, $location, userModel) {
 		$rootScope.$on("$routeChangeStart",
 			function(event, next, current) {
+				if (next.$$route.originalPath == '/logout') {
+					if(!userModel.getAuthStatus()) {
+						$location.path('/');
+					}
+				}
+
 				if (next.$$route.authenticated) {
 					if (!userModel.getAuthStatus()) {
 						$location.path('/login');

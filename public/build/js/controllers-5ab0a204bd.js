@@ -17,18 +17,24 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	$scope.confirmDelete = function(id) {
 
-		var isConfirmDelete = confirm('Are you sure you want to delete?');
-		if (isConfirmDelete) {
-			$http({
-				method: 'DELETE',
-				url: $scope.API_URL + 'posts/' + id
-			}).
-				success(function(data) {
-					location.reload();
+		if (userModel.getAuthStatus())
+		{	
+			var isConfirmDelete = confirm('Are you sure you want to delete?');
+			if (isConfirmDelete) {
+				$http({
+					method: 'DELETE',
+					url: $scope.API_URL + 'posts/' + id
 				}).
-				error(function(data) {
-					alert('Unable to delete.');
-				});
+					success(function(data) {
+						location.reload();
+					}).
+					error(function(data) {
+						alert('Unable to delete.');
+					});
+			}
+			else {
+				return false;
+			}
 		}
 		else {
 			return false;
@@ -238,7 +244,7 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 		*/
 		angular.extend($scope, {
 			checkAuth: function() {
-				console.log(userModel.getAuthStatus());
+				//console.log(userModel.getAuthStatus());
 				return userModel.getAuthStatus();
 			}
 		});
