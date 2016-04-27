@@ -130,6 +130,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 		}).success(function(response) {
 			console.log("vote created, redirecting to home");
+			alert(response);
 			location.reload();
 		}).error(function(data,status,headers) {
 			console.log("error");
