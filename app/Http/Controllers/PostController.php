@@ -254,6 +254,9 @@ class PostController extends Controller
 
         $post->delete();
 
+        DB::delete("DELETE FROM comments WHERE c_pid = '$id'");
+        DB::delete("DELETE FROM votes WHERE v_pid = '$id'");
+
         return "true";
     }
 
