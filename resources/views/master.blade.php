@@ -10,7 +10,7 @@
 
 <body>
 
-	<div class = "body"> TEST </div>
+	<h1> TEST </h1>
 
 
 
