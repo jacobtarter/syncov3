@@ -17,8 +17,9 @@ class VoteController extends Controller
 
 	public function store(Request $request)
     {
-        $voteCount = $request->input('uid');
-       	$DATA = (array)DB::select( "SELECT * FROM votes WHERE uid = '$voteCount'");
+        $user = $request->input('uid');
+        $post = $request->input('v_pid');
+       	$DATA = (array)DB::select( "SELECT * FROM votes WHERE uid = '$user' AND v_pid = '$post'");
        	$voteCount=0;
         foreach ($DATA as $row){
             $voteCount++;
@@ -36,6 +37,9 @@ class VoteController extends Controller
             $vote->votescore = $request->input('votescore');
             $vote->uid = $request->input('uid');
             $vote->save();
+        }
+        else {
+            return response("User has already voted");
         }
     }
 }
