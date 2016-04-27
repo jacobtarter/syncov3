@@ -1,9 +1,9 @@
 <link rel="stylesheet" type="text/css" href="http://jmurray.altervista.org/Synco/SyncoNEWCSS33.css">
 
 <div class="logBox">
-<a href = "#/post"><button class="btn btn-default btn-xs btn-post" ng-show="checkAuth()">New Post</button></a>
-<div class="buttonLocation"><a href = "#/login"><button class="btn btn-default btn-lg btn-post" ng-show="!checkAuth()">Login</button></a> </div>
-<a href = "#/logout"><button class="btn btn-default btn-xs btn-post" ng-show="checkAuth()">Logout</button></a>
+<div class="buttonNpost"><a href = "#/post"><button class="btn btn-default btn-md btn-post" ng-show="checkAuth()">New Post</button></a> </div>
+<div class="buttonLogin"><a href = "#/login"><button class="btn btn-default btn-lg btn-post" ng-show="!checkAuth()">Login</button></a> </div>
+<div class="buttonLogout"><a href = "#/logout"><button class="btn btn-default btn-xs btn-post" ng-show="checkAuth()">Logout</button></a> </div>
 </div>
 
 <div class = "imgWidth">
@@ -17,11 +17,6 @@
 			<table class="table table-striped">
 			<thead>
 		<tr>
-			<th></th>
-			<th>Score</th>
-			<th>Title</th>
-			<th>Comments</th>
-			<th>User</th>
 		</tr>
 	</thead>
 	<tbody>
