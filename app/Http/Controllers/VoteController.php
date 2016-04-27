@@ -21,9 +21,9 @@ class VoteController extends Controller
        	$DATA = (array)DB::select( "SELECT * FROM votes WHERE uid = '$voteCount'");
        	$voteCount=0;
         foreach ($DATA as $row){
-            voteCount++;
+            $voteCount++;
         }
-        if(voteCount<1)
+        if($voteCount<1)
         {
             $this->validate($request, array(
                 'v_pid' => 'required',
