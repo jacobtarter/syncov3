@@ -12,6 +12,7 @@ synco.controller('editController', ['$scope', '$http', '$location', '$routeParam
 
 		angular.extend($scope, {
 		editPost: function(editForm) {
+		alert($scope.post[0].about.title + " , " + $scope.post[0].about.ptext);
 		$http({	
 			headers: {
 				'Content-Type': 'application/json'
