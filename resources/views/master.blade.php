@@ -9,8 +9,9 @@
 </head>
 
 <body>
-
+<div class = "imgWidth"> 
 	<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" alt="SYNCO SYNCO SYNCO"></img>
+</div
 			<div ng-view></div>
 
 	</div>
