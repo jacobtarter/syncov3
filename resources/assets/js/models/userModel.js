@@ -34,9 +34,9 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				url: baseUrl + 'register',
 				method: "POST",
 				data: {
-					email: loginData.email,
-					password: loginData.password,
-					name: loginData.name
+					email: registerData.email,
+					password: registerData.password,
+					name: registerData.name
 				}
 			}).success(function(response) {
 				console.log(response);
