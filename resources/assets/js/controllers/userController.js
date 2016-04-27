@@ -149,3 +149,13 @@ synco.controller('userController', ['$scope', '$http', '$location', function($sc
 
 
 }]);
+
+synco.filter('byScore', function() {
+ return function(items) {  
+    items.sort(function(a,b){   
+        if (parseInt(a[0].about.post_score) > parseInt(b[0].about.post_score)
+            return 1;
+        if (parseInt(a[0].about.post_score) < parseInt(b[0].about.post_score)
+            return -1;         
+        return 0; })
+});
