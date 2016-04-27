@@ -23,7 +23,7 @@ Route::get('/', 'PageController@getMaster');
 //Route for checking authorization on login
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
-Route::post('/auth', 'userController@checkAuth');
+Route::post('/auth', 'UserController@checkAuth');
 
 //--Posts
 //Create
