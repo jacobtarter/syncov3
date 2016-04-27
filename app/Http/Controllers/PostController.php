@@ -193,6 +193,7 @@ class PostController extends Controller
         $post = new Post;
         $post->title = $request->input('title');
         $post->ptext = $request->input('ptext');
+        $post->name = $request->input('name');
         $post->save();
         //return redirect('/');	
     }

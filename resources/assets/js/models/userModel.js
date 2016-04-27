@@ -33,8 +33,19 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 		}
 	};
 
+	userModel.getUserName = function() {
+		var name = $cookies.get('userName');
+		if (name) {
+			return name;
+		}
+		else {
+			return null;
+		}
+	}
+
 	userModel.doUserLogout = function() {
 		$cookies.remove('auth');
+		$cookies.remove('userName');
 	}
 
 	return userModel;
