@@ -142,8 +142,8 @@ synco.controller('editController', ['$scope', '$http', '$location', '$routeParam
 			url: baseUrl + api + "posts/" + $scope.id,
 			method: "POST",
 			data: {
-				title: $scope.post[0].title,
-				ptext: $scope.post[0].ptext
+				title: $scope.post[0].about.title,
+				ptext: $scope.post[0].about.ptext
 			}
 		}).success(function(response) {
 			console.log("post created, redirecting to home");
