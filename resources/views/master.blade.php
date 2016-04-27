@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
 	<script>var baseUrl = "{{ url('/') }}/";</script>
 	<script>var api = "api/v1/"; </script>
-	<link href="{{ asset(http://jmurray.altervista.org/Synco/SyncoCss2.2.css) }}" media="all" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('http://jmurray.altervista.org/Synco/SyncoCss2.2.css') }}" media="all" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
