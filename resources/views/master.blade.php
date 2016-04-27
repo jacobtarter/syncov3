@@ -10,7 +10,7 @@
 <body>
 
 	<!-- <p style="font-size: 24px"><b>Synco!</b></p> -->
-	<a href = "#/post"><button class="btn btn-default btn-xs btn-post" >New Post</button></a>
+	<!-- <a href = "#/post"><button class="btn btn-default btn-xs btn-post" >New Post</button></a> --> 
 
 	<div class="container">
 		<div ng-view></div>
