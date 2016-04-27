@@ -26,9 +26,14 @@ elixir(function(mix) {
             'controllers/commentController.js'
     	], 'public/js/controllers.js');
 
+    mix.scripts([
+        'models/userModel.js'
+    ], 'public/js/models.js');
+
     mix.version([
-    	'js/all.js',
+    	'js/app.js',
     	'js/factories.js',
-    	'js/controllers.js'
+    	'js/controllers.js',
+        'js/models.js'
     ]);
 });
