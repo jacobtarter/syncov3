@@ -22,6 +22,7 @@ class PostController extends Controller
     public function index($pid = null)
     {
     
+        /*
         if(!is_null($pid))
         {
             $WHERE= "
@@ -146,6 +147,10 @@ class PostController extends Controller
         
         print (json_encode($postsFinal));
         //echo json_encode($DATA);
+        */
+
+        $DATA = (array)DB::select( "SELECT * FROM posts" );
+        echo json_encode($DATA);
     }
 
     /**
