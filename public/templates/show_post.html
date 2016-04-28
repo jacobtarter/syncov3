@@ -45,9 +45,9 @@
 	<tbody class = "botComment">
 		<tr ng-repeat="x in comments">
 
-		    <td><div class="commentHeader"> {{ x.name }}  {{ x.created_at }} </div></td>
-		    {{ x.ctext }}
-		    <td><div class="commentFooter">{{ x.ctext }}</div></td>
+		    <td><div class="commentHeader"> <h3> Name: {{ x.name }} </h3> </div></td>
+
+		    <td><div class="commentFooter"> {{ x.ctext }} <div class = "newline"> Date:{{ x.created_at }} <div></div></td>
 
 		</tr>
 	</tbody>
