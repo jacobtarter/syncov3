@@ -6,6 +6,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	$scope.whichPost = null;
 
+	$scope.postForm = false;
+
 	//Get Posts Method
 
 	$http.get($scope.API_URL + "posts")
@@ -107,7 +109,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 		}).success(function(response) {
 			console.log("post created, redirecting to home");
-			$location.path('/');
+			//$location.path('/');
+			$scope.postForm=false;
 		}).error(function(data,status,headers) {
 			console.log(data);
 			alert("Error Making Post - Make sure form is filled.");
@@ -185,8 +188,9 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	angular.extend($scope, {
 	newPost: function() {
-		console.log("directing to post page");
-		$location.path('/post');
+		//console.log("directing to post page");
+		//$location.path('/post');
+		$scope.postForm=true;
 	}	
 	});
 
