@@ -25,12 +25,12 @@
 
 		  	<td>
 					<div class = "commentHeader"><b>{{ x.title }} <div class ="newline"> Original Poster: {{ x.name }} </b> </div>
-						 <div><span class="leftAlign"> Score: {{ x.vote_score }}
+						 <div class="leftAlign"> Score: {{ x.vote_score }}
 							 <span class="pos">({{ x.upvotes }} </span>/<span class="neg">{{ x.downvotes }}) </span> Comments: {{ x.comment_count }}
-						 </span>
+						 </div>
 					 </div>
 					</td>
-				</div>
+
 		    <td>
 					<div class="commentFooter">
 					<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()"> Upvote </button>
