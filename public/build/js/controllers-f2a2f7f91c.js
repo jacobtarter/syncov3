@@ -53,7 +53,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		
 	}
 
-	$scope.postForm = function() 
+	$scope.showPostForm = function() 
 	{
 		return $scope.postForm;
 		
