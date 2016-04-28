@@ -23,7 +23,8 @@ elixir(function(mix) {
     		'controllers/userController.js',
             'controllers/editController.js',
             'controllers/showController.js',
-            'controllers/commentController.js'
+            'controllers/commentController.js',
+            'controller/postController.js'
     	], 'public/js/controllers.js');
 
     mix.scripts([
