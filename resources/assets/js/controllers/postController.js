@@ -1,5 +1,7 @@
 synco.controller('postController', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
-
+	$scope.post.title=null;
+	$scope.post.ptext=null;
+	
 	angular.extend($scope, {
 	makePost: function(postForm) {
 		$http({	
