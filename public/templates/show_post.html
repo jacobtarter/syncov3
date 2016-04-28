@@ -46,8 +46,8 @@
 		<tr ng-repeat="x in comments">
 
 		    <td><span class="commentHeader"> {{ x.name }} </span></td>
-		    <td>{{ x.ctext }}</td>
-		    <td>{{ x.created_at }}</td>
+		    <td><span class="commentBody">{{ x.ctext }} </span></td>
+		    <td><span class="commentFooter">{{ x.created_at }} </span></td>
 
 		</tr>
 	</tbody>
