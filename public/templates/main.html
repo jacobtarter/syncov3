@@ -22,10 +22,7 @@
 	</thead>
 	<tbody>
 		<tr ng-repeat="x in posts | orderBy : '-vote_score'">
-		    <td>
-		    	<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()"> Upvote </button>
-		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()"> Downvote </button>
-		    </td>
+		    
 		  	<td>
 					<div class = "commentHeader"><b>{{ x.title }} <div class ="newline"> Original Poster: {{ x.name }} </b> </div>
 						 <div><span class="leftAlign"> Score: {{ x.vote_score }}
@@ -38,7 +35,8 @@
 		    	<button class="btn btn-default btn-xs btn-view" ng-click="viewPost(x.id)">View/Comment</button>
 		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.id)">Edit</button>
 		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.id)">Delete</button>
-
+					<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()"> Upvote </button>
+		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()"> Downvote </button>
 		    </td>
 
 
