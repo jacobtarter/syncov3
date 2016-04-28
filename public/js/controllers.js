@@ -53,6 +53,12 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		
 	}
 
+	$scope.postForm = function() 
+	{
+		return $scope.postForm;
+		
+	}
+
 	//Autofill login for testing
 	angular.extend($scope, {
 		login: {
