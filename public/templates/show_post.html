@@ -1,5 +1,6 @@
+<link rel="stylesheet" type="text/css" href="http://jmurray.altervista.org/Synco/SyncoNEWCSS138.css">
 <table class="table">
-	
+
 	<p>SHOW POST PAGE</p>
 
 	<thead>
@@ -27,7 +28,7 @@
 		    <td>{{ post[0].created_at }}</td>
 		    <td>{{ post[0].name }}</td>
 		    <td>
-		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.about.id)">Edit</button>		 
+		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.about.id)">Edit</button>
 		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.about.id)">Delete</button>
 		    </td>
 
@@ -45,7 +46,7 @@
 					required placeholder="Your comment here..." class="form-control">
 				</div>
 
-				
+
 
 				<input type="submit" name="save" value="Post" class="btn btn-success">
 			</form>
@@ -63,13 +64,13 @@
 			<th>Date</th>
 		</tr>
 	</thead>
-	<tbody class = "botComment">		
+	<tbody class = "botComment">
 		<tr ng-repeat="x in comments">
-		    
+
 		    <td>{{ x.name }}</td>
 		    <td>{{ x.ctext }}</td>
 		    <td>{{ x.created_at }}</td>
-		    
+
 		</tr>
 	</tbody>
 </table>
