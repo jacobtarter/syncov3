@@ -159,10 +159,16 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				uid: userModel.getId()
 			}
 		}).success(function(response) {
-			console.log("vote created, redirecting to home");
-			location.reload();
+			if(response) {
+				console.log(response);
+				alert(response);
+			}
+			else {
+				console.log("vote created, redirecting to home");
+				location.reload();
+			}
 		}).error(function(data,status,headers) {
-			console.log(data);
+			console.log("error");
 			alert("Error Making Vote - Make sure form is filled.");
 		});
 	}
