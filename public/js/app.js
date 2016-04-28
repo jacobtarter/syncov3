@@ -56,6 +56,7 @@ synco.run(["$rootScope", "$location", 'userModel',
 	function($rootScope, $location, userModel) {
 		$rootScope.$on("$routeChangeStart",
 			function(event, next, current) {
+				/*
 				if (next.$$route.originalPath == '/logout') {
 					if(!userModel.getAuthStatus()) {
 						$location.path(current.$$route.originalPath);
@@ -74,6 +75,7 @@ synco.run(["$rootScope", "$location", 'userModel',
 						$location.path(current.$$route.originalPath);
 					}
 				}
+				*/
 			});
 	}	
 ]);
