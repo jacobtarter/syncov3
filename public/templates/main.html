@@ -30,7 +30,11 @@ col-sm-6-offset-6 -->
 		<tr ng-repeat="x in posts | orderBy : '-vote_score'">
 
 		  	<td>
-					<div class = "commentHeader"><b>{{ x.title }} <div class ="newline"> Original Poster: {{ x.name }} </b> </div>
+					<div class = "textWrapper">
+						<div class = "commentHeader"><b>{{ x.title }} <div class ="newline"> Original Poster: {{ x.name }} </b>
+						</div>
+					</div>
+					</div>
 						 <div class="leftAlign"> Score: {{ x.vote_score }}
 							 <span class="pos">({{ x.upvotes }} </span>/<span class="neg">{{ x.downvotes }}) </span> Comments: {{ x.comment_count }}
 						 </div>
