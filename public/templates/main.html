@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="http://jmurray.altervista.org/Synco/SyncoNEWCSS94.css">
+<link rel="stylesheet" type="text/css" href="http://jmurray.altervista.org/Synco/SyncoNEWCSS95.css">
 <div class = "bigBox">
 	<div class="loginBox"> </div>
 <div class = "container">
@@ -6,15 +6,13 @@
 	<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" alt="SYNCO SYNCO SYNCO"></img>
 </div>
 
-<div class="loginBox"> </div>
+<div class="loginBox">
+	<a href = "#/post"><button class="btn btn-default btn-md btn-post" ng-show="checkAuth()">New Post</button></a></div>
+	<a href = "#/login"><button class="btn btn-default btn-lg btn-post" ng-show="!checkAuth()">Login</button></a></div>
+	<a href = "#/logout"><button class="btn btn-default btn-md btn-post" ng-show="checkAuth()">Logout</button></a> </div>
+</div>
 
-<nav class = "flex-nav">
-	<ul>
-<li><a href = "#/post" ng-show="checkAuth()">New Post</a>
-<li><a href = "#/login" ng-show="!checkAuth()">Login</a>
-<li><a href = "#/logout" ng-show="checkAuth()">Logout</a>
-	</ul>
-</nav>
+
 <!--<li><a href = "#/post"><button class="btn btn-default btn-md btn-post" ng-show="checkAuth()">New Post</button></a></div>
 <li><a href = "#/login"><button class="btn btn-default btn-lg btn-post" ng-show="!checkAuth()">Login</button></a></div>
 <li><a href = "#/logout"><button class="btn btn-default btn-md btn-post" ng-show="checkAuth()">Logout</button></a> </div>
