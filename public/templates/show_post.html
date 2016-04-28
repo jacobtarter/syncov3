@@ -1,32 +1,25 @@
 <link rel="stylesheet" type="text/css" href="http://jmurray.altervista.org/Synco/SyncoNEWCSS138.css">
-<table class="table">
 
-	<p>SHOW POST PAGE</p>
+<body>
+<div class = "row">
+		<div class = "myWrapper">
 
-	<thead>
-		<tr>
-			<th></th>
-			<th>Score</th>
-			<th>Upvotes</th>
-			<th>Downvotes</th>
-			<th>Title</th>
-			<th>Post Text</th>
-			<th>Date</th>
-			<th>User</th>
-		</tr>
-	</thead>
+
+	<table class="table">
 	<tbody>
 		    <td>
-		    	<button class="btn btn-default btn-xs btn-up" >Upvote</button>
-		    	<button class="btn btn-default btn-xs btn-down" >Downvote</button>
-		    </td>
-		    <td>{{ post[0].vote_score }}</td>
-		    <td>{{ post[0].upvotes }}</td>
-		    <td>{{ post[0].downvotes }}</td>
-		    <td>{{ post[0].title }}</td>
-		    <td>{{ post[0].ptext }}</td>
+					<div class = "commentHeader">
+						<div class = "textWrapper"><b>{{ post[0].title }} </br> <span class ="newline"> Original Poster: {{ post[0].name }} </b>
+						</span>
+					</div>
+				</div>
+				<div class="leftAlign"> Score: 	{{ post[0].vote_score }}
+					<span class="pos">({{ post[0].upvotes }} </span>/<span class="neg">{{ post[0].downvotes }}) </span> Comments: {{ x.comment_count }}
+				</div>
+			</div>
+				<td>{{ post[0].ptext }}</td>
 		    <td>{{ post[0].created_at }}</td>
-		    <td>{{ post[0].name }}</td>
+
 		    <td>
 		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.about.id)">Edit</button>
 		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.about.id)">Delete</button>
@@ -35,6 +28,8 @@
 
 	</tbody>
 </table>
+</div>
+</div>
 <div class="row" ng-show="checkAuth()">
 	<div class="col-sm-3 col-xs-0"></div>
 	<div class="col-sm-6 col-xs-12 well" >
