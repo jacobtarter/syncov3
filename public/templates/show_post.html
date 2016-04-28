@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="http://jmurray.altervista.org/Synco/SyncoNEWCSS138.css">
+<link rel="stylesheet" type="text/css" href="http://jmurray.altervista.org/Synco/SyncoNEWCSS139.css">
 <div class = "bigBox">
 	<div class = "container">
 		<div class = "imgWidth">
@@ -22,9 +22,8 @@
 				<div class="leftAlign"> Score: 	{{ post[0].vote_score }}
 					<span class="pos">({{ post[0].upvotes }} </span>/<span class="neg">{{ post[0].downvotes }}) </span> Comments: {{ x.comment_count }}
 				</div>
-
-				<td>{{ post[0].ptext }}</td>
-		    <td>{{ post[0].created_at }}</td>
+				{{ post[0].ptext }}
+		    {{ post[0].created_at }}
 	</div>
 		    <td>
 		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.about.id)">Edit</button>
