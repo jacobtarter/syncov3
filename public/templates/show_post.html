@@ -21,12 +21,13 @@
 				</div>
 				<div class="leftAlign"> Score: 	{{ post[0].vote_score }}
 					<span class="pos">({{ post[0].upvotes }} </span>/<span class="neg">{{ post[0].downvotes }}) </span>
+				</div>
 			</br>
 				<div class = "commentBody" >
 					{{ post[0].ptext }}
 				</div>
 		    {{ post[0].created_at }}
-	</div>
+
 		<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.about.id)">Edit</button>
 		<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.about.id)">Delete</button>
 
