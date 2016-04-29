@@ -36,7 +36,7 @@ synco.config(['$routeProvider', '$locationProvider',
 
 		$routeProvider.when('/post', {
 			templateUrl: 'templates/post.html',
-			controller: 'postController',
+			controller: 'userController',
 			authenticated: true
 		});
 

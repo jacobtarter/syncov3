@@ -195,7 +195,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	angular.extend($scope, {
 	newPost: function() {
-		console.log("directing to post page");
+		if ($scope.post.title)
+		{	
+			delete $scope.post.title;
+			delete $scope.post.ptext;
+		}
 		$location.path('/post');
 		//$scope.postForm=true;
 	}	
