@@ -15,16 +15,16 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				}
 			}).success(function(response) {
 				console.log(response);
-				$cookies.put('auth', response);
-				$cookies.put('userName', response.name);
-				$cookies.put('id', response.id);
+				//$cookies.put('auth', response);
+				//$cookies.put('userName', response.name);
+				//$cookies.put('id', response.id);
 				localStorage.auth = response;
 				localStorage.userName = response.name;
 				localStorage.id = response.id;
 				console.log($cookies.get('userName'));
-				alert(localStorage.auth);
-				alert(localStorage.userName);
-				alert(localStorage.id);
+				//alert(localStorage.auth);
+				//alert(localStorage.userName);
+				//alert(localStorage.id);
 			}).error(function(data,status,headers) {
 				console.log(data,status,headers);
 				alert(data);
@@ -104,9 +104,9 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 		
 		localStorage.clear();
 
-		$cookies.remove('auth');
-		$cookies.remove('userName');
-		$cookies.remove('id');
+		//$cookies.remove('auth');
+		//$cookies.remove('userName');
+		//$cookies.remove('id');
 	}
 
 	return userModel;
