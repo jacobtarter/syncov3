@@ -40,7 +40,7 @@ class UserController extends Controller
     {
         $credentials = [
             'email' => $request->input('email'),
-            'password' $request->input('password')),
+            'password' => $request->input('password')),
             'name' => $request->input('name')
         ];
         $user  = new User;
