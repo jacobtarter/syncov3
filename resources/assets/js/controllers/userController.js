@@ -102,7 +102,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	//Submit make post request
 
 	angular.extend($scope, {
-	makePost: function(postForm) {
+	makePost: function() {
 		$http({	
 			headers: {
 				'Content-Type': 'application/json'
