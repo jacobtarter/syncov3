@@ -207,12 +207,12 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			//console.log(userModel.getAuthStatus());
 			return userModel.getAuthStatus();
 		}
+	});
+	angular.extend($scope, {
 		getUser: function() {
 			return userModel.getUserName();
 		}
 	});
-
-
 }]);
 
 /*
