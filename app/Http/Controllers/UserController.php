@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\User;
+use DB;
 
 class UserController extends Controller
 {
@@ -47,7 +48,7 @@ class UserController extends Controller
         $user->email= $request->input('email');
         $user->password= bcrypt($request->input('password'));
         $user->name= $request->input('name');
-        $user.save();
+        $user->save();
 
     }
 
