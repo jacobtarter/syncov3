@@ -18,14 +18,13 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				$cookies.put('auth', response);
 				$cookies.put('userName', response.name);
 				$cookies.put('id', response.id);
-				sessionStorage.auth = response;
-				sessionStorage.userName = response.name;
-				sessionStorage.id = response.id;
+				localStorage.auth = response;
+				localStorage.userName = response.name;
+				localStorage.id = response.id;
 				console.log($cookies.get('userName'));
-				alert("hi");
-				alert(sessionStorage.auth);
-				alert(sessionStorage.userName);
-				alert(sessionStorage.id);
+				alert(localStorage.auth);
+				alert(localStorage.userName);
+				alert(localStorage.id);
 			}).error(function(data,status,headers) {
 				console.log(data,status,headers);
 				alert(data);
@@ -57,7 +56,8 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 	};
 
 	userModel.getAuthStatus = function() {
-		var status = $cookies.get('auth');
+		var status = localStorage.auth;
+		//var status = $cookies.get('auth');
 		if (status) {
 			return true;
 		} else {
@@ -66,7 +66,8 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 	};
 
 	userModel.getUserName = function() {
-		var name = $cookies.get('userName');
+		var name = localStorage.userName;
+		//var name = $cookies.get('userName');
 		if (name) {
 			return name;
 		}
@@ -76,7 +77,8 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 	}
 
 	userModel.getId = function() {
-		var id = $cookies.get('id');
+		var id = localStorage.id;
+		//var id = $cookies.get('id');
 		if (id) {
 			return id;
 		}
@@ -86,7 +88,8 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 	}
 
 	userModel.isUsersPost = function(name) {
-		if (name == $cookies.get('userName'))
+		if (name == localStorage.userName)
+		//if (name == $cookies.get('userName'))
 		{
 			return true;
 		}
@@ -98,6 +101,9 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 	}
 
 	userModel.doUserLogout = function() {
+		
+		localStorage.clear();
+
 		$cookies.remove('auth');
 		$cookies.remove('userName');
 		$cookies.remove('id');
