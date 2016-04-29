@@ -1,4 +1,4 @@
-synco.controller('userController', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
+synco.controller('userController', ['$scope', '$http', '$location', 'userModel', 'apiModel', function($scope, $http, $location, userModel, apiModel) {
 	
 	$scope.API_URL = "http://www.synco.xyz/api/v1/";
 
@@ -162,6 +162,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				alert(response);
 			}
 			else {
+				$scope.posts = apiModel.getPostData();
 				console.log("vote created, redirecting to home");
 				$location.path('/');
 				//location.reload();
@@ -193,6 +194,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				alert(response);
 			}
 			else {
+				$scope.posts = apiModel.getPostData();
 				console.log("vote created, redirecting to home");
 				//location.reload();
 				$location.path('/');
