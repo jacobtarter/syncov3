@@ -358,7 +358,7 @@ synco.controller('commentController', ['$scope', '$http', '$location', '$routePa
 
 
 }]);
-synco.controller('postController', ['$scope', '$http', '$location', function($scope, $http, $location) {
+synco.controller('postController', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
 	$scope.post = {};
 	
 	
