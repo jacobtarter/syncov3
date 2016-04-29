@@ -53,7 +53,7 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::delete( '/admin/posts/{id}', 'PostController@destroyByUser' );
+Route::delete( '/admin/posts', 'PostController@destroyByUser' );
 
 
 
