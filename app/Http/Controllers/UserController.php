@@ -27,7 +27,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('auth.register');
     }
 
     /**
@@ -40,12 +40,12 @@ class UserController extends Controller
     {
         $credentials = [
             'email' => $request->input('email'),
-            'password' => bcrypt($request->input('password')),
+            'password' $request->input('password')),
             'name' => $request->input('name')
         ];
         $user  = new User;
         $user->email= $request->input('email');
-        $user->password= Hash::make(Input::get('password'));
+        $user->password= bcrypt(request->input('password'));
         $user->name= $request->input('name');
         $user.save();
 
