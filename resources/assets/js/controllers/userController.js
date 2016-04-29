@@ -116,8 +116,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 		}).success(function(response) {
 			console.log("post created, redirecting to home");
-			//$location.path('/');
-			$scope.postForm=false;
+			$location.path('/');
+			//$scope.postForm=false;
 		}).error(function(data,status,headers) {
 			console.log(data);
 			alert("Error Making Post - Make sure form is filled.");
