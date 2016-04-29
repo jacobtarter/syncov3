@@ -54,7 +54,7 @@ Route::post( '/api/v1/votes', 'VoteController@store' );
 Route::group(['middleware' => ['web']], function () {
 
 	Route::post('auth/register', 'Auth\AuthController@create');
-Route::get('auth/register', 'Auth\AuthController@getRegister');
+	Route::get('auth/register', 'Auth\AuthController@getRegister');
 
 	
 }
