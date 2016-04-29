@@ -104,6 +104,9 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				alert(sessionStorage.auth);
 				alert(sessionStorage.userName);
 				alert(sessionStorage.id);
+				console.log(sessionStorage.userName);
+				console.log(sessionStorage.auth);
+				console.log(sessionStorage.id);
 					$location.path('/');
 				});
 			}
