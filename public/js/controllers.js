@@ -110,8 +110,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			url: baseUrl + api + "posts",
 			method: "POST",
 			data: {
-				title: $scope.post.title,
-				ptext: $scope.post.ptext,
+				title: $scope.postTitle,
+				ptext: $scope.postText,
 				name: userModel.getUserName()
 			}
 		}).success(function(response) {
@@ -195,10 +195,10 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	angular.extend($scope, {
 	newPost: function() {
-		if (!angular.isUndefined($scope.post.title))
+		if (!angular.isUndefined($scope.postTitle))
 		{	
-			delete $scope.post.title;
-			delete $scope.post.ptext;
+			delete $scope.postTitle;
+			delete $scope.postText;
 		}
 		$location.path('/post');
 		//$scope.postForm=true;
