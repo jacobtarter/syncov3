@@ -88,7 +88,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			$location.path('/');
 		},
 		doRegister: function(registerForm) {
-			console.log($scope.login.password + " , " + $scope.login.password2);
+			console.log($scope.login.password);
+			console.log($scope.login.password2);
 			if($scope.login.password == $scope.login.password2)
 			{
 				var data = {
