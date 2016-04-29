@@ -163,6 +163,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 			else {
 				$scope.posts = apiModel.getPostData();
+				console.log(apiModel.getPostData());
 				console.log("vote created, redirecting to home");
 				$location.path('/');
 				//location.reload();
