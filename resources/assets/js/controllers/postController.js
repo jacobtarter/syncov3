@@ -15,13 +15,14 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 			data: {
 				title: $scope.post.title,
 				ptext: $scope.post.ptext,
-				name: userModel.getUserName()
+				name: userModel.getUserName(),
+				uid: userModel.getId()
 			}
 		}).success(function(response) {
 			console.log("post created, redirecting to home");
 			$location.path('/');
 		}).error(function(data,status,headers) {
-			console.log(data);
+			console.log(status);
 			alert("Error Making Post - Make sure form is filled.");
 		});
 		
