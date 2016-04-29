@@ -44,13 +44,16 @@ Route::get( '/api/v1/comments/{pid}', 'CommentController@getCommentsByPost');
 //Create
 Route::post( '/api/v1/votes', 'VoteController@store' );
 
+//Register user
 Route::post('authentication/register', 'UserController@store');
-Route::get('authentication/register', 'UserController@create');
-Route::get('auth/register', 'Auth\AuthController@getRegister');
+//Route::get('authentication/register', 'UserController@create');
+//Route::get('auth/register', 'Auth\AuthController@getRegister');
 
 Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::delete( '/admin/posts/{id}', 'PostController@destroyByUser' );
 
 
 

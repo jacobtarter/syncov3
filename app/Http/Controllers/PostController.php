@@ -168,6 +168,12 @@ class PostController extends Controller
         return "true";
     }
 
+    public function destroyByUser($id)
+    {
+        $posts = DB::delete("DELETE FROM posts WHERE name = '$id'");
+        return response("deleted");
+    }
+
     public function test($pid)
     {
         $result = Post::find($pid);

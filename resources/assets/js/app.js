@@ -47,6 +47,12 @@ synco.config(['$routeProvider', '$locationProvider',
 
 		});
 
+		$routeProvider.when('/admin', {
+			templateUrl: 'templates/admin.html',
+			controller: 'adminController',
+			authenticated: true
+		});
+
 		$routeProvider.otherwise('/');
 	}
 

@@ -4,6 +4,8 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 	
 	$scope.makePost = function()
 	{
+
+		
 		$http({	
 			headers: {
 				'Content-Type': 'application/json'
@@ -22,6 +24,7 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 			console.log(data);
 			alert("Error Making Post - Make sure form is filled.");
 		});
+		
 	}
 	
 }]);
