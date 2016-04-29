@@ -22,6 +22,7 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				sessionStorage.userName = response.name;
 				sessionStorage.id = number(response.id);
 				console.log($cookies.get('userName'));
+				alert("hi");
 				alert(sessionStorage.auth);
 				alert(sessionStorage.userName);
 				alert(sessionStorage.id);
