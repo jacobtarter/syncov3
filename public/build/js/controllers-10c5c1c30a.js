@@ -100,13 +100,13 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				}
 
 				userModel.register(data).then(function() {
-					alert("hi");
-				alert(sessionStorage.auth);
-				alert(sessionStorage.userName);
-				alert(sessionStorage.id);
-				console.log(sessionStorage.userName);
-				console.log(sessionStorage.auth);
-				console.log(sessionStorage.id);
+				//	alert("hi");
+				//alert(sessionStorage.auth);
+				//alert(sessionStorage.userName);
+				//alert(sessionStorage.id);
+				//console.log(sessionStorage.userName);
+				//console.log(sessionStorage.auth);
+				//console.log(sessionStorage.id);
 					$location.path('/');
 				});
 			}
