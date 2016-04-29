@@ -195,13 +195,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	angular.extend($scope, {
 	newPost: function() {
-		if (!angular.isUndefined($scope.postTitle))
-		{	
-			delete $scope.postTitle;
-			delete $scope.postText;
-		}
 		$location.path('/post');
-		//$scope.postForm=true;
 	}	
 	});
 

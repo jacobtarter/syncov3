@@ -195,13 +195,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	angular.extend($scope, {
 	newPost: function() {
-		if (!angular.isUndefined($scope.postTitle))
-		{	
-			delete $scope.postTitle;
-			delete $scope.postText;
-		}
 		$location.path('/post');
-		//$scope.postForm=true;
 	}	
 	});
 
@@ -362,13 +356,11 @@ synco.controller('commentController', ['$scope', '$http', '$location', '$routePa
 
 }]);
 synco.controller('postController', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
-	$scope.post = {title: null, ptext: null};
+	$scope.post = {};
 	
 	
-	angular.extend($scope, {
-	makePost: function(postForm) {
-	
-
+	$scope.makePost = function()
+	{
 		$http({	
 			headers: {
 				'Content-Type': 'application/json'

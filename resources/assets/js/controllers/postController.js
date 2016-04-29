@@ -1,11 +1,9 @@
 synco.controller('postController', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
-	$scope.post = {title: null, ptext: null};
+	$scope.post = {};
 	
 	
-	angular.extend($scope, {
-	makePost: function(postForm) {
-	
-
+	$scope.makePost = function()
+	{
 		$http({	
 			headers: {
 				'Content-Type': 'application/json'
