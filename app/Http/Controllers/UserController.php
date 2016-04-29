@@ -43,7 +43,7 @@ class UserController extends Controller
             'email' => 'required|unique:users',
             'name' => 'required|unique:users',
             'password' => 'required'
-        ])
+        ]);
         $credentials = [
             'email' => $request->input('email'),
             'password' => $request->input('password'),
