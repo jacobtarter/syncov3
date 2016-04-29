@@ -163,7 +163,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 			else {
 				console.log("vote created, redirecting to home");
-				location.reload();
+				$location.path('/');
+				//location.reload();
 			}
 			
 		}).error(function(data,status,headers) {
@@ -193,7 +194,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 			else {
 				console.log("vote created, redirecting to home");
-				location.reload();
+				//location.reload();
+				$location.path('/');
 			}
 		}).error(function(data,status,headers) {
 			console.log("error");
@@ -431,7 +433,7 @@ synco.controller('adminController', ['$scope', '$http', '$location', '$routePara
 				uid: $scope.user.toDelete
 			}
 		}).success(function(response) {
-			console.log("posts deleted");
+			console.log(response + " posts deleted");
 			$location.path('/');
 		}).error(function(data,status,headers) {
 			console.log(data);

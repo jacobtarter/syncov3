@@ -17,7 +17,7 @@ synco.controller('adminController', ['$scope', '$http', '$location', '$routePara
 				uid: $scope.user.toDelete
 			}
 		}).success(function(response) {
-			console.log("posts deleted");
+			console.log(response + " posts deleted");
 			$location.path('/');
 		}).error(function(data,status,headers) {
 			console.log(data);
