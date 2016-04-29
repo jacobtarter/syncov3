@@ -44,7 +44,8 @@ Route::get( '/api/v1/comments/{pid}', 'CommentController@getCommentsByPost');
 //Create
 Route::post( '/api/v1/votes', 'VoteController@store' );
 
-
+Route::post('auth/register', 'Auth\AuthController@create');
+Route::get('auth/register', 'Auth\AuthController@getRegister');
 
 
 
@@ -53,8 +54,7 @@ Route::post( '/api/v1/votes', 'VoteController@store' );
 //Route::get ('/api/v1/posts/view', 'PageController@getView' );
 Route::group(['middleware' => ['web']], function () {
 
-	Route::post('auth/register', 'Auth\AuthController@create');
-	Route::get('auth/register', 'Auth\AuthController@getRegister');
+	
 
 	
 }
