@@ -41,10 +41,10 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				}
 			}).success(function(response) {
 				console.log(response);
-				alert("registered");
+				alert("You were registered. You can now log in.");
 			}).error(function(data,status,headers) {
-				console.log(data,status,headers);
-				alert(data);
+				console.log("Error registering.");
+				alert("Error with registering. Please try again.");
 			});
 
 	};

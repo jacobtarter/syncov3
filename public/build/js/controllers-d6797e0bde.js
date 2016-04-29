@@ -207,6 +207,9 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			//console.log(userModel.getAuthStatus());
 			return userModel.getAuthStatus();
 		}
+		getUser: function() {
+			return userModel.getUserName();
+		}
 	});
 
 
