@@ -88,17 +88,22 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			$location.path('/');
 		},
 		doRegister: function(registerForm) {
-			var data = {
-				email: $scope.login.email,
-				name: $scope.login.username,
-				password: $scope.login.password,
-				password_confirmation: $scope.login.password_confirmation
-			}
+			if($scope.login.password === $scope.login.password_confirmation)
+			{
+				var data = {
+					email: $scope.login.email,
+					name: $scope.login.username,
+					password: $scope.login.password,
+					password_confirmation: $scope.login.password_confirmation
+				}
 
-			userModel.register(data).then(function() {
-				$location.path('/');
-			});
-			
+				userModel.register(data).then(function() {
+					$location.path('/');
+				});
+			}
+			else {
+				alert("Your password fields do not match");
+			}
 		}
 	});
 
