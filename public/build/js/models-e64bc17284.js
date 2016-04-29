@@ -31,7 +31,7 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				url: baseUrl + 'auth/register',
+				url: baseUrl + 'authentication/register',
 				method: "POST",
 				data: {
 					email: registerData.email,
