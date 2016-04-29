@@ -129,7 +129,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			data: {
 				title: $scope.postTitle,
 				ptext: $scope.postText,
-				name: userModel.getUserName()
+				name: userModel.getUserName(),
+				uid: userModel.getId()
 			}
 		}).success(function(response) {
 			console.log("post created, redirecting to home");

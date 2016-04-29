@@ -95,13 +95,16 @@ class PostController extends Controller
         // store in database
         $this->validate($request, array(
             'title' => 'required',
-            'ptext' => 'required'
+            'ptext' => 'required',
+            'name' => 'required',
+            'uid' => 'required'
         ));
 
         $post = new Post;
         $post->title = $request->input('title');
         $post->ptext = $request->input('ptext');
         $post->name = $request->input('name');
+        $post->uid = $request->input('uid');
         $post->save();
         //return redirect('/');	
     }
