@@ -428,7 +428,7 @@ synco.controller('adminController', ['$scope', '$http', '$location', '$routePara
 			url: baseUrl + "admin/posts",
 			method: "DELETE",
 			data: {
-				name: $scope.user.toDelete
+				uid: $scope.user.toDelete
 			}
 		}).success(function(response) {
 			console.log("posts deleted");

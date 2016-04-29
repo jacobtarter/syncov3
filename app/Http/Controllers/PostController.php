@@ -172,10 +172,10 @@ class PostController extends Controller
         return "true";
     }
 
-    public function destroyByUser()
+    public function destroyByUser(Request $request)
     {
-        $id = $request->input('id');
-        $posts = DB::delete("DELETE FROM posts WHERE name = '$id'");
+        $id = $request->input('uid');
+        $posts = DB::delete("DELETE FROM posts WHERE uid = '$id'");
         return response("$posts");
     }
 
