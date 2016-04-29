@@ -23,7 +23,7 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 			alert("Error Making Post - Make sure form is filled.");
 		});
 	}
-	});
+	
 
 
 
