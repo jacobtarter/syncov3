@@ -79,7 +79,7 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 	}
 
 	userModel.isUsersPost = function(name) {
-		if (name == $cookies.remove('userName'))
+		if (name == $cookies.get('userName'))
 		{
 			return true;
 		}
