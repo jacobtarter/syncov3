@@ -18,7 +18,13 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				$cookies.put('auth', response);
 				$cookies.put('userName', response.name);
 				$cookies.put('id', response.id);
+				sessionStorage.auth = response;
+				sessionStorage.userName = response.name;
+				sessionStorage.id = number(response.id);
 				console.log($cookies.get('userName'));
+				alert(sessionStorage.auth);
+				alert(sessionStorage.userName);
+				alert(sessionStorage.id);
 			}).error(function(data,status,headers) {
 				console.log(data,status,headers);
 				alert(data);
