@@ -4,7 +4,7 @@ synco.factory('apiModel', ['$http', '$cookies', function($http, $cookies) {
 	
 	apiModel.getPostData = function()
 	{
-		$http.get($scope.API_URL + "posts")
+		$http.get("http://www.synco.xyz/api/vi/" + "posts")
 			.success(function(response){
 				return response;
 			});
