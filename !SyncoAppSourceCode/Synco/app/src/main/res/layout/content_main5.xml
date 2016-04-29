@@ -16,7 +16,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log On"
+        android:text="Log In"
         android:id="@+id/logOnButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -58,8 +58,8 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/username"
-        android:text="syncoserver@gmail.com"
+        android:id="@+id/email"
+        android:text="Email@domain.com"
         android:layout_alignBottom="@+id/textView6"
         android:layout_alignLeft="@+id/logOnButton"
         android:layout_alignStart="@+id/logOnButton" />
@@ -70,10 +70,10 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/password"
+        android:text="password"
         android:layout_alignBottom="@+id/textView7"
-        android:layout_alignLeft="@+id/username"
-        android:layout_alignStart="@+id/username"
-        android:text="syncosyncosynco" />
+        android:layout_alignLeft="@+id/createUser"
+        android:layout_alignStart="@+id/createUser" />
 
     <Button
         android:layout_width="wrap_content"
@@ -84,5 +84,25 @@
         android:layout_above="@+id/logOnButton"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name(create only):"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uName"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/createUser"
+        android:layout_alignEnd="@+id/createUser" />
 
 </RelativeLayout>

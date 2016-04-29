@@ -1,13 +1,8 @@
 package cwd.slv.syncolv;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,7 +18,7 @@ public class Main5Activity extends AppCompatActivity {
     EditText password;
     public String name;
     public String id;
-
+    EditText crName;
 
 
     @Override
@@ -40,7 +35,7 @@ public class Main5Activity extends AppCompatActivity {
         }
 
         Button button = (Button)findViewById(R.id.logOnButton);
-        email = (EditText) findViewById(R.id.username) ;
+        email = (EditText) findViewById(R.id.email) ;
         password = (EditText) findViewById(R.id.password) ;
 
 
@@ -79,23 +74,25 @@ public class Main5Activity extends AppCompatActivity {
 
         Button create = (Button)findViewById(R.id.createUser);
 
-
+        crName = (EditText) findViewById(R.id.uName);
 
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-                Toast.makeText(getApplicationContext(), "GO AWAY. CREATE AN ACCOUNT ON THE WEBSITE YOUR CREDENTIALS WERE... \nEmail: " +email.getText().toString()
-                        + "\nPassword: " +  password.getText().toString(), Toast.LENGTH_LONG).show();
+                /*Toast.makeText(getApplicationContext(), "GO AWAY. CREATE AN ACCOUNT ON THE WEBSITE YOUR CREDENTIALS WERE... \nEmail: " +email.getText().toString()
+                        + "\nPassword: " +  password.getText().toString(), Toast.LENGTH_LONG).show();*/
+
+            CreateHandler cre = new CreateHandler(email.getText().toString(),password.getText().toString(),crName.getText().toString());
+                cre.execute();
 
 
+               Intent intent = new Intent(Main5Activity.this, MainActivity.class);
 
-              /*  Intent intent = new Intent(Main5Activity.this, MainActivity.class);
-
-                intent.putExtra("name", name);
+                intent.putExtra("name",crName.getText().toString() );
                 intent.putExtra("id",id);
-                startActivity(intent);*/
+                startActivity(intent);
 
 
             }

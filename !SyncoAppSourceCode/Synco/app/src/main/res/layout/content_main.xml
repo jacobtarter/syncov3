@@ -37,7 +37,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log on"
+        android:text="Log In"
         android:id="@+id/logOn"
         android:background="#E6FFFF"
         android:layout_alignParentTop="true"
