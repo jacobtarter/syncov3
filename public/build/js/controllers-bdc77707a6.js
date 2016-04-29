@@ -410,7 +410,7 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 	}
 	
 }]);
-synco.controller('commentController', ['$scope', '$http', '$location', '$routeParams', 'userModel', function($scope, $http, $location, $routeParams, userModel) 
+synco.controller('adminController', ['$scope', '$http', '$location', '$routeParams', 'userModel', function($scope, $http, $location, $routeParams, userModel) 
 {
 	$scope.user = {};
 	
