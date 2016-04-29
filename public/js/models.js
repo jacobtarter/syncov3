@@ -78,6 +78,18 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 		}
 	}
 
+	userModel.isUsersPost = function(name) {
+		if (name == $cookies.remove('userName'))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+
+	}
+
 	userModel.doUserLogout = function() {
 		$cookies.remove('auth');
 		$cookies.remove('userName');

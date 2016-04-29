@@ -209,6 +209,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		}
 	});
 	angular.extend($scope, {
+		checkOwner: function(id) {
+			return userModel.isUsersPost(id);
+		}
+	});
+	angular.extend($scope, {
 		getUser: function() {
 			return userModel.getUserName();
 		}
