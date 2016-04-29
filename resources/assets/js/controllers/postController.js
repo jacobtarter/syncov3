@@ -1,4 +1,4 @@
-synco.controller('postController', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
+synco.controller('postController', ['$scope', '$http', '$location', function($scope, $http, $location) {
 	$scope.post = {};
 	
 	
@@ -24,8 +24,4 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 		});
 	}
 	
-
-
-
-
 }]);

@@ -21,7 +21,7 @@ Route::resource('user', 'UserController');
 Route::get('/', 'PageController@getMaster');
 
 //Route for checking authorization on login
-Route::post('auth/register', 'Auth\AuthController@postRegister');
+Route::post('auth/register', 'UserController@store');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('/auth', 'UserController@checkAuth');
 

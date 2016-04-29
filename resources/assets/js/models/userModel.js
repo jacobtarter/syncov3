@@ -31,12 +31,13 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				url: baseUrl + 'register',
+				url: baseUrl + 'auth/register',
 				method: "POST",
 				data: {
 					email: registerData.email,
 					password: registerData.password,
-					name: registerData.name
+					name: registerData.name,
+					password_confirmation: registerData.password_confirmation
 				}
 			}).success(function(response) {
 				console.log(response);
