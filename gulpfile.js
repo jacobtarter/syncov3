@@ -29,7 +29,8 @@ elixir(function(mix) {
     	], 'public/js/controllers.js');
 
     mix.scripts([
-        'models/userModel.js'
+        'models/userModel.js',
+        'models/apiModel.js'
     ], 'public/js/models.js');
 
     mix.version([
