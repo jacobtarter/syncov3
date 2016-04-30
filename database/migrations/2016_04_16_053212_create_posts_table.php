@@ -19,6 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('ptext');
             $table->integer('uid');
+            $table->string('name');
             $table->date('created_at');
             $table->date('updated_at');
 

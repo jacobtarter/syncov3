@@ -18,6 +18,7 @@ class CreateCommentsTable extends Migration
             $table->increments('cid');
             $table->string('commenttext');
             $table->integer('uid');
+            $table->string('name');
 	    $table->integer('c_pid');
             $table->date('created_at');
             $table->date('updated_at');

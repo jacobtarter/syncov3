@@ -17,8 +17,8 @@ class CreateVotesTable extends Migration
         {
             $table->increments('vid');
             $table->integer('uid');
-	    $table->integer('votescore');
-	    $table->integer('v_pid');
+	       $table->integer('votescore');
+	           $table->integer('v_pid');
 		
             $table->date('created_at');
             $table->date('modified_at');
