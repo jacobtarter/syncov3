@@ -145,6 +145,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	angular.extend($scope, {
 	upVote: function(id) {
+		alert(id);
+		alert(userModel.getId());
 		$http({	
 			headers: {
 				'Content-Type': 'application/json'
