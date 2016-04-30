@@ -165,8 +165,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				//console.log(apiModel.getPostData());
 				console.log("vote created, redirecting to home");
 				$location.path('/');
-				$scope.posts = apiModel.getPostData();
-				//location.reload();
+				//$scope.posts = apiModel.getPostData();
+				location.reload();
 			}
 			
 		}).error(function(data,status,headers) {
@@ -196,9 +196,9 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 			else {
 				console.log("vote created, redirecting to home");
-				//location.reload();
 				$location.path('/');
-				$scope.posts = apiModel.getPostData();
+				location.reload();
+				//$scope.posts = apiModel.getPostData();
 
 			}
 		}).error(function(data,status,headers) {
