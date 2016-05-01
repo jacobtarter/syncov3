@@ -27,7 +27,7 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 			if(status==429)
 			{
 				alert("Too many API hits, throttle limit hit.")
-				console.log(headers);
+				console.log(data);
 			}
 			else{
 			alert("Error Making Post - Make sure form is filled.");
