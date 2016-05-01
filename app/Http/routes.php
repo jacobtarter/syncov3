@@ -26,7 +26,7 @@ Route::post('/auth', 'UserController@checkAuth');
 
 //--Posts
 //Create
-Route::post( '/api/v1/posts', ['PostController@store' )->middleware('throttle');
+Route::post( '/api/v1/posts', 'PostController@store' )->middleware('throttle');
 //Read
 Route::get( '/api/v1/posts/{pid?}', 'PostController@index' );
 //Update
