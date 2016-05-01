@@ -19,8 +19,14 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 				uid: userModel.getId()
 			}
 		}).success(function(response) {
+			if(response == 429)
+			{
+				alert.log("Too many posts being created, disabled for 10 minutes.");
+			}
+			else{
 			console.log("post created, redirecting to home");
 			$location.path('/');
+			}
 		}).error(function(data,status,headers) {
 			console.log(status);
 			alert("Error Making Post - Make sure form is filled.");
