@@ -22,12 +22,14 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 			console.log("post created, redirecting to home");
 			$location.path('/');
 			
-		}).error(function(data,status,headers) {
+		}).error(function(response, data,status,headers) {
 			console.log(status);
 			if(status==429)
 			{
 				alert("Too many API hits, throttle limit hit.")
 				console.log(data);
+				consle.log(response);
+
 			}
 			else{
 			alert("Error Making Post - Make sure form is filled.");
