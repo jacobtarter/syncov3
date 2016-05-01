@@ -23,7 +23,8 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 			$location.path('/');
 			
 		}).error(function(response, data,status,headers) {
-			console.log(status);
+			console.log(status, data, headers);
+			console.log(response);
 			if(status==429)
 			{
 				alert("Too many API hits, throttle limit hit.")
