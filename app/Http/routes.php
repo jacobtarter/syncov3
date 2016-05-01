@@ -14,8 +14,8 @@
 
 
 //Resource routes, will probably be deleted
-Route::resource('posts', 'PostController');
-Route::resource('user', 'UserController');
+//Route::resource('posts', 'PostController');
+//Route::resource('user', 'UserController');
 
 //Home route, directs to main template page
 Route::get('/', 'PageController@getMaster');
@@ -26,7 +26,7 @@ Route::post('/auth', 'UserController@checkAuth');
 
 //--Posts
 //Create
-Route::post( '/api/v1/posts', 'PostController@store' );
+Route::post( '/api/v1/posts', ['PostController@store' )->middleware('throttle');
 //Read
 Route::get( '/api/v1/posts/{pid?}', 'PostController@index' );
 //Update
