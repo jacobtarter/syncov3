@@ -33,7 +33,7 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 				console.log(data);
 				var json = 'http://ipv4.myexternalip.com/json';
 				$http.get(json).then(function(result) {
-				    console.log(result.data,ip)
+				    console.log(result.data.ip)
 				    alert("You have hit the API's post limit. Your ip address has been logged: " + result.data.ip);
 				});
 
