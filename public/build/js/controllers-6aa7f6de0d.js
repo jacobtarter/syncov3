@@ -420,12 +420,12 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 			
 			if(status==429)
 			{
-				alert("Too many API hits, throttle limit hit.")
+				//alert("Too many API hits, throttle limit hit.")
 				console.log(data);
 				var json = 'http://ipv4.myexternalip.com/json';
 				$http.get(json).then(function(result) {
-				    console.log(result.ip)
-				    alert("Your ip address has been logged: " + result.ip);
+				    console.log(result.data,ip)
+				    alert("You have hit the API's post limit. Your ip address has been logged: " + result.data.ip);
 				});
 
 			}
