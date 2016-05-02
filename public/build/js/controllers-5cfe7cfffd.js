@@ -422,6 +422,11 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 			{
 				alert("Too many API hits, throttle limit hit.")
 				console.log(data);
+				var json = 'http://ipv4.myexternalip.com/json';
+				$http.get(json).then(function(result) {
+				    console.log(result.ip)
+				    alert("Your ip address has been logged: " + result.ip);
+				});
 
 			}
 			else{
