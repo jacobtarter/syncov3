@@ -42,4 +42,27 @@ class VoteController extends Controller
             return response("User has already voted");
         }
     }
+
+    public function index()
+    {
+        //$user = $request->input('uid');
+        //$post = $request->input('v_pid');
+        $DATA = (array)DB::select( "SELECT * FROM votes WHERE uid = '$uid' AND v_pid = '$v_pid'");
+        $upVotes=0;
+        $downVotes=0;
+        foreach ($DATA as $row){
+            $value = $row->votescore;
+            if ($value == 1)
+            {
+                $upVotes++;
+            }
+            if ($value == -1)
+            {
+                $downVotes++;
+            }
+        }
+        return response ("Upvotes: " + $upVotes + " Downvotes: " + $downVotes);
+
+
+    }
 }
