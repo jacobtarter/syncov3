@@ -61,7 +61,10 @@ class VoteController extends Controller
                 $downVotes++;
             }
         }
-        return response ("Upvotes: " + $upVotes + " Downvotes: " + $downVotes);
+        $voteTotal = [];
+        $voteTotal['upvotes']=$upVotes;
+        $voteTotal['downvotes']=$downVotes;
+        return response ($voteTotal);
 
 
     }
