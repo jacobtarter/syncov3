@@ -243,6 +243,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			return userModel.getUserName();
 		}
 	});
+	angular.extend($scope, {
+		checkUpvotes: function(user, post) {
+			return userModel.hasUpvoted(user, post);
+		}
+	});
 }]);
 
 /*

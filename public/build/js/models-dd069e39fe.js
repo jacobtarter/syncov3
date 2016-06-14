@@ -100,6 +100,35 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 
 	}
 
+	userModel.hasUpvoted = function(user, post)
+	{
+		$http({	
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			url: baseUrl + 'authentication/register',
+			method: "GET",
+			data: {
+				uid: user,
+				v_pid: post,
+			}
+		}).success(function(response) {
+			console.log(response);
+			if (response.upvotes > 0)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}).error(function(data,status,headers) {
+			console.log("Error registering.");
+			alert("Error with registering. Please try again.");
+		});
+
+	}
+
 	userModel.doUserLogout = function() {
 		
 		localStorage.clear();
