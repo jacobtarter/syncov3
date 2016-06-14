@@ -249,7 +249,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			{
 				return userModel.hasUpvoted(post);
 
-			};
+			}
 			else
 			{
 				return false;
