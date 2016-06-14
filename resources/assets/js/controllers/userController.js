@@ -10,10 +10,15 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	//Get Posts Method
 
-	$http.get($scope.API_URL + "posts")
-		.success(function(response){
-			$scope.posts = response;
-		});
+	$scope.loadData = function() {
+		$http.get($scope.API_URL + "posts")
+			.success(function(response){
+				$scope.posts = response;
+			});
+		};
+
+	//inital load
+	$scope.loadData();
 
 	//Delete Post
 
