@@ -100,8 +100,9 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 
 	}
 
-	userModel.hasUpvoted = function(user, post)
+	userModel.hasUpvoted = function(post)
 	{
+		var id = localStorage.id;
 		$http({	
 			headers: {
 				'Content-Type': 'application/json'
@@ -109,7 +110,7 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 			url: baseUrl + 'authentication/register',
 			method: "GET",
 			data: {
-				uid: user,
+				uid: id,
 				v_pid: post,
 			}
 		}).success(function(response) {
