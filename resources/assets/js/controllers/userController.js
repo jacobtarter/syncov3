@@ -245,11 +245,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	});
 	angular.extend($scope, {
 		checkUpvotes: function(post) {
-			if(userModel.getAuthStatus() 
+			if(userModel.getAuthStatus()) 
 			{
 				return userModel.hasUpvoted(post);
 
-			});
+			};
 			else
 			{
 				return false;
