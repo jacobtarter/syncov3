@@ -43,7 +43,7 @@ class VoteController extends Controller
         }
     }
 
-    public function index()
+    public function index($uid, $v_pid)
     {
         //$user = $request->input('uid');
         //$post = $request->input('v_pid');
