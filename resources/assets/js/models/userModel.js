@@ -122,9 +122,9 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 			{
 				return false;
 			}
-		}).error(function(data,status,headers) {
-			console.log("Error registering.");
-			alert("Error with registering. Please try again.");
+		}).error(function(response) {
+			console.log(response);
+			//alert("Error with registering. Please try again.");
 		});
 
 	}
