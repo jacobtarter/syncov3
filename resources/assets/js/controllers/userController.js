@@ -291,7 +291,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		}).success(function(response) {
 			if(response) {
 				console.log(response);
-				alert(response);
+				//alert(response);
+				$scope.loadData();
 			}
 			else {
 				console.log("vote created, redirecting to home");
