@@ -17,6 +17,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	}
 
 	$scope.loadVotes = function() {
+		console.log("voteurl: " + $scope.API_URL + "votes/" + userModel.getId());
 		$http.get($scope.API_URL + "votes/" + userModel.getId())
 		.success(function(response) {
 			localStorage.voteTable = response;
