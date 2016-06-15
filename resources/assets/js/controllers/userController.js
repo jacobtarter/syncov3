@@ -25,6 +25,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	$scope.checkUpvote = function(postId) {
 		for (var votes in $scope.voteTable)
 		{
+			console.log(votes);
 			if (votes.v_pid == postId)
 			{
 				if (votes.upvotes > 1)
