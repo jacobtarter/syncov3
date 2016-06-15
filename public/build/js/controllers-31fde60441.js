@@ -60,10 +60,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 			else
 			{
-				return false;
-				console.log("false");
+				//return false;
+				console.log("looping");
 			}
 		}
+		return false;
 	}
 
 	//inital load
