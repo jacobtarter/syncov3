@@ -47,7 +47,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		for (var i = 0; i < localStorage.voteTable.length; i++)
 		{
 			var voteObj = localStorage.voteTable[i];
-			console.log(votes);
+			//console.log(votes);
 			if (voteObj.v_pid == postId)
 			{
 				if (voteObj.upvotes > 1)
