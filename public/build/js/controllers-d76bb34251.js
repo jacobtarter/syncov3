@@ -54,8 +54,15 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			{
 				if ($scope.voteTable[i].upvotes > 1)
 				{
+					console.log("upvote exists, return true.");
 					return true;
-					console.log("true");
+					
+				}
+				else
+				{
+					console.log("vote exists but is downvote, return false.");
+					return false;
+
 				}
 			}
 			else
@@ -64,6 +71,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				console.log("looping");
 			}
 		}
+		console.log("no vote found, returning false.");
 		return false;
 	}
 
