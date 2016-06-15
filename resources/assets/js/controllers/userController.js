@@ -75,6 +75,38 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		return false;
 	}
 
+	$scope.checkDownvote = function(postId) {
+		console.log("checking downvotes...");
+		for (var i = 0; i < $scope.voteTable.length; i++)
+		{
+			console.log("Input: " + postId + " TableValue: " + $scope.voteTable[i].v_pid);
+			//var voteObj = $scope.voteTable[i];
+			//console.log(votes);
+			if ($scope.voteTable[i].v_pid == postId)
+			{
+				if ($scope.voteTable[i].downvotes > 0)
+				{
+					console.log("downvote exists, return true.");
+					return true;
+					
+				}
+				else
+				{
+					console.log("vote exists but is upvote, return false.");
+					return false;
+
+				}
+			}
+			else
+			{
+				//return false;
+				console.log("looping");
+			}
+		}
+		console.log("no vote found, returning false.");
+		return false;
+	}
+
 	//inital load
 	$scope.loadData();
 

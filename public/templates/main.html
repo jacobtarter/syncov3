@@ -48,7 +48,7 @@ col-sm-6-offset-6 -->
 		    <td>
 					<div class="commentFooter">
 					<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()" ng-disabled="checkUpvote(x.id)"><span class="glyphicon glyphicon-arrow-up"></span> Upvote </button>
-		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()"><span class="glyphicon glyphicon-arrow-down"></span> Downvote </button>
+		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-arrow-down"></span> Downvote </button>
 		    	<button class="btn btn-default btn-xs btn-view" ng-click="viewPost(x.id)"><span class="glyphicon glyphicon-eye-open"></span> View/Comment</button>
 		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-synchronization"</span> Edit</button>
 		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-warning-sign"></span> Delete</button>
