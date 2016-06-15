@@ -44,12 +44,13 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	$scope.checkUpvote = function(postId) {
 		console.log("checking upvotes...");
-		for (var votes in localStorage.voteTable)
+		for (var i = 0; i < localStorage.voteTable.length; i++)
 		{
+			var voteObj = localStorage.voteTable[i];
 			console.log(votes);
-			if (votes.v_pid == postId)
+			if (voteObj.v_pid == postId)
 			{
-				if (votes.upvotes > 1)
+				if (voteObj.upvotes > 1)
 				{
 					return true;
 					console.log("true");
