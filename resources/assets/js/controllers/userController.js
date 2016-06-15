@@ -20,6 +20,12 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	//inital load
 	$scope.loadData();
 
+	//Check if logged in, if so we will load vote data.
+	if ($scope.checkAuth())
+	{
+		alert("authorized.");
+	}
+
 	//Delete Post
 
 	$scope.confirmDelete = function(id) {
