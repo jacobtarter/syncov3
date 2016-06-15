@@ -51,7 +51,7 @@ class VoteController extends Controller
         }
         else if ($downvote == 1 && $request->input('votescore') == 1)
         {
-            $vote = Post::find($voteid);
+            $vote = Vote::find($voteid);
 
             $vote->votescore = 1;
             $vote->save();
