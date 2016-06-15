@@ -17,6 +17,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			});
 		};
 
+	$scope.checkAuth = function() {
+		//console.log(userModel.getAuthStatus());
+		return userModel.getAuthStatus();
+	}
+
 	//inital load
 	$scope.loadData();
 
@@ -233,10 +238,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	}	
 	});
 
-	$scope.checkAuth = function() {
-			//console.log(userModel.getAuthStatus());
-			return userModel.getAuthStatus();
-		}
+	
 	
 	angular.extend($scope, {
 		checkOwner: function(id) {
