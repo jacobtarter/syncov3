@@ -50,11 +50,13 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				if (votes.upvotes > 1)
 				{
 					return true;
+					console.log("true");
 				}
 			}
 			else
 			{
 				return false;
+				console.log("false");
 			}
 		}
 	}
