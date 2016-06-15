@@ -43,14 +43,17 @@ class VoteController extends Controller
         }
     }
 
-    public function index($uid, $v_pid)
+    public function index($uid)
     {
         //$user = $request->input('uid');
         //$post = $request->input('v_pid');
-        $DATA = (array)DB::select( "SELECT * FROM votes WHERE uid = '$uid' AND v_pid = '$v_pid'");
-        $upVotes=0;
-        $downVotes=0;
+        $DATA = (array)DB::select( "SELECT * FROM votes WHERE uid = '$uid'");
+        
+        $voteTotal = [];
         foreach ($DATA as $row){
+            $currentRow = [];
+            $upVotes=0;
+            $downVotes=0;
             $value = $row->votescore;
             if ($value == 1)
             {
@@ -60,10 +63,13 @@ class VoteController extends Controller
             {
                 $downVotes++;
             }
+            $currentRow['v_pid'] = $row->v_pid
+            $currentRow['upvotes']=$upVotes;
+            $currentRow['downvotes']=$downVotes;
+            $voteTotal[] = $currentRow;
         }
-        $voteTotal = [];
-        $voteTotal['upvotes']=$upVotes;
-        $voteTotal['downvotes']=$downVotes;
+        
+        
         return response ($voteTotal);
 
 
