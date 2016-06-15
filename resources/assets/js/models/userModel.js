@@ -1,6 +1,7 @@
 synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 	var userModel = {};
 
+	//Log in user
 	userModel.doLogin = function(loginData) 
 		{
 			return $http({	
@@ -15,22 +16,19 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				}
 			}).success(function(response) {
 				console.log(response);
-				//$cookies.put('auth', response);
-				//$cookies.put('userName', response.name);
-				//$cookies.put('id', response.id);
+				
 				localStorage.auth = response;
 				localStorage.userName = response.name;
 				localStorage.id = response.id;
 				console.log($cookies.get('userName'));
-				//alert(localStorage.auth);
-				//alert(localStorage.userName);
-				//alert(localStorage.id);
+				
 			}).error(function(data,status,headers) {
 				console.log(data,status,headers);
 				alert(data);
 			});
 		};
 
+	//Send JSON request to register new user
 	userModel.register = function(registerData)
 	{
 		return $http({	
@@ -55,44 +53,55 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 
 	};
 
-	userModel.getAuthStatus = function() {
+	//Check if user is a logged in member
+	userModel.getAuthStatus = function() 
+	{
 		var status = localStorage.auth;
-		//var status = $cookies.get('auth');
-		if (status) {
+		if (status) 
+		{
 			return true;
-		} else {
+		} else 
+		{
 			return false;
 		}
 	};
 
-	userModel.getUserName = function() {
+	//Get logged in user's username
+	userModel.getUserName = function() 
+	{
 		var name = localStorage.userName;
-		//var name = $cookies.get('userName');
-		if (name) {
+		if (name) 
+		{
 			return name;
 		}
-		else {
+		else 
+		{
 			return null;
 		}
 	}
 
-	userModel.getId = function() {
+	//Get ID# of logged in user
+	userModel.getId = function() 
+	{
 		var id = localStorage.id;
-		//var id = $cookies.get('id');
-		if (id) {
+		if (id) 
+		{
 			return id;
 		}
-		else {
+		else 
+		{
 			return null;
 		}
 	}
 
-	userModel.isUsersPost = function(name) {
+	//Check if post belongs to user
+	userModel.isUsersPost = function(name) 
+	{
 		if (name == localStorage.userName)
-		//if (name == $cookies.get('userName'))
 		{
 			return true;
 		}
+
 		else if (localStorage.userName == "god")
 		{
 			return true;
@@ -105,43 +114,10 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 
 	}
 
-	userModel.hasUpvoted = function(post)
+	//Logout user -> clear local storage
+	userModel.doUserLogout = function() 
 	{
-		var id = localStorage.id;
-		$http({	
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			url: baseUrl + 'authentication/register',
-			method: "GET",
-			data: {
-				uid: id,
-				v_pid: post,
-			}
-		}).success(function(response) {
-			console.log(response);
-			if (response.upvotes > 0)
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}).error(function(response) {
-			console.log(response);
-			//alert("Error with registering. Please try again.");
-		});
-
-	}
-
-	userModel.doUserLogout = function() {
-		
 		localStorage.clear();
-
-		//$cookies.remove('auth');
-		//$cookies.remove('userName');
-		//$cookies.remove('id');
 	}
 
 	return userModel;

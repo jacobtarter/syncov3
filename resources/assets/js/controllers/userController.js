@@ -10,13 +10,13 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	//Get Posts Method
 
-	$scope.checkAuth = function() {
-		//console.log(userModel.getAuthStatus());
-		//console.log("checking auth...");
+	$scope.checkAuth = function() 
+	{
 		return userModel.getAuthStatus();
 	}
 
-	$scope.loadVotes = function() {
+	$scope.loadVotes = function() 
+	{
 		console.log("voteurl: " + $scope.API_URL + "votes/" + userModel.getId());
 		$http.get($scope.API_URL + "votes/" + userModel.getId())
 		.success(function(response) {
@@ -24,13 +24,10 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		});
 	};
 
-
-
-	$scope.loadData = function() {
-		
+	$scope.loadData = function() 
+	{
 		if ($scope.checkAuth())
 		{
-			//alert("authorized.");
 			$scope.loadVotes();
 			console.log("Votes loaded for user.");
 		}
@@ -40,40 +37,29 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				$scope.posts = response;
 			});
 		
-
 	};
 
 	$scope.checkUpvote = function(postId) {
 		if($scope.voteTable)
 		{	
-			//console.log("checking upvotes...");
 			for (var i = 0; i < $scope.voteTable.length; i++)
 			{
-				//console.log("Input: " + postId + " TableValue: " + $scope.voteTable[i].v_pid);
-				//var voteObj = $scope.voteTable[i];
-				//console.log(votes);
 				if ($scope.voteTable[i].v_pid == postId)
 				{
 					if ($scope.voteTable[i].upvotes > 0)
 					{
-						//console.log("upvote exists, return true.");
 						return true;
-						
 					}
 					else
 					{
-						//console.log("vote exists but is downvote, return false.");
 						return false;
-
 					}
 				}
 				else
 				{
-					//return false;
-					//console.log("looping");
+
 				}
 			}
-			//console.log("no vote found, returning false.");
 			return false;
 		}
 	}
@@ -81,34 +67,24 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	$scope.checkDownvote = function(postId) {
 		if ($scope.voteTable)
 		{
-			//console.log("checking downvotes...");
 			for (var i = 0; i < $scope.voteTable.length; i++)
 			{
-				//console.log("Input: " + postId + " TableValue: " + $scope.voteTable[i].v_pid);
-				//var voteObj = $scope.voteTable[i];
-				//console.log(votes);
 				if ($scope.voteTable[i].v_pid == postId)
 				{
 					if ($scope.voteTable[i].downvotes > 0)
 					{
-						//console.log("downvote exists, return true.");
 						return true;
-						
 					}
 					else
 					{
-						//console.log("vote exists but is upvote, return false.");
 						return false;
-
 					}
 				}
 				else
 				{
-					//return false;
-					//console.log("looping");
+					
 				}
 			}
-			//console.log("no vote found, returning false.");
 			return false;
 		}
 	}
@@ -116,7 +92,6 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	//inital load
 	$scope.loadData();
 
-	//Check if logged in, if so we will load vote data.
 
 
 	//Delete Post
@@ -164,15 +139,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		
 	}
 
-	/*
-	//Autofill login for testing
-	angular.extend($scope, {
-		login: {
-			email: 'syncoserver@gmail.com',
-			password: 'syncosyncosynco'
-		}
-	});
-	*/
+
 
 	//Submit login attempt
 
@@ -203,18 +170,13 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 					password_confirmation: $scope.login.password2
 				}
 
-				userModel.register(data).then(function() {
-				//	alert("hi");
-				//alert(sessionStorage.auth);
-				//alert(sessionStorage.userName);
-				//alert(sessionStorage.id);
-				//console.log(sessionStorage.userName);
-				//console.log(sessionStorage.auth);
-				//console.log(sessionStorage.id);
+				userModel.register(data).then(function() 
+				{
 					$location.path('/');
 				});
 			}
-			else {
+			else 
+			{
 				alert("Your password fields do not match");
 			}
 		}
@@ -238,8 +200,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 		}).success(function(response) {
 			console.log("post created, redirecting to home");
-			//$location.path('/');
-			//$scope.postForm=false;
+			
 			$scope.loadData();
 		}).error(function(data,status,headers) {
 			console.log(data);
@@ -250,8 +211,6 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	angular.extend($scope, {
 	upVote: function(id) {
-		//alert(id);
-		//alert(userModel.getId());
 		$http({	
 			headers: {
 				'Content-Type': 'application/json'
@@ -266,11 +225,9 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		}).success(function(response) {
 			if(response) {
 				console.log(response);
-				//alert(response);
 				$scope.loadData();
 			}
 			else {
-				//console.log(apiModel.getPostData());
 				console.log("vote created, redirecting to home");
 				$scope.loadData();
 			}
@@ -298,7 +255,6 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		}).success(function(response) {
 			if(response) {
 				console.log(response);
-				//alert(response);
 				$scope.loadData();
 			}
 			else {
@@ -356,14 +312,3 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	});
 }]);
 
-/*
-synco.filter('byScore', function() {
- return function(items) {  
-    items.sort(function(a,b){   
-        if (parseInt(a[0].about.post_score) > parseInt(b[0].about.post_score)
-            return 1;
-        if (parseInt(a[0].about.post_score) < parseInt(b[0].about.post_score)
-            return -1;         
-        return 0; })
-});
-*/

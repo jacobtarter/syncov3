@@ -22,10 +22,12 @@ class PostController extends Controller
     public function index($pid = null)
     {
     
+        //If optional parameter of post ID is given, return that post
         if(!is_null($pid))
         {
             $DATA = (array)DB::select( "SELECT * FROM posts WHERE id = '$pid'");
         }
+        //Otherwise return all posts
         else
         {
            $DATA = (array)DB::select( "SELECT * FROM posts" ); 
@@ -66,9 +68,7 @@ class PostController extends Controller
             $current['downvotes']=$downvotes;
             $current['vote_score']=$upvotes-$downvotes;
             $responseArray[] = $current;
-
         }
-
 
         echo json_encode($responseArray);
     }
@@ -78,11 +78,14 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
+    /*
     public function create()
     {
         //
 	return view('posts.create');
     }
+    */
 
     /**
      * Store a newly created resource in storage.
@@ -90,6 +93,8 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    //Create new post
     public function store(Request $request)
     {
         // store in database
@@ -106,7 +111,6 @@ class PostController extends Controller
         $post->name = $request->input('name');
         $post->uid = $request->input('uid');
         $post->save();
-        //return redirect('/');	
     }
 
     /**
@@ -127,6 +131,8 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    
+    //Update a post
     public function update(Request $request, $id)
     {
         $post = Post::find($id);
@@ -145,20 +151,8 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    /*
-    public function destroy(Request $request, $pid) 
-    {
-        //$pid = $request->input('pid');
-    	$post = Post::find($pid);
-        $post->delete();
-        return "Post successfully deleted at post ID: " . $request->input('pid');
-        //Session::flash('success', 'The post was deleted.');
-        //console.log( "sql: " + $DEL );
-        //$affected = Post::where('pid', '=', $pid)->delete();
-        //return $affected;
-    }
-    */
-
+    
+    //Destroy a post with given ID, also destroy comments and votes attached to it
     public function destroy($id) 
     { 
         $post = Post::find($id);
@@ -172,6 +166,7 @@ class PostController extends Controller
         return "true";
     }
 
+    /*
     public function destroyByUser(Request $request)
     {
         $id = $request->input('uid');
@@ -184,5 +179,6 @@ class PostController extends Controller
         $result = Post::find($pid);
         print (json_encode($result));
     }
+    */
     
 }

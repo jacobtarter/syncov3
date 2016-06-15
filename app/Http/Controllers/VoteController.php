@@ -15,7 +15,8 @@ use DB;
 class VoteController extends Controller
 {
 
-	public function store(Request $request)
+	//Function to store a vote
+    public function store(Request $request)
     {
         $user = $request->input('uid');
         $post = $request->input('v_pid');
@@ -35,6 +36,8 @@ class VoteController extends Controller
                 $voteid = $row->id;
             }
         }
+        
+        //If no upvotes or downvotes exist for given user and post, create a new vote with given value
         if(($upvote + $downvote) < 1)
         {
             $this->validate($request, array(
@@ -49,6 +52,8 @@ class VoteController extends Controller
             $vote->uid = $request->input('uid');
             $vote->save();
         }
+
+        //Otherwise, if there is a downvote but user asks to upvote, update vote in database to an upvote
         else if ($downvote == 1 && $request->input('votescore') == 1)
         {
             $vote = Vote::find($voteid);
@@ -57,6 +62,8 @@ class VoteController extends Controller
             $vote->save();
             return response("vote changed to upvote");
         }
+
+        //Otherwise, if there is an upvote but user asks to downvote, update vote in database to a downvote
         else if ($upvote == 1 && $request->input('votescore') == -1)
         {
             $vote = Vote::find($voteid);
@@ -66,11 +73,15 @@ class VoteController extends Controller
             return response("vote changed to downvote");
             
         }
-        else {
+
+        //Else, if a user is trying to upvote and has already done so, or downvote and has already done so, return error
+        else 
+        {
             return response("User has already voted");
         }
     }
 
+    //Update function, currently not used as create function handles the updating 
     public function update(Request $request, $id)
     {
         $vote = Post::find($id);
@@ -82,10 +93,9 @@ class VoteController extends Controller
         return "Sucess updating vote #" . $post->id;
     }
 
+    //Return JSON array of vote info for a given user. Used to help with voting logic (1 vote per post)
     public function index($uid)
     {
-        //$user = $request->input('uid');
-        //$post = $request->input('v_pid');
         $DATA = (array)DB::select( "SELECT * FROM votes WHERE uid = '$uid'");
         
         $voteTotal = [];
@@ -108,9 +118,7 @@ class VoteController extends Controller
             $voteTotal[] = $currentRow;
         }
         
-        
         return response ($voteTotal);
-
 
     }
 }

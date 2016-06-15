@@ -14,7 +14,7 @@ use DB;
 
 class CommentController extends Controller
 {
-
+    //Return JSON respones of all comments for a given post ID
 	public function getCommentsByPost($pid)
     {
 		$WHERE= "
@@ -27,7 +27,9 @@ class CommentController extends Controller
 	    echo json_encode($DATA);
 	}
 
-	 public function store(Request $request)
+
+    //Store a new comment 
+	public function store(Request $request)
     {
        
         $this->validate($request, array(
