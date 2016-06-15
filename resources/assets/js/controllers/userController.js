@@ -10,26 +10,37 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	//Get Posts Method
 
-	$scope.loadData = function() {
-		$http.get($scope.API_URL + "posts")
-			.success(function(response){
-				$scope.posts = response;
-			});
-		};
-
 	$scope.checkAuth = function() {
 		//console.log(userModel.getAuthStatus());
 		return userModel.getAuthStatus();
 	}
 
+	$scope.loadVotes = function() {
+		$http.get($scope.API_URL + "votes/" + userModel.getId())
+		.success(function(response) {
+			$scope.voteTable = response;
+		});
+	};
+
+	$scope.loadData = function() {
+		$http.get($scope.API_URL + "posts")
+			.success(function(response){
+				$scope.posts = response;
+			});
+		
+		if ($scope.checkAuth())
+		{
+			//alert("authorized.");
+			$scope.loadVotes();
+			console.log("Votes loaded for user.");
+		}
+	};
+
 	//inital load
 	$scope.loadData();
 
 	//Check if logged in, if so we will load vote data.
-	if ($scope.checkAuth())
-	{
-		alert("authorized.");
-	}
+
 
 	//Delete Post
 
