@@ -21,7 +21,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	$scope.loadData();
 
 	//Check if logged in, if so we will load vote data.
-	if ($scope.checkAuth())
+	if (checkAuth())
 	{
 		alert("authorized.");
 	}
