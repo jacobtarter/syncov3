@@ -63,9 +63,9 @@ class VoteController extends Controller
             {
                 $downVotes++;
             }
-            $currentRow['v_pid'] = $row->v_pid
-            $currentRow['upvotes']=$upVotes;
-            $currentRow['downvotes']=$downVotes;
+            $currentRow['v_pid'] = $row->v_pid;
+            $currentRow['upvotes']= $upVotes;
+            $currentRow['downvotes']= $downVotes;
             $voteTotal[] = $currentRow;
         }
         
