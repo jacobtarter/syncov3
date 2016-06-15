@@ -21,7 +21,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	$scope.loadData();
 
 	//Check if logged in, if so we will load vote data.
-	if (checkAuth())
+	if ($scope.checkAuth())
 	{
 		alert("authorized.");
 	}
@@ -233,12 +233,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	}	
 	});
 
-	angular.extend($scope, {
-		checkAuth: function() {
+	$scope.checkAuth = function() {
 			//console.log(userModel.getAuthStatus());
 			return userModel.getAuthStatus();
 		}
-	});
+	
 	angular.extend($scope, {
 		checkOwner: function(id) {
 			return userModel.isUsersPost(id);
