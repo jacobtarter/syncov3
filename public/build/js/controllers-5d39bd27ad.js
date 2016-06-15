@@ -18,17 +18,13 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	$scope.loadVotes = function() {
 		$http.get($scope.API_URL + "votes/" + userModel.getId())
 		.success(function(response) {
-			$scope.voteTable = response;
+			localStorage.voteTable = response;
 		});
 	};
 
 
 
 	$scope.loadData = function() {
-		$http.get($scope.API_URL + "posts")
-			.success(function(response){
-				$scope.posts = response;
-			});
 		
 		if ($scope.checkAuth())
 		{
@@ -36,10 +32,17 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			$scope.loadVotes();
 			console.log("Votes loaded for user.");
 		}
+
+		$http.get($scope.API_URL + "posts")
+			.success(function(response){
+				$scope.posts = response;
+			});
+		
+
 	};
 
 	$scope.checkUpvote = function(postId) {
-		for (var votes in $scope.voteTable)
+		for (var votes in localStorage.voteTable)
 		{
 			console.log(votes);
 			if (votes.v_pid == postId)
