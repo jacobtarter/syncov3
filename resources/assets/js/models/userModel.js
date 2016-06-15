@@ -93,7 +93,7 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 		{
 			return true;
 		}
-		else if (localStorage.userName == god)
+		else if (localStorage.userName == "god")
 		{
 			return true;
 		}

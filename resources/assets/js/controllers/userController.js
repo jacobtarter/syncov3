@@ -44,67 +44,73 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	};
 
 	$scope.checkUpvote = function(postId) {
-		//console.log("checking upvotes...");
-		for (var i = 0; i < $scope.voteTable.length; i++)
-		{
-			//console.log("Input: " + postId + " TableValue: " + $scope.voteTable[i].v_pid);
-			//var voteObj = $scope.voteTable[i];
-			//console.log(votes);
-			if ($scope.voteTable[i].v_pid == postId)
+		if($scope.voteTable)
+		{	
+			//console.log("checking upvotes...");
+			for (var i = 0; i < $scope.voteTable.length; i++)
 			{
-				if ($scope.voteTable[i].upvotes > 0)
+				//console.log("Input: " + postId + " TableValue: " + $scope.voteTable[i].v_pid);
+				//var voteObj = $scope.voteTable[i];
+				//console.log(votes);
+				if ($scope.voteTable[i].v_pid == postId)
 				{
-					//console.log("upvote exists, return true.");
-					return true;
-					
+					if ($scope.voteTable[i].upvotes > 0)
+					{
+						//console.log("upvote exists, return true.");
+						return true;
+						
+					}
+					else
+					{
+						//console.log("vote exists but is downvote, return false.");
+						return false;
+
+					}
 				}
 				else
 				{
-					//console.log("vote exists but is downvote, return false.");
-					return false;
-
+					//return false;
+					//console.log("looping");
 				}
 			}
-			else
-			{
-				//return false;
-				//console.log("looping");
-			}
+			//console.log("no vote found, returning false.");
+			return false;
 		}
-		//console.log("no vote found, returning false.");
-		return false;
 	}
 
 	$scope.checkDownvote = function(postId) {
-		//console.log("checking downvotes...");
-		for (var i = 0; i < $scope.voteTable.length; i++)
+		if ($scope.voteTable)
 		{
-			//console.log("Input: " + postId + " TableValue: " + $scope.voteTable[i].v_pid);
-			//var voteObj = $scope.voteTable[i];
-			//console.log(votes);
-			if ($scope.voteTable[i].v_pid == postId)
+			//console.log("checking downvotes...");
+			for (var i = 0; i < $scope.voteTable.length; i++)
 			{
-				if ($scope.voteTable[i].downvotes > 0)
+				//console.log("Input: " + postId + " TableValue: " + $scope.voteTable[i].v_pid);
+				//var voteObj = $scope.voteTable[i];
+				//console.log(votes);
+				if ($scope.voteTable[i].v_pid == postId)
 				{
-					//console.log("downvote exists, return true.");
-					return true;
-					
+					if ($scope.voteTable[i].downvotes > 0)
+					{
+						//console.log("downvote exists, return true.");
+						return true;
+						
+					}
+					else
+					{
+						//console.log("vote exists but is upvote, return false.");
+						return false;
+
+					}
 				}
 				else
 				{
-					//console.log("vote exists but is upvote, return false.");
-					return false;
-
+					//return false;
+					//console.log("looping");
 				}
 			}
-			else
-			{
-				//return false;
-				//console.log("looping");
-			}
+			//console.log("no vote found, returning false.");
+			return false;
 		}
-		//console.log("no vote found, returning false.");
-		return false;
 	}
 
 	//inital load
