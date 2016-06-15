@@ -22,6 +22,23 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		});
 	};
 
+	$scope.checkUpvote = function(postId) {
+		for (var votes in $scope.voteTable)
+		{
+			if (votes.v_pid == postId)
+			{
+				if (votes.upvotes > 1)
+				{
+					return true;
+				}
+			}
+			else
+			{
+				return false;
+			}
+		}
+	}
+
 	$scope.loadData = function() {
 		$http.get($scope.API_URL + "posts")
 			.success(function(response){
