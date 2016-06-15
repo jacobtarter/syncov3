@@ -48,11 +48,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		for (var i = 0; i < $scope.voteTable.length; i++)
 		{
 			console.log($scope.voteTable[i].v_pid);
-			var voteObj = $scope.voteTable[i];
+			//var voteObj = $scope.voteTable[i];
 			//console.log(votes);
-			if (voteObj.v_pid == postId)
+			if ($scope.voteTable[i].v_pid == postId)
 			{
-				if (voteObj.upvotes > 1)
+				if ($scope.voteTable[i].upvotes > 1)
 				{
 					return true;
 					console.log("true");
