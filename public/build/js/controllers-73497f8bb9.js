@@ -22,6 +22,22 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		});
 	};
 
+
+
+	$scope.loadData = function() {
+		$http.get($scope.API_URL + "posts")
+			.success(function(response){
+				$scope.posts = response;
+			});
+		
+		if ($scope.checkAuth())
+		{
+			//alert("authorized.");
+			$scope.loadVotes();
+			console.log("Votes loaded for user.");
+		}
+	};
+
 	$scope.checkUpvote = function(postId) {
 		for (var votes in $scope.voteTable)
 		{
@@ -39,20 +55,6 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 		}
 	}
-
-	$scope.loadData = function() {
-		$http.get($scope.API_URL + "posts")
-			.success(function(response){
-				$scope.posts = response;
-			});
-		
-		if ($scope.checkAuth())
-		{
-			//alert("authorized.");
-			$scope.loadVotes();
-			console.log("Votes loaded for user.");
-		}
-	};
 
 	//inital load
 	$scope.loadData();
