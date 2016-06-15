@@ -12,7 +12,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	$scope.checkAuth = function() {
 		//console.log(userModel.getAuthStatus());
-		console.log("checking auth...");
+		//console.log("checking auth...");
 		return userModel.getAuthStatus();
 	}
 
@@ -44,7 +44,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	};
 
 	$scope.checkUpvote = function(postId) {
-		console.log("checking upvotes...");
+		//console.log("checking upvotes...");
 		for (var i = 0; i < $scope.voteTable.length; i++)
 		{
 			//console.log("Input: " + postId + " TableValue: " + $scope.voteTable[i].v_pid);
@@ -260,7 +260,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		}).success(function(response) {
 			if(response) {
 				console.log(response);
-				alert(response);
+				//alert(response);
+				$scope.loadData();
 			}
 			else {
 				//console.log(apiModel.getPostData());
