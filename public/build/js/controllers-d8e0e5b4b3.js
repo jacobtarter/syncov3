@@ -52,7 +52,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			//console.log(votes);
 			if ($scope.voteTable[i].v_pid == postId)
 			{
-				if ($scope.voteTable[i].upvotes > 1)
+				if ($scope.voteTable[i].upvotes > 0)
 				{
 					console.log("upvote exists, return true.");
 					return true;
