@@ -12,6 +12,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	$scope.checkAuth = function() {
 		//console.log(userModel.getAuthStatus());
+		console.log("checking auth...");
 		return userModel.getAuthStatus();
 	}
 
@@ -42,6 +43,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	};
 
 	$scope.checkUpvote = function(postId) {
+		console.log("checking upvotes...");
 		for (var votes in localStorage.voteTable)
 		{
 			console.log(votes);
