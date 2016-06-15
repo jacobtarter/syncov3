@@ -47,7 +47,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		console.log("checking upvotes...");
 		for (var i = 0; i < $scope.voteTable.length; i++)
 		{
-			console.log($scope.voteTable[i].v_pid);
+			console.log("Input: " + postId + " TableValue: " + $scope.voteTable[i].v_pid);
 			//var voteObj = $scope.voteTable[i];
 			//console.log(votes);
 			if ($scope.voteTable[i].v_pid == postId)
