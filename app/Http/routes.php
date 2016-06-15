@@ -45,6 +45,8 @@ Route::get( '/api/v1/comments/{pid}', 'CommentController@getCommentsByPost');
 Route::post( '/api/v1/votes', 'VoteController@store' );
 //Read
 Route::get ( '/api/v1/votes/{uid}', 'VoteController@index');
+//Update
+Route::post ( '/api/v1/votes/{id}', 'VoteController@update');
 
 //Register user
 Route::post('authentication/register', 'UserController@store');
