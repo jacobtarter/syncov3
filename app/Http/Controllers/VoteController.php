@@ -26,16 +26,16 @@ class VoteController extends Controller
         foreach ($DATA as $row){
             if ($row->votescore == 1)
             {
-                upvote++;
+                $upvote++;
                 $voteid = $row->id;
             }
             if ($row->votescore == -1)
             {
-                downvote++;
+                $downvote++;
                 $voteid = $row->id;
             }
         }
-        if((upvote + downvote) < 1)
+        if(($upvote + $downvote) < 1)
         {
             $this->validate($request, array(
                 'v_pid' => 'required',
@@ -49,7 +49,7 @@ class VoteController extends Controller
             $vote->uid = $request->input('uid');
             $vote->save();
         }
-        else if (downvote == 1 && $request->input('votescore') == 1)
+        else if ($downvote == 1 && $request->input('votescore') == 1)
         {
             $vote = Post::find($voteid);
 
@@ -57,7 +57,7 @@ class VoteController extends Controller
             $vote->save();
             return response("vote changed to upvote");
         }
-        else if (upvote == 1 && $request->input('votescore') == -1)
+        else if ($upvote == 1 && $request->input('votescore') == -1)
         {
             $vote = Vote::find($voteid);
 
