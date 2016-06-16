@@ -10,3 +10,15 @@
 	margin: 0px auto;
 	background:white;
 }
+
+#main-box{
+	width: 960px;
+}
+
+#post-table{
+	width: 700px;
+}
+
+#login-box{
+	width: 260px;
+}
