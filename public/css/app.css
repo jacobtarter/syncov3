@@ -80,7 +80,7 @@ img {
 	margin-bottom: 10px;
 	
 	flex-wrap: wrap;
-	align-content: space-between;
+	justify-content: space-between;
 
 }
 
@@ -111,13 +111,13 @@ img {
 	width:50%;
 }
 .voting{
-	width:50%;
+	
 }
 .editdelete{
-	width:100%;
+	
 }
 .info{
-	width:50%;
+	
 	text-alight:right;
 }
 /* End of Post Items */
