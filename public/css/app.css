@@ -2,7 +2,7 @@
 /*# sourceMappingURL=app.css.map */
 
 .container {
-	background:purple;
+
 }
 
 #comment-box{
@@ -14,9 +14,7 @@
 /* Main flex container for master page */
 .wrapper {
 	display:flex;
-	width:100%;
-	height:100%;
-	margin:0 auto;
+	justify-content:center;
 }
 /*Main flex object for master page */
 .box {
