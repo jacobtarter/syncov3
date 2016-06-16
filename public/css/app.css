@@ -40,7 +40,7 @@
 	background:purple;
 }
 
-/* Main flex object for main posts page */
+/* Inner flex object for master page */
 .innerbox {
 	flex:1;
 	flex-basis:100%;
@@ -51,6 +51,11 @@
 }
 .footer {
 	background:purple;
+}
+
+/* Flex object for main page */
+.maincontent {
+	flex-basis:100%;
 }
 
 
