@@ -78,6 +78,7 @@ img {
 	padding:5px;
 	margin-bottom: 10px;
 	display: flex;
+	flex-wrap: wrap;
 
 }
 
@@ -88,8 +89,12 @@ img {
 }
 
 /* Flex items for each post*/
+.position{
+	width:5%;
+}
+
 .title{
-	width:100%;
+	width:95%;
 	text-alight: left;
 }
 .btn{
