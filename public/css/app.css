@@ -58,6 +58,10 @@ img {
 	border: 4px solid black;
 }
 
+.title{
+	white-space:normal;
+}
+
 @media all and (max-width:900px){
 	.wrapper{
 		flex-direction:column;
