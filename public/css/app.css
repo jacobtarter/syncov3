@@ -47,6 +47,17 @@
 .inbox {
 	flex:1;
 }
+.inbox1 {
+	flex:1;
+	background:purple;
+}
+.inbox2 {
+	flex:10;
+}
+.inbox3 {
+	flex:.5;
+	background:purple;
+}
 
 .box1 {
 	background:purple;
