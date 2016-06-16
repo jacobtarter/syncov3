@@ -61,6 +61,10 @@ img {
 .title{
 	white-space:normal;
 }
+.btn-link{
+	width:50%;
+}
+
 
 @media all and (max-width:900px){
 	.wrapper{
