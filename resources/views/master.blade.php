@@ -5,7 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
 	<script>var baseUrl = "{{ url('/') }}/";</script>
 	<script>var api = "api/v1/"; </script>
-	<link rel="stylesheet" href="<?php echo asset('css/app.css')?>" type="text/css"> 
+	<link rel="stylesheet" href="<?php echo asset('css/app.css')?>" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
 </head>
 
 <body>
