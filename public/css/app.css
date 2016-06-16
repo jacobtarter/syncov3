@@ -67,6 +67,7 @@ img {
 .eachpost{
 	border:.25px solid black;
 	margin:10px;
+	width:100%;
 }
 .score{
 	width:50%;
