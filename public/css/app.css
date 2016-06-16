@@ -97,9 +97,11 @@ img {
 		order:1;
 		width:100%;
 		margin:0px;
+		margin-bottom:5px;
 	}
 	.eachpost{
 		margin:0px;
+		marin-bottom:5px;
 	}
 	.login{
 		flex:1;
