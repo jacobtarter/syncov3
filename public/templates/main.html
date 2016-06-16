@@ -15,11 +15,12 @@
 		
 		<div class="eachpost" ng-repeat="x in posts | orderBy : '-vote_score'">
 
+		  	<div class="list position">{{ $index + 1 }}</div>
+
 		  	<div class="list title">
 				<button type="button" class="btn btn-link" ng-click="viewPost(x.id)"><b>{{ x.title }}</b></button>
 			</div>
 
-		  	<div class="list position">{{ $index + 1 }}</div>
 			<div class="list score">{{ x.vote_score }}</div> 
 			<div class="list score-breakdown">({{ x.upvotes }}/{{ x.downvotes }})</div>
 			<div class="list voting">

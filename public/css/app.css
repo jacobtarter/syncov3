@@ -69,6 +69,21 @@ img {
 	border:.25px solid black;
 	margin:10px;
 }
+.score{
+	width:50%;
+}
+.score-breakdown{
+	width:50%;
+}
+.voting{
+	width:100%;
+}
+.editdelete{
+	width:100%;
+}
+.info{
+	width:100%;
+}
 
 
 @media all and (max-width:900px){
