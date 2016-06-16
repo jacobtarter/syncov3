@@ -18,9 +18,11 @@
 #post-table{
 	width:700px;
 	float:left;
+	background:blue;
 }
 
 #login-box{
 	width:260px;
 	float:left;
+	background:red;
 }
