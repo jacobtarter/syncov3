@@ -99,6 +99,10 @@ img {
 	.login{
 		flex:1;
 	}
+
+	.container{
+		width:95%;
+	}
 }
 
 
