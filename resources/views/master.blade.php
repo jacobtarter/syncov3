@@ -11,12 +11,11 @@
 
 <body>
 
-	<div id="container">
-
-		<div id="input">
-			<div ng-view></div>
-		</div>
-
+	<div class="wrapper">
+		<div class="box box1"></div>
+		<div class="box box2"><div ng-view></div></div>
+		<div class="box box3"></div>
+		
 	</div>
 
 
