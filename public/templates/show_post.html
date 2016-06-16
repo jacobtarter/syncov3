@@ -1,24 +1,24 @@
 <link rel="stylesheet" type="text/css" href="css/app.css">
 
-
+	<body>
 		<div>
 			<a href = "http://synco.xyz/#/">
 			<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth1"  alt="SYNCO SYNCO SYNCO"></img>
 			</a>
 		</div>
-<body>
 
-	<table class="table">
+
+	<table class= "table">
 		    
-		<tr>{ post[0].title }}</tr> 
+		<tr><td>{{ post[0].title }}</td></tr> 
 		
-		<tr>Original Poster: {{ post[0].name }}</tr>
+		<tr><td>Original Poster: {{ post[0].name }}</td></tr>
 		
-		<tr>Created On: {{ post[0].created_at }}</tr> 
+		<tr><td>Created On: {{ post[0].created_at }}</td></tr> 
 
-		<tr>Score: 	{{ post[0].vote_score }}({{ post[0].upvotes }}/{ post[0].downvotes }})</tr>
+		<tr><td>Score: 	{{ post[0].vote_score }}({{ post[0].upvotes }}/{{ post[0].downvotes }})</td></tr>
 		
-		<tr>{{ post[0].ptext }}</tr>
+		<tr><td>{{ post[0].ptext }}</td></tr>
 
 	</table>
 
