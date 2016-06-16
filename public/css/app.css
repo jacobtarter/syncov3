@@ -90,19 +90,20 @@ img {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
+	background:blue;
 
 }
 .second-line{
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-
+	background:red;
 }
 .third-line{
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-
+	background:green;
 }
 
 

@@ -35,12 +35,13 @@
 				<div class="list info"><b>OP:</b> {{ x.name }} <b>Comments:</b> {{ x.comment_count }}
 				</div>
 			</div>
-		</div>
+
 
 		    <div class="third-line">
 		    <div class="list editdelete">
 	    		<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-synchronization"</span> Edit</button>
-		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-warning-sign"></span> Delete</button></div>
+		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-warning-sign"></span> Delete</button>
+		    </div>
 		    </div>
 
 
