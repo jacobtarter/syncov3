@@ -96,6 +96,10 @@ img {
 		flex:1;
 		order:1;
 		width:100%;
+		margin:0px;
+	}
+	.eachpost{
+		margin:0px;
 	}
 	.login{
 		flex:1;
