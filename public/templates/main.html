@@ -21,9 +21,10 @@
 				<button type="button" class="btn btn-link" ng-click="viewPost(x.id)"><b>{{ x.title }}</b></button>
 			</div>
 
-			<div class="list score">{{ x.vote_score }}</div> 
-			<div class="list score-breakdown">({{ x.upvotes }}/{{ x.downvotes }})</div>
+			
 			<div class="list voting">
+		  		
+				{{ x.vote_score }} ({{ x.upvotes }}/{{ x.downvotes }})
 		  		<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()" ng-disabled="checkUpvote(x.id)"><span class="glyphicon glyphicon-thumbs-up"></span>  </button>
 
 	    		<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-thumbs-down"></span>  </button>
