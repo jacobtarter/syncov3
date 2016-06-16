@@ -80,7 +80,7 @@ img {
 	margin-bottom: 10px;
 	
 	flex-wrap: wrap;
-	align-items: center;
+	align-content: space-between;
 
 }
 
