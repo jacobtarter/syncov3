@@ -97,6 +97,7 @@ img {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
+	border:10px solid red;
 	background:red;
 }
 .third-line{
