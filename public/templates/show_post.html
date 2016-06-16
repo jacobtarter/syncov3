@@ -1,11 +1,13 @@
 <link rel="stylesheet" type="text/css" href="css/app.css">
 
 	<body>
-		<div>
-			<a href = "http://synco.xyz/#/">
-			<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth1"  alt="SYNCO SYNCO SYNCO"></img>
-			</a>
-		</div>
+	<div id="main-box">
+
+		
+		<a href = "http://synco.xyz/#/">
+		<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth1"  alt="SYNCO SYNCO SYNCO"></img>
+		</a>
+		
 
 
 	<table class= "table">
@@ -42,15 +44,17 @@
 	
 	<tr ng-repeat="x in comments">
 
-		    <td>Name: {{ x.name }}</td>
+		    <td>{{ x.name }}</td>
 
 		    <td>{{ x.ctext }}</td>
 
-		    <td>Date:{{ x.created_at }}</td>
+		    <td>{{ x.created_at }}</td>
 
 	</tr>
 	
 	</table>
+
+</div>
 
 </body>
 
