@@ -5,9 +5,7 @@
 
 }
 
-#comment-box{
-	width:910px;
-}
+
 
 
 
@@ -15,54 +13,20 @@
 .wrapper {
 	display:flex;
 	justify-content:center;
-}
-/*Main flex object for master page */
-.box {
-	flex:1;
-	border:10px black;
-
+	border: 10px solid mistyrose;
 }
 
-.box1 {
-	background:purple;
+.posts {
+	flex: 4;
 }
-/* Flex object and container for content items */
-.box2 {
-	background:white;
-	flex:6;
-	display:flex;
-	/*
-	width:100%;
-	height:100%;
-	*/
-	flex-direction:column;
-}
-.box3 {
-	background:purple;
-}
-
-/* Inner flex object for master page */
-.innerbox {
-	
+.login {
+	flex: 1;
 }
 
 .logo {
 	display: block;
 	width: 50%;
 	border: 1px;
-}
-.content {
-	flex:8;
-}
-.footer {
-	background:purple;
-	flex:1;
-}
 
-/* Flex object for main page */
-.maincontent {
-	flex-basis:100%;
-	flex:1;
-}
 
 
