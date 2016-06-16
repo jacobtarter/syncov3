@@ -17,23 +17,25 @@
 
 		  	<div class="first-line">
 
-		  	<div class="list position">{{ $index + 1 }}</div>
+		  		<div class="list position">{{ $index + 1 }}</div>
 
-		  	<div class="list title">
-				<button type="button" class="btn btn-link" ng-click="viewPost(x.id)"><b>{{ x.title }}</b></button>
-			</div>
-
+			  	<div class="list title">
+					<button type="button" class="btn btn-link" ng-click="viewPost(x.id)"><b>{{ x.title }}</b></button>
+				</div>
 			</div
 
 			<div class="second-line">
-			<div class="list voting">
+				<div class="list voting">
 		  		
 				{{ x.vote_score }} ({{ x.upvotes }}/{{ x.downvotes }})
 				<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()" ng-disabled="checkUpvote(x.id)"><span class="glyphicon glyphicon-thumbs-up"></span>  </button>
-				<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-thumbs-down"></span>  </button></div>
+				<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-thumbs-down"></span>  </button>
+				</div>
 			
-			<div class="list info"><b>OP:</b> {{ x.name }} <b>Comments:</b> {{ x.comment_count }}</div>
+				<div class="list info"><b>OP:</b> {{ x.name }} <b>Comments:</b> {{ x.comment_count }}
+				</div>
 			</div>
+		</div>
 
 		    <div class="third-line">
 		    <div class="list editdelete">
