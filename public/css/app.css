@@ -19,10 +19,12 @@
 
 #post-table{
 	width:700px;
+	margin:0px auto;
 	float:left;
 }
 
 #login-box{
 	width:260px;
+	margin:0px auto;
 	float:left;
 }
