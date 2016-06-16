@@ -2,11 +2,11 @@
 /*# sourceMappingURL=app.css.map */
 
 #container{
-	background:purple;
+	
 }
 
 #input{
-	background:white;
+	
 	width:960px;
 	margin:0px auto;
 }
@@ -14,7 +14,7 @@
 #main-box{
 	width:960px;
 	margin:0px auto;
-	clear:left;
+	
 	
 }
 
@@ -22,9 +22,12 @@
 	width:700px;
 	margin:0px auto;
 	float:left;
+	background:blue;
 }
 
 #login-box{
 	width:260px;
 	margin:0px auto;
+	float:left;
+	background:red;
 }
