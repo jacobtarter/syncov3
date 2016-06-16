@@ -32,7 +32,7 @@
 			<tr ng-repeat="x in posts | orderBy : '-vote_score'">
 
 			  	<th>
-			  		{{ x.vote_score }} 
+			  		<b>{{ x.vote_score }}</b> ({{ x.upvotes }}/{{ x.downvotes }})
 
 			  		</br>
 
@@ -40,9 +40,9 @@
 
 		    		<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-thumbs-down"></span>  </button>
 
-		    		</br>
+		    		
 
-		    		({{ x.upvotes }} / {{ x.downvotes }} )
+		    		
 
 		    	</th>
 
