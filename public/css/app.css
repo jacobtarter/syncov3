@@ -65,6 +65,7 @@
 .box2 {
 	background:white;
 	flex:6;
+	display:flex;
 }
 .box3 {
 	background:purple;
