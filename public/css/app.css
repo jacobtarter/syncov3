@@ -46,8 +46,9 @@
 }
 
 .logo {
-	background:purple;
-	flex:1;
+	margin: auto;
+	width: 50%;
+	border: 1px;
 }
 .content {
 	flex:8;

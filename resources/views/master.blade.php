@@ -11,16 +11,23 @@
 
 <body>
 
-	<div class="wrapper">
-		<div class="box box1"></div>
+	<div class="logo">
+		
+			<a href = "http://synco.xyz/#/">
+			<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth" alt="SYNCO SYNCO SYNCO"></img>
+			</a>
+		
+	</div>
+		
 		<div class="box box2">
 
-			<div class="innerbox logo">
-				<a href = "http://synco.xyz/#/">
-				<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth" alt="SYNCO SYNCO SYNCO"></img>
-				</a>
+			
+		</div>
+			<div class="innerbox content">
+
+
+
 			</div>
-			<div class="innerbox content"><div ng-view></div></div>
 			<div class="innerbox footer"></div>
 			
 	
