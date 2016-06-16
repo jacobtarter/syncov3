@@ -11,10 +11,7 @@
 
 <body>
 
-	
-		
-	<div class="container">
-
+	<div class="logobox">
 		<div class="logo">
 		
 			<a href = "http://synco.xyz/#/">
@@ -22,6 +19,12 @@
 			</a>
 		
 		</div>
+	</div>
+	
+
+	<div class="container">
+
+		
 
 		<div ng-view></div>
 

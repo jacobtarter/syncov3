@@ -1,10 +1,14 @@
 
 /*# sourceMappingURL=app.css.map */
 
-.container {
+.logobox {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.container {
+	
 
 }
 
