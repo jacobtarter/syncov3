@@ -16,11 +16,13 @@
 		<div class="box box2">
 
 			<div class="inner-wrapper">
+			
 			<div class="innerbox inbox1"></div>
 			<div class="innerbox inbox2">	
 				<div ng-view></div>
 			</div>
 			<div class="innerbox inbox3"></div>
+			
 			</div>
 		
 		</div>

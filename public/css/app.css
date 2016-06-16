@@ -50,14 +50,14 @@
 }
 .inbox1 {
 	flex:1;
-	background:purple;
+	background:red;
 }
 .inbox2 {
 	flex:10;
 }
 .inbox3 {
 	flex:.5;
-	background:purple;
+	background:orange;
 }
 
 .box1 {
