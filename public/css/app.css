@@ -24,11 +24,12 @@ body {
 
 .posts {
 	flex: 4;
+	margin: 10px;
 }
 .login {
 	flex: 1;
 	border: .5px solid black;
-	margin-left: 10px;
+	margin: 10px;
 }
 
 .logo {
