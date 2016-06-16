@@ -21,6 +21,7 @@
 				<div ng-view></div>
 			</div>
 			<div class="innerbox inbox3"></div>
+			</div>
 		
 		</div>
 		<div class="box box3"></div>
