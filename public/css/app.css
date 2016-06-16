@@ -45,6 +45,7 @@ body {
 	border: .5px solid black;
 	margin: 0px;
 	padding: 20px;
+	margin-left:10px;
 }
 
 .logo {
@@ -71,6 +72,7 @@ img {
 	border:.25px solid black;
 	margin:0px;
 	width:100%;
+	margin-bottom: 10px
 }
 .score{
 	width:50%;
