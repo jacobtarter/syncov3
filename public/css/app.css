@@ -84,6 +84,22 @@ img {
 
 }
 
+.first-lind{
+	display: flex;
+	justify-content: space-between;
+
+}
+.second-line{
+	display: flex;
+	justify-content: space-between;
+
+}
+.third-line{
+	display: flex;
+	justify-content: space-between;
+
+}
+
 
 /* Flex object category, items within each post */
 .list {
@@ -92,11 +108,9 @@ img {
 
 /* Flex items for each post*/
 .position{
-	width:5%;
 }
 
 .title{
-	width:95%;
 	text-alight: left;
 }
 .btn{
@@ -105,10 +119,8 @@ img {
 }
 
 .score{
-	width:50%;
 }
 .score-breakdown{
-	width:50%;
 }
 .voting{
 	
