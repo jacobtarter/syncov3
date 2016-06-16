@@ -2,6 +2,9 @@
 /*# sourceMappingURL=app.css.map */
 
 .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
 
@@ -33,10 +36,16 @@ body {
 }
 
 .logo {
+	flex: 1;
 	display: block;
 	margin: auto;
 	width: 50%;
 	border: 4px solid black;
+}
+
+image {
+	max-width: 100%;
+}
 
 
 
