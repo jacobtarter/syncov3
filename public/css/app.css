@@ -13,8 +13,9 @@
 .wrapper {
 	display:flex;
 	justify-content:center;
-	border: 10px solid mistyrose;
+	border: 5px solid black;
 	background: white;
+	padding: 10px;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
 }
 .login {
 	flex: 1;
+	border: 2px solid black;
 }
 
 .logo {
