@@ -48,9 +48,14 @@
 
 .logo {
 	background:purple;
+	flex:1;
+}
+.content {
+	flex:8;
 }
 .footer {
 	background:purple;
+	flex:1;
 }
 
 /* Flex object for main page */
