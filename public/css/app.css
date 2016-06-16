@@ -57,6 +57,13 @@ img {
 	.wrapper{
 		flex-direction:column;
 	}
+	.posts{
+		flex:1;
+		order:1;
+	}
+	.login{
+		flex:1;
+	}
 }
 
 
