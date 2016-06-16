@@ -44,16 +44,12 @@
 .innerbox {
 	flex:1;
 }
-.inbox1 {
-	flex:1;
-	background:red;
+
+.logo {
+	background:purple;
 }
-.inbox2 {
-	flex:1;
-}
-.inbox3 {
-	flex:1;
-	background:orange;
+.footer {
+	background:purple;
 }
 
 
