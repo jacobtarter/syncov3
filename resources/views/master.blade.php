@@ -11,15 +11,17 @@
 
 <body>
 
-	<div class="logo">
+	
+		
+	<div class="container">
+
+		<div class="logo">
 		
 			<a href = "http://synco.xyz/#/">
 			<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth" alt="SYNCO SYNCO SYNCO"></img>
 			</a>
 		
-	</div>
-		
-	<div class="container">
+		</div>
 
 		<div ng-view></div>
 
