@@ -14,6 +14,10 @@
 		<!tr ng-repeat-start="x in posts | orderBy : '-vote_score'">
 		<div ng-repeat="x in posts | orderBy : '-vote_score'">
 
+		  	<div class="list title">
+				<button type="button" class="btn btn-link" ng-click="viewPost(x.id)"><b>{{ x.title }}</b></button>
+			</div>
+
 		  	<div class="list position">{{ $index + 1 }}</div>
 			<div class="list score">{{ x.vote_score }}</div> 
 			<div class="list score-breakdown">({{ x.upvotes }}/{{ x.downvotes }})</div>
@@ -23,9 +27,7 @@
 	    		<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-thumbs-down"></span>  </button>
 	    	</div>
 
-		  	<div class="list title">
-				<button type="button" class="btn btn-link" ng-click="viewPost(x.id)"><b>{{ x.title }}</b></button>
-			</div>
+		  	
 			<div class="list info">	
 				OP: {{ x.name }} Comments: {{ x.comment_count }}		
 			</div>
