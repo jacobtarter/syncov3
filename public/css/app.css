@@ -87,16 +87,19 @@ img {
 .first-lind{
 	display: flex;
 	justify-content: space-between;
+	flex-direction: row;
 
 }
 .second-line{
 	display: flex;
 	justify-content: space-between;
+	flex-direction: row;
 
 }
 .third-line{
 	display: flex;
 	justify-content: space-between;
+	flex-direction: row;
 
 }
 
