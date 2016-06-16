@@ -34,6 +34,7 @@ body {
 	flex: 6;
 	margin: 10px;
 	display: flex;
+	flex-direction: column;
 }
 .list {
 	flex: 1;
