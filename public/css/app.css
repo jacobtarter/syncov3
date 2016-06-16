@@ -42,8 +42,7 @@
 
 /* Inner flex object for master page */
 .innerbox {
-	flex:1;
-	flex-basis:100%;
+	
 }
 
 .logo {
