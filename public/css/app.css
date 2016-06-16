@@ -32,7 +32,7 @@ body {
 
 .posts {
 	flex: 6;
-	margin: 10px;
+	margin: 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
@@ -43,7 +43,7 @@ body {
 .login {
 	flex: 1;
 	border: .5px solid black;
-	margin: 10px;
+	margin: 0px;
 	padding: 20px;
 }
 
@@ -69,7 +69,7 @@ img {
 }
 .eachpost{
 	border:.25px solid black;
-	margin:10px;
+	margin:0px;
 	width:100%;
 }
 .score{
