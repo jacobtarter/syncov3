@@ -1,70 +1,56 @@
 <link rel="stylesheet" type="text/css" href="css/app.css">
 
-<div class = "bigBox">
-	<div class = "container">
+
 		<div>
 			<a href = "http://synco.xyz/#/">
 			<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth1"  alt="SYNCO SYNCO SYNCO"></img>
 			</a>
 		</div>
 <body>
-<div class = "row">
-		<div class = "myWrapper">
-
 
 	<table class="table">
-	<tbody>
-		    <td>
-					<div class = "commentHeader">
-						<div class = "textWrapper"><b>{{ post[0].title }} </br> <span class ="newline"> Original Poster: {{ post[0].name }} Created On: {{ post[0].created_at }} </b>
-						</span>
-					</div>
-				</div>
-				<div class="leftAlign"> Score: 	{{ post[0].vote_score }}
-					<span class="pos">({{ post[0].upvotes }} </span>/<span class="neg">{{ post[0].downvotes }}) </span>
-				</div>
-				<div class = "commentBody" >
-					<strong> {{ post[0].ptext }} </strong>
-				</div>
-
+		    
+		<tr>{ post[0].title }}</tr> 
 		
+		<tr>Original Poster: {{ post[0].name }}</tr>
+		
+		<tr>Created On: {{ post[0].created_at }}</tr> 
 
+		<tr>Score: 	{{ post[0].vote_score }}({{ post[0].upvotes }}/{ post[0].downvotes }})</tr>
+		
+		<tr>{{ post[0].ptext }}</tr>
 
+	</table>
 
-	</tbody>
-</table>
-</div>
-</div>
-<table class= "table">
-	<thead>
+	<div class="row" ng-show="checkAuth()">
+	<hi>Post Your Comment Here</h1>
+		<form name="commentForm" ng-submit="makeComment(commentForm)">
+
+			<div class="form-group">
+				<TEXTAREA name="Body" COLS=60 ROWS=6 name="Comment" ng-model ="post.ctext"
+				required placeholder="Your comment here..." class="form-control"></TEXTAREA>
+			</div>
+			<input type="submit" name="save" value="Post" class="btn btn-success">
+		</form>
+	</div>
+
+	<table class= "table">
+	
 		<tr>
 			<th><h1> The Comments </h1> </th>
 		</tr>
-	</thead>
-	<tbody class = "botComment">
-		<tr ng-repeat="x in comments">
+	
+	<tr ng-repeat="x in comments">
 
-		    <td><div class="commentHeader"> <h3> Name: {{ x.name }} </h3> </div></td>
+		    <td>Name: {{ x.name }}</td>
 
-		    <td><div class="commentFooter"><strong> {{ x.ctext }} </strong><div class = "newline">
-					<span class = "smallText"> Date:{{ x.created_at }} </span><div></div></td>
+		    <td>{{ x.ctext }}</td>
 
-		</tr>
-	</tbody>
-</table>
-<div class="row" ng-show="checkAuth()">
-	<div class="commentBox well" >
-		<hi>Post Your Comment Here</h1>
-			<form name="commentForm" ng-submit="makeComment(commentForm)">
+		    <td>Date:{{ x.created_at }}</td>
 
-				<div class="form-group">
-					<TEXTAREA name="Body" COLS=60 ROWS=6 name="Comment" ng-model ="post.ctext"
-					required placeholder="Your comment here..." class="form-control"></TEXTAREA>
-				</div>
-				<input type="submit" name="save" value="Post" class="btn btn-success">
-			</form>
-	</div>
-</div>
+	</tr>
+	
+	</table>
+
 </body>
-</div>
-</div>
+
