@@ -95,9 +95,11 @@ img {
 
 		flex:1;
 		order:1;
+		width:100%;
 	}
 	.login{
 		flex:1;
+		width: 100%;
 	}
 
 	.container{
