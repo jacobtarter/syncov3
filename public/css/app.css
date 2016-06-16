@@ -61,8 +61,9 @@ img {
 .title{
 	white-space:normal;
 }
-.btn-link{
-	width:50%;
+.btn{
+	white-space:normal;
+	max-width:50%;
 }
 
 
