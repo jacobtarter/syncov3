@@ -92,7 +92,7 @@ img {
 }
 
 
-@media all and (max-width:900px){
+@media all and (max-width:750px){
 	.wrapper{
 		flex-direction:column;
 		
