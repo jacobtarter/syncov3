@@ -33,9 +33,8 @@
 	height:100%;
 	margin:0 auto;
 }
-.innerwrapper {
+.inner-wrapper {
 	display:flex;
-	flex-direction: column;
 	
 }
 

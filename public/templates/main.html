@@ -4,13 +4,16 @@
 	
 <body>		
 
-	<div id="main-box">
+	
+	<div class="inner-wrapper">
 
+	<div class="innerbox inbox1">
 	<a href = "http://synco.xyz/#/">
 	<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth" alt="SYNCO SYNCO SYNCO"></img>
 	</a>
+	</div>
 
-	<section id="post-table">
+	<div class="innerbox inbox2">
 		
 	<table class="table table-hover">
 		<tr ng-repeat="x in posts | orderBy : '-vote_score'">
@@ -44,9 +47,9 @@
 		</tr>
 
 	</table>
-	</section>
+	</div>
 	
-	<aside id="login-box">
+	<div class="innerbox inbox3">
 		<p ng-show="checkAuth()"> Hello, {{getUser()}}</p>
 		
 		<button class="btn btn-default btn-lg btn-post" ng-show="checkAuth()" ng-click="newPost()">New Post</button>
@@ -56,7 +59,7 @@
 		<a href = "#/register"><button class="btn btn-default btn-lg btn-post" ng-show="!checkAuth()">Register</button></a>
 		
 		<a href = "#/logout"><button class="btn btn-default btn-lg btn-post" ng-show="checkAuth()"> Logout </button></a>
-	</aside>
+	</div>
 
 </div>
 
