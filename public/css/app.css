@@ -42,11 +42,12 @@
 }
 
 .box1 {
-	background:red;
+	background:purple;
 }
 .box2 {
 	background:white;
+	flex:3;
 }
 .box3 {
-	background:blue;
+	background:purple;
 }
