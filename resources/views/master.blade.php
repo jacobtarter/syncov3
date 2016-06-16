@@ -12,7 +12,9 @@
 
 	<div id="container">
 
-	<div ng-view></div>
+		<div id="input">
+			<div ng-view></div>
+		</div>
 
 	</div>
 
