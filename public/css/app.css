@@ -90,6 +90,37 @@ img {
 @media all and (max-width:900px){
 	.wrapper{
 		flex-direction:column;
+		
+	}
+	.posts{
+
+		flex:1;
+		order:1;
+		width:100%;
+		margin:0px;
+		padding:0px;
+	}
+	.eachpost{
+		margin:0px;
+		margin-bottom:10px;
+		padding: 0px;
+
+	}
+	.login{
+		flex:1;
+		width: 100%;
+		margin:0px;
+		margin-bottom:10px;
+	}
+
+	.container{
+		width:95%;
+	}
+}
+
+@media all and (max-width:500px){
+	.wrapper{
+		flex-direction:column;
 		padding-left:0px;
 		padding-right:0px;
 	}
