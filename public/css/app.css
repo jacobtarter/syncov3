@@ -123,6 +123,10 @@ img {
 		flex-direction:column;
 		padding-left:0px;
 		padding-right:0px;
+		border:2px solid black;
+	}
+	img{
+		border:2px solid black;
 	}
 	.posts{
 
@@ -144,11 +148,15 @@ img {
 		width: 100%;
 		margin:0px;
 		margin-bottom:10px;
+		border-left:0px;
+		border-right:0px;
 	}
 
 	.container{
-		width:95%;
+		width:100%;
 	}
+
+
 }
 
 
