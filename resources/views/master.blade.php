@@ -19,22 +19,12 @@
 		
 	</div>
 		
-		<div class="box box2">
+	<div class="container">
 
-			
-		</div>
-			<div class="innerbox content">
+		<div ng-view></div>
 
-
-
-			</div>
-			<div class="innerbox footer"></div>
-			
-	
-		</div>
-		<div class="box box3"></div>
-		
 	</div>
+			
 
 
 	<script type="text/javascript" src="{{asset('bower_components/angular/angular.min.js')}}"></script>

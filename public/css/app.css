@@ -1,7 +1,10 @@
 
 /*# sourceMappingURL=app.css.map */
 
-background:purple;
+.container {
+	background:purple;
+}
+
 #comment-box{
 	width:910px;
 }
