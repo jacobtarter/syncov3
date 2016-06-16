@@ -65,6 +65,9 @@ img {
 	white-space:normal;
 	max-width:75%;
 }
+.eachpost{
+	border:.5px solid black;
+}
 
 
 @media all and (max-width:900px){

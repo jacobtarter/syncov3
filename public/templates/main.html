@@ -12,7 +12,8 @@
 		
 	<!table class="table table-hover">
 		<!tr ng-repeat-start="x in posts | orderBy : '-vote_score'">
-		<div ng-repeat="x in posts | orderBy : '-vote_score'">
+		
+		<div class="eachpost" ng-repeat="x in posts | orderBy : '-vote_score'">
 
 		  	<div class="list title">
 				<button type="button" class="btn btn-link" ng-click="viewPost(x.id)"><b>{{ x.title }}</b></button>
