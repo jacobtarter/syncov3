@@ -36,6 +36,7 @@
 .innerwrapper {
 	display:flex;
 	flex-direction: column;
+	height:100%;
 }
 
 .box {
@@ -44,7 +45,7 @@
 
 }
 
-.inbox {
+.innerbox {
 	flex:1;
 }
 .inbox1 {
