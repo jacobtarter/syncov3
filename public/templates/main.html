@@ -10,8 +10,9 @@
 
 	<div class="maincontent posts">
 		
-	<table class="table table-hover">
-		<tr ng-repeat-start="x in posts | orderBy : '-vote_score'">
+	<!table class="table table-hover">
+		<!tr ng-repeat-start="x in posts | orderBy : '-vote_score'">
+		<div ng-repeat="x in posts | orderBy : '-vote_score'">
 
 		  	<div class="list position">{{ $index + 1 }}</div>
 			<div class="list score">{{ x.vote_score }}</div> 
@@ -29,7 +30,7 @@
 				OP: {{ x.name }} Comments: {{ x.comment_count }}		
 			</div>
 
-		    <div ng-repeat-end class="list editdelete">
+		    <div class="list editdelete">
 	    		<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-synchronization"</span> Edit</button>
 		    	
 	    		<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-warning-sign"></span> Delete</button>
@@ -37,9 +38,9 @@
 		    </div>
 
 
-		</tr>
+		</div>
 
-	</table>
+	<!/table>
 	</div>
 	
 	<div class="maincontent login">
