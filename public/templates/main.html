@@ -1,64 +1,56 @@
 <link rel="stylesheet" type="text/css" href="css/app.css">
 
-<div class = "bigBox">
-	<div class="loginBox"> </div>
-<div class = "container">
-<div>
+
 	<a href = "http://synco.xyz/#/">
 	<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth" alt="SYNCO SYNCO SYNCO"></img>
 	</a>
-</div>
+		
 
-<div class="loginBox">
-	<p ng-show="checkAuth()"> Hello, {{getUser()}}</p>
-	<button class="btn btn-default btn-lg btn-post" ng-show="checkAuth()" ng-click="newPost()">New Post</button>
-	<a href = "#/login"><button class="btn btn-default btn-lg btn-post" ng-show="!checkAuth()">Login</button></a>
-	<a href = "#/register"><button class="btn btn-default btn-lg btn-post" ng-show="!checkAuth()">Register</button></a>
-	<a href = "#/logout"><button class="btn btn-default btn-lg btn-post" ng-show="checkAuth()"> Logout </button></a>
-</div>
+	<div class="loginBox">
+		<p ng-show="checkAuth()"> Hello, {{getUser()}}</p>
+		
+		<button class="btn btn-default btn-lg btn-post" ng-show="checkAuth()" ng-click="newPost()">New Post</button>
+		
+		<a href = "#/login"><button class="btn btn-default btn-lg btn-post" ng-show="!checkAuth()">Login</button></a>
+		
+		<a href = "#/register"><button class="btn btn-default btn-lg btn-post" ng-show="!checkAuth()">Register</button></a>
+		
+		<a href = "#/logout"><button class="btn btn-default btn-lg btn-post" ng-show="checkAuth()"> Logout </button></a>
+	</div>
 
 
-<!--<li><a href = "#/post"><button class="btn btn-default btn-md btn-post" ng-show="checkAuth()">New Post</button></a></div>
-<li><a href = "#/login"><button class="btn btn-default btn-lg btn-post" ng-show="!checkAuth()">Login</button></a></div>
-<li><a href = "#/logout"><button class="btn btn-default btn-md btn-post" ng-show="checkAuth()">Logout</button></a> </div>
-col-sm-6-offset-6 -->
 
 <body>
-		<div class = "myWrapper">
-			<table class="table">
-			<thead>
-		<tr>
-		</tr>
-	</thead>
-	<tbody>
-		<tr ng-repeat="x in posts | orderBy : '-vote_score'">
+		
+	<table class="table">
+		<thead>
+			<tr>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr ng-repeat="x in posts | orderBy : '-vote_score'">
 
-		  	<td>
-					<div class = "commentHeader">
-						<div class = "textWrapper"><b> Title: {{ x.title }} </br> <span class ="newline"> Original Poster: {{ x.name }} </b>
-						</span>
-					</div>
-					</div>
-						 <div class="leftAlign"> Score: {{ x.vote_score }}
-							 <span class="pos">({{ x.upvotes }} </span>/<span class="neg">{{ x.downvotes }}) </span> Comments: {{ x.comment_count }}
-						 </div>
-					 </div>
-					</td>
+			  	<td>
+					<b> {{ x.title }} </b></br> OP: {{ x.name }} </b>
+					Score: {{ x.vote_score }}
+					({{ x.upvotes }} / {{ x.downvotes }} ) Comments: {{ x.comment_count }}		
+				</td>
 
-		    <td>
-					<div class="commentFooter">
-					<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()" ng-disabled="checkUpvote(x.id)"><span class="glyphicon glyphicon-arrow-up"></span> Upvote </button>
-		    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-arrow-down"></span> Downvote </button>
-		    	<button class="btn btn-default btn-xs btn-view" ng-click="viewPost(x.id)"><span class="glyphicon glyphicon-eye-open"></span> View/Comment</button>
-		    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-synchronization"</span> Edit</button>
-		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-warning-sign"></span> Delete</button>
-					</div>
-		    </td>
+			    <td>
+						<div class="commentFooter">
+						<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()" ng-disabled="checkUpvote(x.id)"><span class="glyphicon glyphicon-arrow-up"></span> Upvote </button>
+			    	<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-arrow-down"></span> Downvote </button>
+			    	<button class="btn btn-default btn-xs btn-view" ng-click="viewPost(x.id)"><span class="glyphicon glyphicon-eye-open"></span> View/Comment</button>
+			    	<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-synchronization"</span> Edit</button>
+			    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-warning-sign"></span> Delete</button>
+						</div>
+			    </td>
 
 
-		</tr>
+			</tr>
 
-	</tbody>
+		</tbody>
 </table>
 </body>
 </div>
