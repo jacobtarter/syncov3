@@ -58,6 +58,7 @@ img {
 		flex-direction:column;
 	}
 	.posts{
+		display: flex;
 		flex:1;
 		order:1;
 	}
