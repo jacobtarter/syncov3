@@ -90,6 +90,8 @@ img {
 @media all and (max-width:900px){
 	.wrapper{
 		flex-direction:column;
+		padding-left:0px;
+		padding-right:0px;
 	}
 	.posts{
 
