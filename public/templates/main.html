@@ -25,22 +25,15 @@
 			<div class="list voting">
 		  		
 				{{ x.vote_score }} ({{ x.upvotes }}/{{ x.downvotes }})
-		  		<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()" ng-disabled="checkUpvote(x.id)"><span class="glyphicon glyphicon-thumbs-up"></span>  </button>
-
-	    		<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-thumbs-down"></span>  </button>
-	    	</div>
+				<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()" ng-disabled="checkUpvote(x.id)"><span class="glyphicon glyphicon-thumbs-up"></span>  </button>
+				<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-thumbs-down"></span>  </button></div>
 
 		  	
-			<div class="list info">	
-				OP: {{ x.name }} Comments: {{ x.comment_count }}		
-			</div>
+			<div class="list info"><b>OP:</b> {{ x.name }} <b>Comments:</b> {{ x.comment_count }}</div>
 
 		    <div class="list editdelete">
 	    		<button class="btn btn-default btn-xs btn-edit" ng-click="editPost(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-synchronization"</span> Edit</button>
-		    	
-	    		<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-warning-sign"></span> Delete</button>
-			
-		    </div>
+		    	<button class="btn btn-danger btn-xs btn-delete" ng-click="confirmDelete(x.id)" ng-show="checkOwner(x.name)"><span class="glyphicon glyphicon-warning-sign"></span> Delete</button></div>
 
 
 		</div>
