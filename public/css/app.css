@@ -66,7 +66,8 @@ img {
 	max-width:75%;
 }
 .eachpost{
-	border:.5px solid black;
+	border:.25px solid black;
+	margin:10px;
 }
 
 
