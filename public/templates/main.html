@@ -6,13 +6,9 @@
 
 	
 
-	<div class="innerbox inbox1">
-	<a href = "http://synco.xyz/#/">
-	<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth" alt="SYNCO SYNCO SYNCO"></img>
-	</a>
-	</div>
+	
 
-	<div class="innerbox inbox2">
+	<div class="maincontent posts">
 		
 	<table class="table table-hover">
 		<tr ng-repeat="x in posts | orderBy : '-vote_score'">
@@ -48,7 +44,7 @@
 	</table>
 	</div>
 	
-	<div class="innerbox inbox3">
+	<div class="maincontent login">
 		<p ng-show="checkAuth()"> Hello, {{getUser()}}</p>
 		
 		<button class="btn btn-default btn-lg btn-post" ng-show="checkAuth()" ng-click="newPost()">New Post</button>

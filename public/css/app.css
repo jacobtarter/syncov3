@@ -1,49 +1,44 @@
 
 /*# sourceMappingURL=app.css.map */
 
-#container{
-	background:purple;
-}
-
-#input{
-	
-	
-}
-
-#main-box{
-	
-
-}
 
 #comment-box{
 	width:910px;
 }
 
-#post-table{
-	
-}
 
-#login-box{
-	
-}
 
+/* Main flex container for master page */
 .wrapper {
 	display:flex;
 	width:100%;
 	height:100%;
-	margin:25 auto;
+	margin:0 auto;
 }
-.inner-wrapper {
-	display:flex;
-	
-}
-
+/*Main flex object for master page */
 .box {
 	flex:1;
 	border:10px black;
 
 }
 
+.box1 {
+	background:purple;
+}
+/* Flex object and container for content items */
+.box2 {
+	background:white;
+	flex:6;
+	display:flex;
+	width:100%;
+	height:100%;
+	flex-direction:column;
+}
+.box3 {
+	background:purple;
+}
+
+/* Main flex object for main posts page */
 .innerbox {
 	flex:1;
 }
@@ -59,16 +54,4 @@
 	background:orange;
 }
 
-.box1 {
-	background:purple;
-}
-.box2 {
-	background:white;
-	flex:6;
-	display:flex;
-	width:100%;
-	flex-direction:column;
-}
-.box3 {
-	background:purple;
-}
+

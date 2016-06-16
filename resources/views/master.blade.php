@@ -15,8 +15,13 @@
 		<div class="box box1"></div>
 		<div class="box box2">
 
-			
-			<div ng-view></div>
+			<div class="innerbox logo">
+				<a href = "http://synco.xyz/#/">
+				<img src="http://jmurray.altervista.org/Synco/SyncoImgName.png" class = "imgWidth" alt="SYNCO SYNCO SYNCO"></img>
+				</a>
+			</div>
+			<div class="innerbox content"><div ng-view></div></div>
+			<div class="innerbox footer"></div>
 			
 	
 		</div>
