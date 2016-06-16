@@ -88,23 +88,21 @@ img {
 
 .first-line{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-direction: row;
-	background:blue;
 
 }
 .second-line{
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	border:10px solid red;
-	background:red;
+	
 }
 .third-line{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	flex-direction: row;
-	background:green;
+	
 }
 
 
