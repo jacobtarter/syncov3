@@ -34,7 +34,6 @@ body {
 	flex: 6;
 	margin: 10px;
 	display: flex;
-	flex-direction:column;
 }
 .list {
 	flex: 1;
@@ -88,6 +87,7 @@ img {
 
 @media all and (max-width:900px){
 	.wrapper{
+		flex-direction:column;
 	}
 	.posts{
 
