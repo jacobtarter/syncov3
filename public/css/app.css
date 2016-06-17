@@ -73,6 +73,11 @@ body {
 	margin:10px;
 }
 
+.newpost{
+	background:white;
+	border:4px solid black;
+}
+
 
 /* Flex object within wrapper, also flex container for the group of posts */
 
