@@ -7,12 +7,12 @@
 			<form name="editForm" ng-submit="editPost(editForm)">
 
 				<div class="form-group">
-					<input type="text" name="Title" ng-model ="post[0].title"
-					required placeholder="Title of your post" class="form-control">
+					<TEXTAREA name="text" COLS=60 ROWS=4 ng-model ="post[0].title"
+					required placeholder="Title of your post" class="form-control"></TEXTAREA>
 				</div>
 
 				<div class="form-group">
-					<TEXTAREA name="text"  COLS=60 ROWS=12 name="Body" ng-model="post[0].ptext"
+					<TEXTAREA name="text"  COLS=60 ROWS=12 ng-model="post[0].ptext"
 					required placeholder="Enter your post text" class="form-control"></TEXTAREA>
 				</div>
 
