@@ -223,7 +223,8 @@ img {
 		flex-direction:column;
 		padding-left:0px;
 		padding-right:0px;
-		border:2px solid black;
+		border:0px;
+		background:purple;
 	}
 	img{
 		border:2px solid black;
@@ -241,14 +242,16 @@ img {
 		margin-bottom:10px;
 		border-left:0px;
 		border-right:0px;
+		background:white;
+		border:2px solid black;
 	}
 	.login{
 		flex:1;
 		width: 100%;
 		margin:0px;
 		margin-bottom:10px;
-		border-left:0px;
-		border-right:0px;
+		border:2px solid black;
+		background:white;
 	}
 
 	.container{
