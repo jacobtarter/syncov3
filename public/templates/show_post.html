@@ -29,23 +29,22 @@
 		</form>
 	</div>
 
-	<table class= "table">
+	<div class= "commenttable">
 	
-		<tr>
-			<th><h1> The Comments </h1> </th>
-		</tr>
+		<div class="commenttabletitle"> The Comments </div>
+		
 	
-	<tr ng-repeat="x in comments">
+		<div class="thecomments" ng-repeat="x in comments">
 
-		    <td>{{ x.name }}</td>
+			    <div class="commentposter">{{ x.name }}</div>
 
-		    <td>{{ x.ctext }}</td>
+			    <div class="commenttext">{{ x.ctext }}</div>
 
-		    <td>{{ x.created_at }}</td>
+			    <div class="commentdate">{{ x.created_at }}</div>
 
-	</tr>
+		</div>
 	
-	</table>
+	</div>
 
 </div>
 
