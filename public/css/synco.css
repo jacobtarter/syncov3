@@ -6,7 +6,7 @@ body {
 	background: purple;
 }
 button[disabled=disabled], button:disabled {
-	background:purple;
+	background:#d9d9d9;
 }
 
 /* Flex Container for logo link at top */
