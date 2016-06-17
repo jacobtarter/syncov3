@@ -278,6 +278,7 @@ img {
 	}
 	.comment-box{
 		border:2px solid black;
+		order:2;
 	}
 	.commenttable{
 		border:2px solid black;
