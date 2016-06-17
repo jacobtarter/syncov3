@@ -96,6 +96,17 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	//Delete Post
 
+	$scope.confirmLogout = function() {
+		if(userModel.getAuthStatus()
+		{
+			var doLogout = confirm('Are you sure you want to logout?');
+			if (doLogout)
+			{
+				userModel.doUserLogout();
+			}
+		});
+	}
+
 	$scope.confirmDelete = function(id) {
 
 		if (userModel.getAuthStatus())
