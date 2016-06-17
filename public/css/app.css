@@ -40,6 +40,11 @@ body {
 	padding: 20px;
 }
 
+.showcontainer{
+	display:flex;
+	background:white;
+}
+
 
 /* Flex object within wrapper, also flex container for the group of posts */
 
