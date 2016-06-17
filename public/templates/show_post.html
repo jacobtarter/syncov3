@@ -3,19 +3,19 @@
 	<body>
 	<div class="showcontainer">
 
-	<table class= "table">
+	<table class= "showpost">
 		    
-		<tr><td>{{ post[0].title }}</td></tr> 
+		<div class="showtitle">{{ post[0].title }}</div>
 		
-		<tr><td>Original Poster: {{ post[0].name }}</td></tr>
+		<div class="showposter">Original Poster: {{ post[0].name }}</div>
 		
-		<tr><td>Created On: {{ post[0].created_at }}</td></tr> 
+		<div class="showdate">Created On: {{ post[0].created_at }}</div> 
 
-		<tr><td>Score: 	{{ post[0].vote_score }}({{ post[0].upvotes }}/{{ post[0].downvotes }})</td></tr>
+		<div class="showscore">Score: 	{{ post[0].vote_score }}({{ post[0].upvotes }}/{{ post[0].downvotes }})</div>
 		
-		<tr><td>{{ post[0].ptext }}</td></tr>
+		<div class="showtext">{{ post[0].ptext }}</div>
 
-	</table>
+	</div>
 
 	<div id="comment-box" ng-show="checkAuth()">
 	<hi>Post Your Comment Here</h1>
