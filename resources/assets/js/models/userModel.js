@@ -8,7 +8,7 @@ synco.factory('userModel', ['$http', '$cookies', function($http, $cookies) {
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				url: baseUrl + 'auth',
+				url: 'www.synco.xyz/auth',
 				method: "POST",
 				data: {
 					email: loginData.email,

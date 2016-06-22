@@ -367,11 +367,16 @@ synco.controller('editController', ['$scope', '$http', '$location', '$routeParam
 }]);
 synco.controller('showController', ['$scope', '$http', '$location', '$routeParams', 'userModel', function($scope, $http, $location, $routeParams, userModel) {
 
+		$scope.API_URL = "http://www.synco.xyz/api/v1/";
+
 		//load in route param for post id
 		$scope.id = $routeParams.id;
 
 		//Pull data for given post id
-		$http.get(baseUrl + api + "posts/" + $scope.id )
+		alert($scope.API_URL + "posts/" + $scope.id);
+		console.log($scope.API_URL + "posts/" + $scope.id);
+		
+		$http.get($scope.API_URL + "posts/" + $scope.id )
 		.success(function(response){
 			$scope.post= response;
 		}).error(function(response) {
@@ -380,7 +385,7 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 
 
 		//Pull comments for given post id
-		$http.get(baseUrl + api + "comments/" + $scope.id)
+		$http.get($scope.API_URL + "comments/" + $scope.id)
 		.success(function(response){
 			$scope.comments= response;
 			
