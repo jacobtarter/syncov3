@@ -76,7 +76,7 @@ button[disabled=disabled], button:disabled {
 .thecomments{
 	display:flex;
 	flex-direction:column;
-	border:1px solid #808080;
+	border:1px solid #cccccc;
 	margin:10px;
 	padding:5px;
 	border-radius:12.5px;
@@ -101,7 +101,7 @@ button[disabled=disabled], button:disabled {
 }
 
 .showtext{
-	border:1px solid #808080;
+	border:1px solid #cccccc;
 	padding:25px;
 	border-radius:12.5px;
 	margin-top:10px;
