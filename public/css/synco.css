@@ -35,6 +35,7 @@ button[disabled=disabled], button:disabled {
 /* Main flex container for master page where the ng-view is */
 
 .container {
+	display:flex;
 	width: 95%;
 	margin-bottom:100px;
 	justify-content:center;
@@ -46,6 +47,7 @@ button[disabled=disabled], button:disabled {
 .wrapper {
 	display:flex;
 	justify-content:center;
+
 
 }
 
