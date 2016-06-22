@@ -65,6 +65,10 @@ button[disabled=disabled], button:disabled {
 
 	
 }
+.showcontainercontainer{
+	width:80%;
+	justify-content:center;
+}
 
 .showpost{
 	display:flex;
