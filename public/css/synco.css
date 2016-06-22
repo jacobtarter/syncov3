@@ -52,6 +52,8 @@ button[disabled=disabled], button:disabled {
 	display:flex;
 	
 	flex-direction:column;
+
+	width:80%;
 	
 }
 
