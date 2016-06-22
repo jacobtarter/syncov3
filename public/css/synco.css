@@ -1,12 +1,8 @@
 
 
 body {
-    
-    background-attachment: fixed;
-}
-
-body {
 	background: linear-gradient(to bottom right, purple, black);
+	background-attachment: fixed;
 }
 button[disabled=disabled], button:disabled {
 	background:#d9d9d9;
