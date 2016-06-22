@@ -60,6 +60,8 @@ button[disabled=disabled], button:disabled {
 
 	border: 3px solid blue;
 
+	align-self: center;
+
 
 	
 }
