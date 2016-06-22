@@ -39,6 +39,7 @@ button[disabled=disabled], button:disabled {
 	width: 95%;
 	margin-bottom:100px;
 	justify-content:center;
+	text-align: center;
 
 }
 
