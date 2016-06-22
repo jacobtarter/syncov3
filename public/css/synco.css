@@ -286,6 +286,7 @@ img {
 @media all and (max-width:550px){
 	.login{
 		position:static;
+		width:100%;
 
 	}
 	.posts{
