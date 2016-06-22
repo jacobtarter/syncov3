@@ -59,6 +59,8 @@ button[disabled=disabled], button:disabled {
 	justify-content:center;
 
 	align-items:stretch;
+
+	border:4px solid black;
 	
 }
 
