@@ -1,7 +1,7 @@
 
 
 body {
-	background: linear-gradient(to bottom right, purple, black);
+	background: linear-gradient(to bottom right, purple, #330033);
 	background-attachment: fixed;
 }
 button[disabled=disabled], button:disabled {
@@ -126,7 +126,7 @@ button[disabled=disabled], button:disabled {
 
 .posts {
 	flex: 6;
-	margin-right: 20%;
+	margin-right: 15%;
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
