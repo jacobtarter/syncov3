@@ -130,6 +130,7 @@ button[disabled=disabled], button:disabled {
 
 /* flex object for box with login/new post*/
 .login {
+	display:flex;
 	flex: 1;
 	margin: 0px;
 	padding: 20px;
