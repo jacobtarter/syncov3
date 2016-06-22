@@ -58,7 +58,7 @@ button[disabled=disabled], button:disabled {
 
 	width:80%;
 
-
+	border: 3px solid blue;
 
 
 	
@@ -67,6 +67,7 @@ button[disabled=disabled], button:disabled {
 	display:flex;
 	justify-content:center;
 	align-items:stretch;
+	border:3px solid red;
 }
 
 .showpost{
