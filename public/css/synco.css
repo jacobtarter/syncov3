@@ -30,6 +30,7 @@ button[disabled=disabled], button:disabled {
 
 .container {
 	width: 90%;
+	margin-bottom:100px;
 
 }
 
