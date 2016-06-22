@@ -175,6 +175,10 @@ img {
 
 }
 
+.logingreeting{
+	width:100%;
+}
+
 .eachpost:hover {
 	opacity:.90;
 }
