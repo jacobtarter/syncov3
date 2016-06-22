@@ -120,7 +120,7 @@ button[disabled=disabled], button:disabled {
 
 .posts {
 	flex: 6;
-	margin-right: 10%;
+	margin-right: 20%;
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
