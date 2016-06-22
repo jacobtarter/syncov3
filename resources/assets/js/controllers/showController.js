@@ -4,7 +4,7 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 		$scope.id = $routeParams.id;
 
 		//Pull data for given post id
-		$http.get(baseUrl + api + "posts/" + $scope.id )
+		$http.get($scope.API_URL + "posts/" + $scope.id )
 		.success(function(response){
 			$scope.post= response;
 		}).error(function(response) {
