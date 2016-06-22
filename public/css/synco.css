@@ -134,7 +134,9 @@ button[disabled=disabled], button:disabled {
 
 img {
 	max-width: 100%;
-	border: 4px solid black;
+	border: 1px solid black;
+	border-radius:12.5px;
+	padding:10px;
 }
 
 
@@ -262,9 +264,7 @@ img {
 		border:0px;
 		background:purple;
 	}
-	img{
-		border:2px solid black;
-	}
+
 	.posts{
 
 		flex:1;
