@@ -66,6 +66,7 @@ button[disabled=disabled], button:disabled {
 	
 }
 .showcontainercontainer{
+	width:500px;
 	display:flex;
 	justify-content:center;
 }
