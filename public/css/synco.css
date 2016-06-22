@@ -101,8 +101,9 @@ button[disabled=disabled], button:disabled {
 }
 
 .showtext{
-	border:.25px solid black;
+	border:.1px solid black;
 	padding:25px;
+	border-radius:12.5px;
 }
 /* Flex object within wrapper, also flex container for the group of posts */
 
