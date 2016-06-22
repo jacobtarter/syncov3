@@ -158,6 +158,8 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	angular.extend($scope, {
 		doLogin: function(loginForm) 
 		{
+			console.log(baseUrl + 'auth');
+
 			var data = {
 					email: $scope.login.email,
 					password: $scope.login.password
