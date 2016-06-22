@@ -113,7 +113,7 @@ button[disabled=disabled], button:disabled {
 	margin-left:25px;
 	background:white;
 	border:1px solid black;
-	border-radius:12.5;
+	border-radius:12.5px;
 }
 
 
