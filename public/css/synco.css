@@ -51,21 +51,26 @@ button[disabled=disabled], button:disabled {
 .showpost{
 	display:flex;
 	flex-direction:column;
-	border: 4px solid black;
+	border: 1px solid black;
 	margin-bottom: 10px;
 	background:white;
-}
-
-.comment-box{
-	border: 4px solid black;
-	margin-bottom: 10px;
-	background:white;
+	border-radius:12.5px;
 	padding:25px;
 }
 
-.commenttable{
-	border:4px solid black;
+.comment-box{
+	border: 1px solid black;
+	margin-bottom: 10px;
 	background:white;
+	padding:25px;
+	border-radius:12.5px;
+}
+
+.commenttable{
+	border:1px solid black;
+	background:white;
+	border-radius:12.5px;
+	padding: 10px;
 }
 
 .thecomments{
@@ -73,6 +78,8 @@ button[disabled=disabled], button:disabled {
 	flex-direction:column;
 	border:.25px solid black;
 	margin:10px;
+	padding:5px;
+	border-radius:12.5px;
 }
 
 .newpost{
@@ -93,7 +100,10 @@ button[disabled=disabled], button:disabled {
 	padding:25px;
 }
 
-
+.showtext{
+	border:.25px solid black;
+	padding:25px;
+}
 /* Flex object within wrapper, also flex container for the group of posts */
 
 .posts {
