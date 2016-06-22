@@ -138,6 +138,8 @@ img {
 
 	flex-direction: column;
 
+	border-radius: 25px;
+
 }
 
 .eachpost:hover {
