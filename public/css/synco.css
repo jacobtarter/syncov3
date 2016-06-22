@@ -16,6 +16,10 @@ button[disabled=disabled], button:disabled {
 	margin:20px;
 }
 
+.btn-login {
+	width:100%;
+}
+
 /* Flex item that holds logo link */
 
 .logo {
