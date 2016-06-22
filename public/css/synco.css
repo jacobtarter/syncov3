@@ -68,6 +68,7 @@ button[disabled=disabled], button:disabled {
 	display:flex;
 	justify-content:center;
 	border:3px solid red;
+
 }
 
 .showpost{
@@ -78,6 +79,7 @@ button[disabled=disabled], button:disabled {
 	background:white;
 	border-radius:12.5px;
 	padding:25px;
+	width:100%;
 }
 
 .comment-box{
