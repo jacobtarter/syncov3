@@ -67,6 +67,7 @@ button[disabled=disabled], button:disabled {
 	display:flex;
 	justify-content:center;
 	border:3px solid red;
+	width:100%;
 }
 
 .showpost{
