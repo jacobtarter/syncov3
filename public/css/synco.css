@@ -80,6 +80,7 @@ button[disabled=disabled], button:disabled {
 	border-radius:12.5px;
 	padding:25px;
 	width:100%;
+	flex-wrap:wrap;
 }
 
 .comment-box{
