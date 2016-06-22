@@ -132,13 +132,16 @@ img {
 	margin-bottom: 5px;
 	background:white;
 	border: 1px solid black;
-	opacity:.85;
 	
 	flex-wrap: wrap;
 	justify-content: space-between;
 
 	flex-direction: column;
 
+}
+
+.eachpost:hover {
+	opacity:.8;
 }
 
 .first-line{
