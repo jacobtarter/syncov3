@@ -240,7 +240,15 @@ img {
 }
 /* End of Post Items */
 
+@media all and (max-width:1000px){
+	.login{
+		padding:10px;
+	}
+	.posts{
+		margin-right:30px;
+	}
 
+}
 /* Medium width layout changes */
 @media all and (max-width:750px){
 	.wrapper{
