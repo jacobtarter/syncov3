@@ -38,8 +38,7 @@ button[disabled=disabled], button:disabled {
 .wrapper {
 	display:flex;
 	justify-content:center;
-	border: 2px solid black;
-	border-radius: 12.5px;
+	
 }
 
 .showcontainer{
