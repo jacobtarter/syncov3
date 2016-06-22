@@ -222,7 +222,6 @@ img {
 	}
 	.eachpost{
 		margin:0px;
-		margin-bottom:10px;
 
 	}
 	.login{
@@ -259,12 +258,12 @@ img {
 	}
 	.eachpost{
 		margin:0px;
-		margin-bottom:10px;
 		border-left:0px;
 		border-right:0px;
 		background:white;
 		border:2px solid black;
 		padding:10px;
+		margin-bottom:3px;
 	}
 	.login{
 		flex:1;
