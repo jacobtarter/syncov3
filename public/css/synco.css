@@ -283,6 +283,16 @@ img {
 	}
 }
 
+@media all and (max-width:550px){
+	.login{
+		position:static;
+
+	}
+	.posts{
+		margin:0px;
+	}
+}
+
 /* Small width layout changes */
 @media all and (max-width:500px){
 	.wrapper{
