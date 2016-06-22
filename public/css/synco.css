@@ -287,6 +287,8 @@ img {
 	.login{
 		position:static;
 		width:100%;
+		margin:0px;
+		margin-bottom:3px;
 
 	}
 	.posts{
