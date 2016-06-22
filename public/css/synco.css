@@ -3,7 +3,7 @@
 
 
 body {
-	background: purple;
+	background: linear-gradient(to bottom right, purple, black);
 }
 button[disabled=disabled], button:disabled {
 	background:#d9d9d9;
