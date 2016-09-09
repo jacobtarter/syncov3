@@ -6,9 +6,9 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 		$scope.id = $routeParams.id;
 
 		//Pull data for given post id
-		alert($scope.API_URL + "posts/" + $scope.id);
+		//alert($scope.API_URL + "posts/" + $scope.id);
 		console.log($scope.API_URL + "posts/" + $scope.id);
-		
+
 		$http.get($scope.API_URL + "posts/" + $scope.id )
 		.success(function(response){
 			$scope.post= response;
@@ -21,19 +21,19 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 		$http.get($scope.API_URL + "comments/" + $scope.id)
 		.success(function(response){
 			$scope.comments= response;
-			
+
 		}).error(function(response) {
 			alert("error getting your json");
 		});
 
 		/*
 		//Load add comment page
-		$scope.addComment = function(id) 
+		$scope.addComment = function(id)
 		{
 			console.log('comment' + id);
 
 			$location.path('/comment/' + id );
-			
+
 		}
 		*/
 		angular.extend($scope, {
@@ -45,7 +45,7 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 
 		angular.extend($scope, {
 		makeComment: function(commentForm) {
-		$http({	
+		$http({
 			headers: {
 				'Content-Type': 'application/json'
 			},
@@ -65,6 +65,6 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 		});
 	}
 	});
-	
+
 
 }]);
