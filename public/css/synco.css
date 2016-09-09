@@ -29,7 +29,7 @@ button[disabled=disabled], button:disabled {
 	flex: 1;
 	width: 50%;
 	text-align: center;
-	
+
 }
 
 /* Main flex container for master page where the ng-view is */
@@ -53,7 +53,7 @@ button[disabled=disabled], button:disabled {
 
 .showcontainer{
 	display:flex;
-	
+
 	flex-direction:column;
 
 
@@ -62,7 +62,7 @@ button[disabled=disabled], button:disabled {
 	align-self: center;
 
 
-	
+
 }
 .showcontainercontainer{
 	display:flex;
@@ -163,7 +163,7 @@ button[disabled=disabled], button:disabled {
 	border:1px solid black;
 	border-radius:12.5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	position:fixed; right: 2%; 
+	position:fixed; right: 2%;
 	flex-direction:column;
 	width:15%;
 	flex-wrap:wrap;
@@ -190,7 +190,7 @@ img {
 	margin-bottom: 5px;
 	background:white;
 	border: 1px solid black;
-	
+
 	flex-wrap: wrap;
 	justify-content: space-between;
 
@@ -221,13 +221,13 @@ img {
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-	
+
 }
 .third-line{
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: row;
-	
+
 }
 
 .editpostform {
@@ -241,7 +241,7 @@ img {
 
 /* Flex object category, items within each post */
 .list {
-	
+
 }
 
 /* Flex items for each post*/
@@ -261,13 +261,13 @@ img {
 .score-breakdown{
 }
 .voting{
-	
+
 }
 .editdelete{
-	
+
 }
 .info{
-	
+
 	text-alight:right;
 }
 /* End of Post Items */
@@ -284,22 +284,22 @@ img {
 @media all and (max-width:750px){
 	.wrapper{
 		flex-direction:column;
-		
+
 	}
 	.posts{
 
 		flex:1;
 		order:1;
-		
+
 	}
 	.eachpost{
 		margin-bottom:3px;
 
 	}
 	.login{
-		
+
 		flex:1;
-		
+
 	}
 
 	.container{
@@ -307,6 +307,7 @@ img {
 	}
 }
 
+/*
 @media all and (max-width:550px){
 	.login{
 		position:static;
@@ -319,6 +320,7 @@ img {
 		margin:0px;
 	}
 }
+*/
 
 /* Small width layout changes */
 @media all and (max-width:500px){
@@ -369,8 +371,8 @@ img {
 		margin-bottom:10px;
 	}
 	.registerbox{
-		
-		
+
+
 	}
 	.loginform{
 	}
