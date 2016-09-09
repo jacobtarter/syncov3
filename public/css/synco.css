@@ -281,7 +281,7 @@ img {
 
 }
 /* Medium width layout changes */
-@media all and (max-width:770px){
+@media all and (max-width:850px){
 	.wrapper{
 		flex-direction:column;
 
