@@ -1,5 +1,5 @@
 synco.controller('userController', ['$scope', '$http', '$location', 'userModel', 'apiModel', function($scope, $http, $location, userModel, apiModel) {
-	
+
 	$scope.API_URL = "http://www.synco.xyz/api/v1/";
 
 	$scope.posts = null;
@@ -10,12 +10,12 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	//Get Posts Method
 
-	$scope.checkAuth = function() 
+	$scope.checkAuth = function()
 	{
 		return userModel.getAuthStatus();
 	}
 
-	$scope.loadVotes = function() 
+	$scope.loadVotes = function()
 	{
 		console.log("voteurl: " + $scope.API_URL + "votes/" + userModel.getId());
 		$http.get($scope.API_URL + "votes/" + userModel.getId())
@@ -24,7 +24,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 		});
 	};
 
-	$scope.loadData = function() 
+	$scope.loadData = function()
 	{
 		if ($scope.checkAuth())
 		{
@@ -36,12 +36,12 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			.success(function(response){
 				$scope.posts = response;
 			});
-		
+
 	};
 
 	$scope.checkUpvote = function(postId) {
 		if($scope.voteTable)
-		{	
+		{
 			for (var i = 0; i < $scope.voteTable.length; i++)
 			{
 				if ($scope.voteTable[i].v_pid == postId)
@@ -82,7 +82,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				}
 				else
 				{
-					
+
 				}
 			}
 			return false;
@@ -111,7 +111,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	$scope.confirmDelete = function(id) {
 
 		if (userModel.getAuthStatus())
-		{	
+		{
 			var isConfirmDelete = confirm('Are you sure you want to delete?');
 			if (isConfirmDelete) {
 				$http({
@@ -133,22 +133,22 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			return false;
 		}
 	}
-	
+
 	//Load edit post page
-	
-	$scope.editPost = function(id) 
+
+	$scope.editPost = function(id)
 	{
 		console.log('viewPost' + id);
 
 		$location.path('/post/' + id );
-		
+
 	}
 
-	$scope.showPostForm = function() 
+	$scope.showPostForm = function()
 	{
 		return $scope.postForm;
 		console.log($scope.postForm);
-		
+
 	}
 
 
@@ -156,9 +156,9 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	//Submit login attempt
 
 	angular.extend($scope, {
-		doLogin: function(loginForm) 
+		doLogin: function(loginForm)
 		{
-			console.log(baseUrl + 'auth');
+			console.log($scope.API_URL + 'auth');
 
 			var data = {
 					email: $scope.login.email,
@@ -184,12 +184,12 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 					password_confirmation: $scope.login.password2
 				}
 
-				userModel.register(data).then(function() 
+				userModel.register(data).then(function()
 				{
 					$location.path('/');
 				});
 			}
-			else 
+			else
 			{
 				alert("Your password fields do not match");
 			}
@@ -200,11 +200,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	angular.extend($scope, {
 	makePost: function() {
-		$http({	
+		$http({
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			url: baseUrl + api + "posts",
+			url: $scope.API_URL + "posts",
 			method: "POST",
 			data: {
 				title: $scope.postTitle,
@@ -214,7 +214,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			}
 		}).success(function(response) {
 			console.log("post created, redirecting to home");
-			
+
 			$scope.loadData();
 		}).error(function(data,status,headers) {
 			console.log(data);
@@ -225,11 +225,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	angular.extend($scope, {
 	upVote: function(id) {
-		$http({	
+		$http({
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			url: baseUrl + api + "votes",
+			url: $scope.API_URL + "votes",
 			method: "POST",
 			data: {
 				v_pid: id,
@@ -245,7 +245,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 				console.log("vote created, redirecting to home");
 				$scope.loadData();
 			}
-			
+
 		}).error(function(data,status,headers) {
 			console.log("error");
 			alert("Error Making Vote - Make sure form is filled.");
@@ -255,11 +255,11 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 
 	angular.extend($scope, {
 	downVote: function(id) {
-		$http({	
+		$http({
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			url: baseUrl + api + "votes",
+			url: $scope.API_URL + "votes",
 			method: "POST",
 			data: {
 				v_pid: id,
@@ -289,17 +289,17 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	viewPost: function(id) {
 
 		$location.path('/view/' + id );
-	}	
+	}
 	});
 
 	angular.extend($scope, {
 	newPost: function() {
 		$location.path('/post');
-	}	
+	}
 	});
 
-	
-	
+
+
 	angular.extend($scope, {
 		checkOwner: function(id) {
 			return userModel.isUsersPost(id);
@@ -312,7 +312,7 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 	});
 	angular.extend($scope, {
 		checkUpvotes: function(post) {
-			if(userModel.getAuthStatus()) 
+			if(userModel.getAuthStatus())
 			{
 				return userModel.hasUpvoted(post);
 
@@ -321,11 +321,10 @@ synco.controller('userController', ['$scope', '$http', '$location', 'userModel',
 			{
 				return false;
 			}
-			
+
 		}
 	});
 }]);
-
 
 synco.controller('editController', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
 
