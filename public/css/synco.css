@@ -324,7 +324,7 @@ img {
 */
 
 /* Small width layout changes */
-@media all and (max-width:700px){
+@media all and (max-width:750px){
 	.wrapper{
 		flex-direction:column;
 		padding-left:0px;
