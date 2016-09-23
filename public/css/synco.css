@@ -251,6 +251,7 @@ img {
 .btn{
 	white-space:normal;
 	max-width:100%;
+	border:1px solid black;
 }
 
 .score{
