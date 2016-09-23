@@ -97,7 +97,8 @@ button[disabled=disabled], button:disabled {
 	border-radius:12.5px;
 }
 
-.showpost, .comment-box, .commenttable, .thecomments, .commenttabletitle{
+.showpost, .comment-box, .commenttable, .thecomments, .commenttabletitle, .showtitle, .showposter,
+.showdate, .showscore, .showtext{
 	flex: 1 100%;
 }
 
