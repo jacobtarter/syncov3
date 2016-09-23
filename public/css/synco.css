@@ -62,20 +62,13 @@ button[disabled=disabled], button:disabled {
 	align-self: center;
 	justify-content:center;
 	align-items:stretch;
+	width:75%;
 
 
 
 
 }
-.showcontainercontainer{
-	width: 75%;
-	display:flex;
-	justify-content:center;
-	border:3px solid red;
-	align-items:stretch;
 
-
-}
 
 .showpost{
 	display:flex;
