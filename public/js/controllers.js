@@ -373,6 +373,8 @@ synco.controller('showController', ['$scope', '$http', '$location', '$routeParam
 		//load in route param for post id
 		$scope.id = $routeParams.id;
 
+		window.scrollTo(0, 0);
+
 		//Pull data for given post id
 		//alert($scope.API_URL + "posts/" + $scope.id);
 		console.log($scope.API_URL + "posts/" + $scope.id);
