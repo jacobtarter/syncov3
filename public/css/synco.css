@@ -277,6 +277,7 @@ img {
 @media all and (max-width:1000px){
 	.login{
 		padding:10px;
+		right:3%;
 	}
 	.posts{
 	}
