@@ -1,18 +1,15 @@
 <link rel="stylesheet" type="text/css" href="css/synco.css">
 
 
-	
-<body>		
 
-	
+<body>
+
+
 
 	<div class="wrapper">
 
 	<div class="maincontent posts">
-		
-	<!table class="table table-hover">
-		<!tr ng-repeat-start="x in posts | orderBy : '-vote_score'">
-		
+
 		<div class="eachpost" ng-repeat="x in posts | orderBy : '-vote_score'">
 
 		  	<div class="first-line">
@@ -26,14 +23,14 @@
 
 			<div class="second-line">
 				<div class="list voting">
-		  		
+
 		  		<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()" ng-disabled="checkUpvote(x.id)"><span class="glyphicon glyphicon-thumbs-up"></span>  </button>
 
 				<b>{{ x.vote_score }}</b> ({{ x.upvotes }}/{{ x.downvotes }})
-				
+
 				<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-thumbs-down"></span>  </button>
 				</div>
-			
+
 				<div class="list info"><b>OP:</b> {{ x.name }} <b>Comments:</b> {{ x.comment_count }}
 				</div>
 			</div>
@@ -49,9 +46,8 @@
 
 		</div>
 
-	<!/table>
 	</div>
-	
+
 	<div class="maincontent login">
 		<div class="logingreeting">
 		<p ng-show="checkAuth()"> Hello, {{getUser()}}</p>
@@ -68,10 +64,9 @@
 		<div class="loginlogout">
 		<button class="btn btn-default btn-lg btn-login" ng-show="checkAuth()" ng-click="confirmLogout()"> Log Out </button>
 		</div>
-	
+
 	</div>
 
 </div>
 
 </body>
-

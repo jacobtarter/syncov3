@@ -76,7 +76,6 @@ button[disabled=disabled], button:disabled {
 	background:white;
 	border-radius:12.5px;
 	padding:25px;
-	width:100%;
 	flex-wrap:wrap;
 }
 
@@ -93,6 +92,7 @@ button[disabled=disabled], button:disabled {
 	background:white;
 	border-radius:12.5px;
 	padding: 10px;
+	display: flex;
 }
 
 .thecomments{
@@ -102,6 +102,10 @@ button[disabled=disabled], button:disabled {
 	margin:10px;
 	padding:5px;
 	border-radius:12.5px;
+}
+
+.showpost, .comment-box, .commenttable, .thecomments{
+	flex: 1 100%;
 }
 
 .newpost{
