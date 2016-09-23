@@ -61,6 +61,8 @@ button[disabled=disabled], button:disabled {
 
 	align-self: center;
 	justify-content:center;
+	align-items:stretch;
+
 
 
 
@@ -70,6 +72,8 @@ button[disabled=disabled], button:disabled {
 	display:flex;
 	justify-content:center;
 	border:3px solid red;
+	align-items:stretch;
+
 
 }
 
