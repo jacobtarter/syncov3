@@ -85,6 +85,7 @@ button[disabled=disabled], button:disabled {
 	border-radius:12.5px;
 	padding: 10px;
 	display: flex;
+	flex-flow: row wrap;
 }
 
 .thecomments{
@@ -96,7 +97,7 @@ button[disabled=disabled], button:disabled {
 	border-radius:12.5px;
 }
 
-.showpost, .comment-box, .commenttable, .thecomments{
+.showpost, .comment-box, .commenttable, .thecomments, .commenttabletitle{
 	flex: 1 100%;
 }
 
