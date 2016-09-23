@@ -55,7 +55,7 @@ button[disabled=disabled], button:disabled {
 .showcontainer{
 	display:flex;
 	justify-content:center;
-	flex-direction:column;
+	flex-flow: row wrap;
 
 }
 
