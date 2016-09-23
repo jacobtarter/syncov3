@@ -280,6 +280,9 @@ img {
 	}
 	.posts{
 	}
+	.container{
+		width:90%;
+	}
 
 }
 /* Medium width layout changes */
@@ -305,25 +308,8 @@ img {
 
 	}
 */
-	.container{
-		width:95%;
-	}
-}
 
-/*
-@media all and (max-width:550px){
-	.login{
-		position:static;
-		width:100%;
-		margin:0px;
-		margin-bottom:3px;
-
-	}
-	.posts{
-		margin:0px;
-	}
 }
-*/
 
 /* Small width layout changes */
 @media all and (max-width:750px){
