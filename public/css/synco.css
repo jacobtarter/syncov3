@@ -54,16 +54,8 @@ button[disabled=disabled], button:disabled {
 /* FLex container for all items on the show post page */
 .showcontainer{
 	display:flex;
-
-	flex-direction:column;
-
-	align-self: center;
 	justify-content:center;
-	align-items:stretch;
-	width:100%;
-
-
-
+	flex-direction:column;
 
 }
 
