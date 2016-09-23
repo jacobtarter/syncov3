@@ -62,7 +62,7 @@ button[disabled=disabled], button:disabled {
 
 .showpost{
 	display:flex;
-	flex-direction:column;
+	flex-flow: row wrap;
 	border: 1px solid black;
 	margin-bottom: 10px;
 	background:white;
