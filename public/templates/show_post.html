@@ -7,11 +7,11 @@
 
 		<div class="showtitle"><h3>{{ post[0].title }}</h3></div>
 
-		<div class="showposter">Original Poster: {{ post[0].name }}</div>
+		<div class="showposter" style="font-size:11px">Original Poster: {{ post[0].name }}</div>
 
-		<div class="showdate">Created On: {{ post[0].created_at }}</div>
+		<div class="showdate" style="font-size:11px">Created On: {{ post[0].created_at }}</div>
 
-		<div class="showscore">Score: 	{{ post[0].vote_score }}({{ post[0].upvotes }}/{{ post[0].downvotes }})</div>
+		<div class="showscore" style="font-size:11px">Score: 	<b>{{ post[0].vote_score }}</b><i>({{ post[0].upvotes }}/{{ post[0].downvotes }})</i></div>
 
 		<div class="showtext">{{ post[0].ptext }}</div>
 
