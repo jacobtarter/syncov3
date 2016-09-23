@@ -21,12 +21,12 @@
 				</div>
 			</div>
 
-			<div class="second-line">
+			<div class="second-line" style="font-size:11px">
 				<div class="list voting">
 
 		  		<button class="btn btn-default btn-xs btn-up" ng-click="upVote(x.id)" ng-show="checkAuth()" ng-disabled="checkUpvote(x.id)"><span class="glyphicon glyphicon-thumbs-up"></span>  </button>
 
-				<div style="font-size:11px"><b>{{ x.vote_score }}</b> <i>({{ x.upvotes }}/{{ x.downvotes }})</i></div>
+				<b>{{ x.vote_score }}</b> <i>({{ x.upvotes }}/{{ x.downvotes }})</i>
 
 				<button class="btn btn-default btn-xs btn-down" ng-click="downVote(x.id)" ng-show="checkAuth()" ng-disabled="checkDownvote(x.id)"><span class="glyphicon glyphicon-thumbs-down"></span>  </button>
 				</div>
