@@ -188,7 +188,7 @@ img {
 	flex-wrap: wrap;
 	justify-content: space-between;
 
-	flex-direction: column;
+	flex-flow:row wrap;
 
 	border-radius: 12.5px;
 
@@ -222,6 +222,9 @@ img {
 	justify-content: flex-end;
 	flex-direction: row;
 
+}
+.first-line, .second-line, .third-line{
+	flex: 1 100%
 }
 
 .editpostform {
