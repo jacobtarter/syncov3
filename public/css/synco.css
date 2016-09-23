@@ -5,7 +5,7 @@ body {
 	background-attachment: fixed;
 }
 button[disabled=disabled], button:disabled {
-	background:#d9d9d9;
+	background:#666666;
 }
 
 /* Flex Container for logo link at top */
