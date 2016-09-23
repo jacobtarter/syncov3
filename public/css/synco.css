@@ -253,6 +253,9 @@ img {
 	max-width:100%;
 	border:1px solid black;
 }
+.btn-link{
+	border:none;
+}
 
 .score{
 }
