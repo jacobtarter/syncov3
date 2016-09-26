@@ -94,6 +94,7 @@ button[disabled=disabled], button:disabled {
 	border:1px solid #cccccc;
 	margin-left:10px;
 	margin-right:10px;
+	margin-bottom:2.5px;
 	padding:5px;
 	border-radius:12.5px;
 }
