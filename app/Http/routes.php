@@ -17,6 +17,8 @@
 //Route::resource('posts', 'PostController');
 //Route::resource('user', 'UserController');
 
+/*
+
 //Home route, directs to main template page
 Route::get('/', 'PageController@getMaster');
 
@@ -59,6 +61,9 @@ Route::controllers([
 
 Route::delete( '/admin/posts', 'PostController@destroyByUser' );
 
+*/
+
+Route::get('/', 'PageController@getScitechMain');
 Route::get ('scitech/planet', 'PageController@getPlanet');
 
 
