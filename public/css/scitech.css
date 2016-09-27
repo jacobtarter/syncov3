@@ -26,6 +26,11 @@ body{
 .scitechtitle{
 	border: 3px solid rgb(237,90,38);
   color: rgb(139,187,243);
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; 
 	background-color: white;
 	padding: 25px;
 	margin-top: 10px;
