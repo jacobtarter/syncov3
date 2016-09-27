@@ -7,7 +7,7 @@
 <body>
   <div class="scitechcontainer">
 
-    <h1 class="scitechtitle">What is a planet?</h1>
+    <h1 class="scitechtitle">What is a Planet?</h1>
 
     <div class="description">All planets have 4 things that describe them:
       <ul style="">
