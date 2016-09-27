@@ -56,7 +56,7 @@ button[disabled=disabled], button:disabled {
 	display:flex;
 	justify-content:center;
 	flex-flow: row wrap;
-	width:75%;
+	
 
 }
 
