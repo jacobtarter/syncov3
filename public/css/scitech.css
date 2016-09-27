@@ -9,6 +9,7 @@ body{
 	justify-content:space-around;
 	align-items:stretch;
   flex-flow: row wrap;
+  flex-direction: column;
 
 
 }
