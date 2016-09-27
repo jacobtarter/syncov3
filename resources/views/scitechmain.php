@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>Planets</title>
-  <link rel="stylesheet" href="<?php echo asset('css/scitech.css')?>" type="text/css">
+  <link rel="stylesheet" href="<?php echo asset('css/synco.css')?>" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
