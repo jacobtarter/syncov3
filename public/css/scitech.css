@@ -1,5 +1,5 @@
 body{
-
+  background-color: rgb(139,187,243);
 }
 
 .scitechcontainer {
@@ -19,7 +19,7 @@ body{
   margin-left: 20px;
   margin-right: 20px;
   text-align: justify;
-  
+
 
 }
 .scitechtitle{
@@ -27,7 +27,7 @@ body{
   color: rgb(139,187,243);
 	background-color: white;
 	padding: 25px;
-	margin-top: 20px;
+	margin-top: 10px;
   margin-bottom: 15px;
   margin-left: 20px;
   margin-right: 20px;
