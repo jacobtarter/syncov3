@@ -52,6 +52,10 @@ button[disabled=disabled], button:disabled {
 	border-style:1px solid black;
 
 }
+.description {
+	border-style:1px solid black;
+	flex-wrap:wrap;
+}
 
 /* Flex container for main page - holds all flex items for page */
 
