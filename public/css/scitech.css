@@ -15,7 +15,7 @@ body{
 	border:2px solid rgb(237,90,38);
 	flex-flow: row wrap;
 	background-color: white;
-	padding:25px;
+	padding:10px;
   margin-left: 20px;
   margin-right: 20px;
   text-align: justify;
@@ -39,3 +39,5 @@ body{
 .description, .scitechtitle{
   flex: 1 100%;
 }
+
+ul { margin: 0; padding: 0; }

@@ -10,7 +10,7 @@
     <h1 class="scitechtitle">What is a planet?</h1>
 
     <div class="description">All planets have 4 things that describe them:
-      <ul>
+      <ul style="">
         <li>They orbit the sun</li>
         <li>They don’t orbit another planet</li>
         <li>They are round (or mostly round)</li>
