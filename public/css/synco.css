@@ -56,6 +56,14 @@ button[disabled=disabled], button:disabled {
 	border-style:1px solid black;
 	flex-wrap:wrap;
 	background-color: white;
+	padding:50px;
+	margin:25px;
+}
+.scitechtitle{
+	border-style: 1px solid black;
+	background-color: white;
+	padding: 50px;
+	margin: 25px;
 }
 
 /* Flex container for main page - holds all flex items for page */

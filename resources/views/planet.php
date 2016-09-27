@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
-  <h1 style="color:white" "border-style 1px solid black">What is a planet?</h1>
+  <h1 class="scitechtitle">What is a planet?</h1>
   <div class="scitechcontainer">
   <div class="description">All planets have 4 things that describe them - they orbit the sun, they don’t orbit another planet,
     they are round (or mostly round), and they can push other objects with their gravity.  There are also
