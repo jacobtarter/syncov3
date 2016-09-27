@@ -25,8 +25,7 @@ body{
 	padding: 25px;
 	margin: auto;
   margin-bottom: 25px;
-  align-content: center;
-
+  text-align:center;
 }
 .description, .scitechtitle{
   flex: 1 100%;
