@@ -6,6 +6,7 @@
 </head>
 <body>
   <div class="scitechcontainer">
+    <div class="pagecontainer">
     <h1 class="scitechtitle">What is a planet?</h1>
 
     <div class="description">All planets have 4 things that describe them - they orbit the sun, they don’t orbit another planet,
@@ -13,5 +14,6 @@
       dwarf planets - these are almost the same, except they are not large enough to push other objects like a planet can.
     </div>
   </div>
+</div>
 </body>
 </html>

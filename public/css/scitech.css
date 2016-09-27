@@ -3,29 +3,32 @@ body{
 }
 
 .scitechcontainer {
-	display:flex;
-	width:90%;
+  display:flex;
+	width:85%;
 	margin-bottom:100px;
 	justify-content:center;
 	align-items:stretch;
-	flex-flow:row wrap;
-	justify-content:center;
 
 
 }
+.pagecontainer {
+  display:flex;
+	justify-content:center;
+	flex-flow: row wrap;
+}
 .description {
-	border:1px solid rgb(237,90,38);
+	border:3px solid rgb(237,90,38);
 	flex-wrap:wrap;
 	background-color: white;
-	padding:50px;
+	padding:25px;
 	margin:25px;
 	flex: 1 100%;
 }
 .scitechtitle{
-	border: 1px solid rgb(237,90,38);
+	border: 3px solid rgb(237,90,38);
   color: rgb(139,187,243);
 	background-color: white;
-	padding: 50px;
+	padding: 25px;
 	margin: 25px;
 	flex: 1 100%;
 }
