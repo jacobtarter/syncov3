@@ -19,7 +19,6 @@
       is the Big Dipper, which is often used for locating Polaris - the “North Star”.  This star appears
       to stay almost motionless by our north pole, which  has helped people know which way was North
       before they had the compass.</div>
-    </ul>
   </div>
 </body>
 </html>

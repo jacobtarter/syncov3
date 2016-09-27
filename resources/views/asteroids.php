@@ -10,20 +10,17 @@
     <h1 class="scitechtitle">Asteroids, Comets & Meteoroids</h1>
 
     <div class="description">
-      <ul class="plainlist">
-        <li>Asteroids are made up of bits and pieces that were left over from when the Solar System was formed -
+      <div class="textsection">Asteroids are made up of bits and pieces that were left over from when the Solar System was formed -
           So they are very old.  They can be studied to see what things were like way back then.  Most asteroids
-          are stuck between Jupiter and Mars - they are trapped by Jupiter’s huge gravitational force.</li>
-        <li>Comets are made of frozen gas, dirt, and rock.  They can be the size of a small town, with tails
-          that stretch millions of miles!  Some comets take hundreds of years just to orbit the Sun once.</li>
-        <li>Meteoroids are objects made of rocky or metal material, and they travel through the solar system.
+          are stuck between Jupiter and Mars - they are trapped by Jupiter’s huge gravitational force.</div>
+      <div class="textsection">Comets are made of frozen gas, dirt, and rock.  They can be the size of a small town, with tails
+          that stretch millions of miles!  Some comets take hundreds of years just to orbit the Sun once.</div>
+      <div class="textsection">Meteoroids are objects made of rocky or metal material, and they travel through the solar system.
           They can be as small as a grain of rice, or as large as a car!  If a meteoroid enters the Earth’s
           atmosphere, but gets burned up before it can reach the surface, it is called a meteor.  Meteor showers
           are the flashes of light created by the meteors getting vaporized.  If a meteoroid makes it all the way
-          through our atmosphere and hits the surface of Earth, it is called a meteorite.</li>
-      </ul>
-
-
+          through our atmosphere and hits the surface of Earth, it is called a meteorite.</div>
+      
   </div>
 </body>
 </html>
