@@ -49,7 +49,7 @@ button[disabled=disabled], button:disabled {
 	margin-bottom:100px;
 	justify-content:center;
 	align-items:stretch;
-	border-style:1px solid black;
+	
 
 }
 .description {
@@ -58,12 +58,14 @@ button[disabled=disabled], button:disabled {
 	background-color: white;
 	padding:50px;
 	margin:25px;
+	flex: 1 100%;
 }
 .scitechtitle{
 	border-style: 1px solid black;
 	background-color: white;
 	padding: 50px;
 	margin: 25px;
+	flex: 1 100%;
 }
 
 /* Flex container for main page - holds all flex items for page */
