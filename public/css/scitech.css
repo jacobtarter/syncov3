@@ -5,7 +5,7 @@ body{
 .scitechcontainer {
   display:flex;
 	flex-flow: row wrap;
-  width: 90%;
+  flex: 1 100%;
   align-content: space-around;
 
 
