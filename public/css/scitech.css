@@ -5,12 +5,13 @@ body{
 .scitechcontainer {
   display:flex;
 	flex-flow: row wrap;
+  width: 90%
 
 
 }
 
 .description {
-	border:3px solid rgb(237,90,38);
+	border:2px solid rgb(237,90,38);
 	flex-flow: row wrap;
 	background-color: white;
 	padding:25px;
@@ -23,6 +24,7 @@ body{
 	background-color: white;
 	padding: 25px;
 	margin: auto;
+  margin-bottom: 25px;
 
 }
 .description, .scitechtitle{
