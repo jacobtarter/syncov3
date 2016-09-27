@@ -8,21 +8,18 @@ body{
 	margin-bottom:100px;
 	justify-content:center;
 	align-items:stretch;
+  flex-flow: row wrap;
 
 
 }
-.pagecontainer {
-  display:flex;
-	justify-content:center;
-	flex-flow: row wrap;
-}
+
 .description {
 	border:3px solid rgb(237,90,38);
-	flex-wrap:wrap;
+	flex-flow: row wrap;
 	background-color: white;
 	padding:25px;
 	margin:25px;
-	flex: 1 100%;
+
 }
 .scitechtitle{
 	border: 3px solid rgb(237,90,38);
@@ -30,5 +27,8 @@ body{
 	background-color: white;
 	padding: 25px;
 	margin: 25px;
-	flex: 1 100%;
+
+}
+.description, .scitechtitle {
+  flex: 1 100%;
 }
