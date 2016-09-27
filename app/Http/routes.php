@@ -59,6 +59,8 @@ Route::controllers([
 
 Route::delete( '/admin/posts', 'PostController@destroyByUser' );
 
+Route::get ('scitech/planet', 'PageController@getPlanet');
+
 
 
 //$router->post('/api/v1/posts', 'PostController@store', ['middleware' => 'JsonApiMiddleware']);
@@ -66,9 +68,9 @@ Route::delete( '/admin/posts', 'PostController@destroyByUser' );
 //Route::get ('/api/v1/posts/view', 'PageController@getView' );
 Route::group(['middleware' => ['web']], function () {
 
-	
 
-	
+
+
 }
 );
 
