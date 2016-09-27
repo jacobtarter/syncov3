@@ -49,7 +49,8 @@ button[disabled=disabled], button:disabled {
 	margin-bottom:100px;
 	justify-content:center;
 	align-items:stretch;
-	
+	flex-flow:row wrap;
+
 
 }
 .description {
