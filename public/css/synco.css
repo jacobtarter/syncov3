@@ -50,6 +50,7 @@ button[disabled=disabled], button:disabled {
 	justify-content:center;
 	align-items:stretch;
 	flex-flow:row wrap;
+	justify-content:center;
 
 
 }
