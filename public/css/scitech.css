@@ -8,7 +8,7 @@ body{
 	margin-bottom:100px;
 	justify-content:space-around;
 	align-items:stretch;
-  
+  flex-wrap: wrap;
 
 
 }
@@ -28,4 +28,7 @@ body{
 	padding: 25px;
 	margin: auto;
 
+}
+.description, .scitechtitle{
+  flex: 1 100%;
 }
