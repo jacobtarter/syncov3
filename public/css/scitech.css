@@ -1,3 +1,7 @@
+.body{
+  background-color: white;
+}
+
 .scitechcontainer {
 	display:flex;
 	width:90%;
@@ -10,7 +14,7 @@
 
 }
 .description {
-	border-style:1px solid black;
+	border-style:1px solid ED5A26;
 	flex-wrap:wrap;
 	background-color: white;
 	padding:50px;
@@ -18,7 +22,8 @@
 	flex: 1 100%;
 }
 .scitechtitle{
-	border-style: 1px solid black;
+	border-style: 1px solid ED5A26;
+  font=color: 4486D6;
 	background-color: white;
 	padding: 50px;
 	margin: 25px;
