@@ -14,9 +14,9 @@
         <li>They orbit the sun</li>
         <li>They don’t orbit another planet</li>
         <li>They are round (or mostly round)</li>
-        <li>They can push other objects with their gravity</li>
+        <li>They can push other objects with their gravitational force</li>
       </ul>
-      There are also dwarf planets - these are almost the same, except they are smaller, and can't push other
+      There are also dwarf planets - these are almost the same, except smaller.  Because of their size, they can't push other
       objects with their gravity like a planet can.
 
   </div>
