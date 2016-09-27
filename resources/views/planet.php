@@ -14,6 +14,6 @@
       dwarf planets - these are almost the same, except they are not large enough to push other objects like a planet can.
     </div>
 
-</div>
+  </div>
 </body>
 </html>
