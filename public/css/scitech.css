@@ -48,8 +48,6 @@ body{
 ul { margin: 0; padding: 0; }
 ul {padding-left:20px;}
 
-.plainlist{
-  list-style-type:none;
-  padding-left: 0px;
-  padding-bottom: 5px;
+.textsection{
+  margin-bottom: 2.5px;
 }
