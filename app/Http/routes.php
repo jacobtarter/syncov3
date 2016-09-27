@@ -65,6 +65,13 @@ Route::delete( '/admin/posts', 'PostController@destroyByUser' );
 
 Route::get('/', 'PageController@getScitechMain');
 Route::get ('scitech/planet', 'PageController@getPlanet');
+Route::get ('scitech/stars', 'PageController@getStars');
+Route::get ('scitech/asteroids', 'PageController@getAsteroids');
+Route::get ('scitech/solarsys', 'PageController@getSolarSys');
+Route::get ('scitech/planetsci', 'PageController@getPlanetSci');
+Route::get ('scitech/planetsize', 'PageController@getPlanetSize');
+Route::get ('scitech/moons', 'PageController@getMoons');
+Route::get ('scitech/galaxy', 'PageController@getGalaxy');
 
 
 

@@ -31,4 +31,25 @@ class PageController extends Controller
 	public function getPlanet() {
 		return view('planet');
 	}
+	public function getStars() {
+		return view('stars');
+	}
+	public function getAsteroids(){
+		return view('asteroids');
+	}
+	public function getSolarSys(){
+		return view('solarsys');
+	}
+	public function getPlanetSci(){
+		return view('planetsci');
+	}
+	public function getPlanetSize(){
+		return view('planetsize');
+	}
+	public function getMoons(){
+		return view('moons');
+	}
+	public function getGalaxy(){
+		return view('galaxy');
+	}
 }
