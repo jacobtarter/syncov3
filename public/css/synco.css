@@ -45,12 +45,8 @@ button[disabled=disabled], button:disabled {
 
 .scitechcontainer {
 	display:flex;
-	width:90%;
-	margin-bottom:100px;
 	justify-content:center;
-	align-items:stretch;
-	flex-flow:row wrap;
-	justify-content:center;
+	flex-flow: row wrap;
 
 
 }
