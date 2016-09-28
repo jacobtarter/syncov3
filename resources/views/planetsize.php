@@ -10,9 +10,13 @@
     <h1 class="scitechtitle">How Big Are Planets?</h1>
 
     <div class="description">
-      The inner, rocky planets - like Earth, are tiny in comparison to the gas and ice giants - Jupiter,
-      Saturn, Uranus and Neptune.  This chart shows just how much larger those giants are than the planet
-      we live on.
+
+      <div class="textsection"> The inner, rocky planets - like Earth, are tiny in comparison to the gas and ice giants - Jupiter,
+      Saturn, Uranus and Neptune. </div>
+      <div class="textsection"> This chart shows just how much larger those giants are than the planet
+      we live on.</div>
+
     </div>
+  </div>
 </body>
 </html>
