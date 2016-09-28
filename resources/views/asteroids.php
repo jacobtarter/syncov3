@@ -10,9 +10,8 @@
     <h1 class="scitechtitle">Asteroids, Comets & Meteoroids</h1>
 
     <div class="description">
-      <div class="textsection">Asteroids are made up of bits and pieces that were left over from when the Solar System was formed -
-          So they are very old.  They can be studied to see what things were like way back then.  Most asteroids
-          are stuck between Jupiter and Mars - they are trapped by Jupiter’s huge gravitational force.</div>
+      <div class="textsection">Asteroids are made up of bits and pieces that were left over from when the Solar System was formed,
+      which means that scientists can use them kind of like a time capsule.</div>
       <div class="textsection">Comets are made of frozen gas, dirt, and rock.  They can be the size of a small town, with tails
           that stretch millions of miles!  Some comets take hundreds of years just to orbit the Sun once.</div>
       <div class="textsection">Meteoroids are objects made of rocky or metal material, and they travel through the solar system.
