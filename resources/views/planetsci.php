@@ -11,10 +11,10 @@
 
     <div class="description">
 
-      <div class="textsection">The knowledge we have of planetary science and astronomy was a very big team effort -
+      <div class="textsectionfirst">The knowledge we have of planetary science and astronomy was a very big team effort -
           It was pieced together over thousands of years by many types of scientists - meteorologists,
           geologists, mathematicians, and more.</div>
-      <div class="textsection">Science is based on theories, which can never be fully proven.  One of the most well known
+      <div class="textsectionlast">Science is based on theories, which can never be fully proven.  One of the most well known
           scientific theories is the theory of gravity.  Another popular scientific theory describes
           how our solar system might be formed - by accretion disks.  These are flat disks of dust, ice,
           and other materials which combine into larger objects.  As they get larger, they gain more gravity,

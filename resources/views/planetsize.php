@@ -11,9 +11,9 @@
 
     <div class="description">
 
-      <div class="textsection"> The inner, rocky planets - like Earth, are tiny in comparison to the gas and ice giants - Jupiter,
+      <div class="textsectionfirst"> The inner, rocky planets - like Earth, are tiny in comparison to the gas and ice giants - Jupiter,
       Saturn, Uranus and Neptune. </div>
-      <div class="textsection"> This chart shows just how much larger those giants are than the planet
+      <div class="textsectionlast"> This chart shows just how much larger those giants are than the planet
       we live on.</div>
 
     </div>

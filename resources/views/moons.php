@@ -10,7 +10,7 @@
     <h1 class="scitechtitle">The Moon and its Phases</h1>
 
     <div class="description">
-      <div class="textsection">A moon is a natural satellite, which is an object that orbits another object in a solar system.
+      <div class="textsectionfirst">A moon is a natural satellite, which is an object that orbits another object in a solar system.
           Some moons were formed by pieces that broke off of the “parent object”, others were captured and
           pulled in by the planet’s gravity.  Some moons are almost like Earth - they can have lakes, oceans,
           atmospheres, volcanos, lava flows, and ice.</div>
@@ -18,7 +18,7 @@
           Earth.  Depending on the day of the month, the Earth will cast a different shadow, leading to the moon
           having a different portion appear to be lit up - this is how the phases change.  The diagram on this
           poster will help you see how this works.</div>
-      <div class="textsection">Humans have sent our own satellites into Earth’s orbit, which orbit the planet just like our moon.
+      <div class="textsectionlast">Humans have sent our own satellites into Earth’s orbit, which orbit the planet just like our moon.
           These have led to important scientific information, and allow us to use cell phones and radios.</div>
     </div>
 
