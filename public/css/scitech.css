@@ -11,7 +11,7 @@ body{
 }
 
 .description {
-	border:2px solid rgb(237,90,38);
+	border:3px solid rgb(237,90,38);
 	flex-flow: row wrap;
 	background-color: white;
 	padding:10px;
@@ -21,7 +21,7 @@ body{
 
 }
 .scitechtitle{
-	border: 3px solid rgb(237,90,38);
+	border: 4px solid rgb(237,90,38);
   color: rgb(139,187,243);
   text-shadow:
    -1px -1px 0 #000,
