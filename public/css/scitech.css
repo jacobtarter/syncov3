@@ -1,5 +1,8 @@
 body{
+/*
   background: linear-gradient(to bottom right, rgb(139,187,243), white);
+*/
+  background: -webkit-linear-gradient(45deg,rgb(139,187,243), white);
 	background-attachment: fixed;
 }
 
