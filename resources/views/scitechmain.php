@@ -8,7 +8,7 @@
   <div class="scitechcontainer">
   <h1 class="scitechtitle">Temporary SciTech QR Website</h1>
 
-  <div class="scitechtitle">This website will be the temporary home for SciTech's QR code information</div>
+  <div class="description" style="color: rgb(139,187,243)"><b>This website will be the temporary home for SciTech's QR code information</b></div>
   <div class="description">
       <div class="textsection"></b>Current Pages for QR Scanning</b></div>
       <div class="textsection">
