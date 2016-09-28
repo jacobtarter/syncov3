@@ -77,11 +77,12 @@ hr{
 .textsection{
   margin-bottom: 5px;
   padding-bottom: 25px;
+  padding-top: 25px;
   border-bottom: 1px solid rgb(139,187,243);
 }
 .textsectionlast{
   margin-bottom: 5px;
-  
+
 }
 
 @media all and (max-width:750px){
