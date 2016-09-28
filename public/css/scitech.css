@@ -4,10 +4,17 @@ body{
 	background-attachment: fixed;
 }
 
-a{ text-decoration: none; }
-a:link{ color:(rgb(139,187,243)); }
-a:visited{ color:(rgb(139,187,243)); }
-a:hover{ color:(rgb(237,90,38)); }
+ul{ list-style:none; }
+
+a:link, a:visited {
+    background-color: rgb(139,187,243);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
 
 .scitechcontainer {
   display:flex;
