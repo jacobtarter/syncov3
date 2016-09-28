@@ -76,6 +76,7 @@ hr{
 
 .textsection{
   margin-bottom: 5px;
+  border-bottom: 1px solid black;
 }
 
 @media all and (max-width:750px){
