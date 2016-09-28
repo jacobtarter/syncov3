@@ -7,13 +7,13 @@
 <body>
   <div class="scitechcontainer">
 
-    <h1 class="scitechtitle">How Can We Study Dark Matter?</h1>
+    <h1 class="scitechtitle">How Can We Study Dark Matter? Look Inside!</h1>
 
     <div class="description">
       <div class="textsection">Turn the crank as you look into the viewer - Inside there are a bunch of balls,
         but only some of them are glowing, and easy to see.  As you keep turning the crank, you can see how the
-        glowing balls are getting knocked around and moved, but it’s hard to tell what’s causing this.  Even
-        though the dark balls are very hard to see, it’s easy to see how they affect the glowing balls.
+        glowing balls are getting knocked around and moved, but it’s hard to tell why.  Even
+        though the dark balls are very hard to see, it’s easy to see that they affect the others.
       </div>
       <div class="textsection">This is how scientists must study and learn about dark matter.  Dark matter is
         invisible to our eyes, but it is possible to observe the effect that it has on things that we
