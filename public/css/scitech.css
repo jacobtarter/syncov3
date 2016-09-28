@@ -9,7 +9,9 @@ body{
 	flex-flow: row wrap;
   flex: 1 100%;
   align-content: flex-start;
-  margin: 35%;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .description {
