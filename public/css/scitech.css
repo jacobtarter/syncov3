@@ -4,7 +4,7 @@ body{
 	background-attachment: fixed;
 }
 
-ul{ list-style:none; }
+ul{ list-style-type:none; }
 
 a:link, a:visited {
     background-color: rgb(139,187,243);
