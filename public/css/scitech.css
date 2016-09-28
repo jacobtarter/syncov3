@@ -50,7 +50,6 @@ body{
 @media all and (max-width:750px){
   body{
     background: -webkit-linear-gradient(left top,rgb(139,187,243), white);
-  	background-size: cover;
   }
 
   .scitechcontainer{
