@@ -28,6 +28,7 @@ hr{
   padding-bottom: 15px;
   margin-left: 5px;
   margin-right: 5px;
+  margin-bottom: 15px;
   text-shadow:
    -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -141,7 +142,7 @@ hr{
 
 
   }
-  
+
 
 
 }
