@@ -12,10 +12,12 @@ a:link, a:visited {
     text-align: center;
     text-decoration: none;
 
-
-
-
 }
+hr{
+  color:black;
+}
+
+
 .linkbutton {
   flex: 1 100%;
   background-color: rgb(139,187,243);
