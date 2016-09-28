@@ -77,7 +77,7 @@ hr{
 .textsection{
   margin-bottom: 5px;
   padding-bottom: 25px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(139,187,243);
 }
 
 @media all and (max-width:750px){
