@@ -10,7 +10,7 @@
 
   <div class="description" style="color: rgb(237,90,38); margin-bottom:10px; text-align:center;"><b>This website will be the temporary home for SciTech's QR code information</b></div>
   <div class="description">
-      <div class="textsection"></b>Current Pages for QR Scanning</b></div>
+      <div class="textsection"></b>Current Pages for QR Scanning</b></div><br />
       <div class="textsection">
         <a href="/scitech/planet" class="linkbutton">Planets</a><br />
         <a href="/scitech/stars" class="linkbutton">Constellations</a><br />
