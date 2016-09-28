@@ -9,16 +9,14 @@
 
     <h1 class="scitechtitle">What is a Planet?</h1>
 
-    <div class="description">All planets have 4 things that describe them:
-      <ul style="">
-        <li>They orbit the sun</li>
-        <li>They don’t orbit another planet</li>
-        <li>They are round (or mostly round)</li>
-        <li>They can push other objects with their gravitational force</li>
-      </ul>
+    <div class="textsection">All planets have 4 things that describe them:</div>
+    <div class="textsection">They orbit the sun</div>
+    <div class="textsection">They don’t orbit another planet</div>
+    <div class="textsection">They are round (or mostly round)</div>
+    <div class="textsection">They can push other objects with their gravitational force</div>
+    <div class="textsection">
       There are also dwarf planets - these are almost the same, except smaller.  Because of their size, they can't push other
-      objects with their gravity like a planet can.
-
+      objects with their gravity like a planet can.</div>
   </div>
 </body>
 </html>
