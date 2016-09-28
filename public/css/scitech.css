@@ -1,5 +1,6 @@
 body{
-  background-color: rgb(139,187,243);
+  background: linear-gradient(to bottom right, rgb(139,187,243), white);
+	background-attachment: fixed;
 }
 
 .scitechcontainer {
