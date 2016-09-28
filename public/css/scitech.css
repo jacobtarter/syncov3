@@ -94,10 +94,7 @@ hr{
 
 @media all and (max-width:750px){
   body{
-    background: -webkit-linear-gradient(left top,rgb(139,187,243),rgb(139,187,243)60%, white);
-    height: 100%;
-    margin: 0%;
-    background-repeat: no-repeat;
+    background: rgb(139,187,243);
   }
   html{
     height:100%;
