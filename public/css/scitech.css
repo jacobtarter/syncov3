@@ -1,8 +1,6 @@
 body{
-/*
+
   background: linear-gradient(to bottom right, rgb(139,187,243), white);
-*/
-  background: -webkit-linear-gradient(45deg,rgb(139,187,243), white);
 	background-attachment: fixed;
 }
 
@@ -50,6 +48,11 @@ body{
 }
 
 @media all and (max-width:750px){
+  body{
+    background: -webkit-linear-gradient(45deg,rgb(139,187,243), white);
+  	background-size: cover;
+  }
+
   .scitechcontainer{
     margin:5px;
   }
