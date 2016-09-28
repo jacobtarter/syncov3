@@ -12,18 +12,15 @@
   <div class="description">
       <div class="textsection"></b>Current Pages for QR Scanning</b></div>
       <div class="textsection">
-
-        <ul class="plain">
-          <li><a href="/scitech/planet">Planets</a></li>
-          <li><a href="/scitech/stars">Constellations</a></li>
-          <li><a href="/scitech/asteroids">Asteroids, Comets & Meteoroids</a></li>
-          <li><a href="/scitech/solarsys">Our Solar System</a></li>
-          <li><a href="/scitech/planetsci">Planetary Science</a></li>
-          <li><a href="/scitech/planetsize">Planet Sizes</a></li>
-          <li><a href="/scitech/moons">Moons & Satellites</a></li>
-          <li><a href="/scitech/galaxy">Stars & Galaxies</a></li>
-          <li><a href="/scitech/darkmatter">Dark Matter</a></li>
-        </ul>
+        <a href="/scitech/planet">Planets</a><br />
+        <a href="/scitech/stars">Constellations</a><br />
+        <a href="/scitech/asteroids">Asteroids, Comets & Meteoroids</a><br />
+        <a href="/scitech/solarsys">Our Solar System</a><br />
+        <a href="/scitech/planetsci">Planetary Science</a><br />
+        <a href="/scitech/planetsize">Planet Sizes</a><br />
+        <a href="/scitech/moons">Moons & Satellites</a><br />
+        <a href="/scitech/galaxy">Stars & Galaxies</a><br />
+        <a href="/scitech/darkmatter">Dark Matter</a><br />
       </div>
   </div>
 </body>
