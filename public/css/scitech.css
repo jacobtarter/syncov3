@@ -121,18 +121,18 @@ hr{
 
   .textsection{
     margin-bottom: 5px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 
   }
   .textsectionlast{
     margin-bottom: 5px;
-    padding-top: 10px
+    padding-top: 5px
 
   }
   .textsectionfirst{
     margin-bottom: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 
 
   }
