@@ -11,7 +11,7 @@
   <div class="description" style="color: rgb(237,90,38); margin-bottom:10px; text-align:center;"><b>This website will be the temporary home for SciTech's QR code information</b></div>
   <div class="description">
       <div class="textsection"></b>Current Pages for QR Scanning</b></div><br />
-      <div class="textsection">
+
         <a href="/scitech/planet" class="linkbutton">Planets</a><br />
         <a href="/scitech/stars" class="linkbutton">Constellations</a><br />
         <a href="/scitech/asteroids" class="linkbutton">Asteroids, Comets & Meteoroids</a><br />
@@ -21,7 +21,7 @@
         <a href="/scitech/moons" class="linkbutton">Moons & Satellites</a><br />
         <a href="/scitech/galaxy" class="linkbutton">Stars & Galaxies</a><br />
         <a href="/scitech/darkmatter" class="linkbutton">Dark Matter</a><br />
-      </div>
+      
   </div>
 </body>
 </html>
