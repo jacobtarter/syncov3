@@ -12,8 +12,8 @@
   <div class="description">
       <div class="textsection"></b>Current Pages for QR Scanning</b></div>
       <div class="textsection">
-        <div class=
-        <ul>
+
+        <ul class="plain">
           <li><a href="/scitech/planet">Planets</a></li>
           <li><a href="/scitech/stars">Constellations</a></li>
           <li><a href="/scitech/asteroids">Asteroids, Comets & Meteoroids</a></li>
