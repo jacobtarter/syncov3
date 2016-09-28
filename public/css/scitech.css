@@ -24,8 +24,10 @@ hr{
   flex: 1 100%;
   background-color: rgb(139,187,243);
   border: 1px solid rgb(237,90,38);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
   text-shadow:
    -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -139,9 +141,7 @@ hr{
 
 
   }
-  .linkbutton{
-    font-size: 24px;
-  }
+  
 
 
 }
