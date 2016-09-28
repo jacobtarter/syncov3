@@ -39,9 +39,6 @@ body{
   flex: 1 100%;
 }
 
-ul { margin: 0; padding: 0; }
-ul {padding-left:20px;}
-
 .textsection{
   margin-bottom: 5px;
 }

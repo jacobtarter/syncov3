@@ -72,6 +72,7 @@ Route::get ('scitech/planetsci', 'PageController@getPlanetSci');
 Route::get ('scitech/planetsize', 'PageController@getPlanetSize');
 Route::get ('scitech/moons', 'PageController@getMoons');
 Route::get ('scitech/galaxy', 'PageController@getGalaxy');
+Route::get ('scitech/darkmatter', 'PageController@getDarkMatter');
 
 
 
