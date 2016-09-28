@@ -4,9 +4,9 @@ body{
 	background-attachment: fixed;
 }
 
-a:link{ color:(rgb(139,187,243);}
-a:visited{ color:(rgb(139,187,243); }
-a:hover{ color:(rgb(237,90,38); }
+A:link{ color:(rgb(139,187,243)}
+A:visited{ color:(rgb(139,187,243) }
+A:hover{ color:(rgb(237,90,38) }
 
 .scitechcontainer {
   display:flex;
