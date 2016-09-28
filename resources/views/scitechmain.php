@@ -12,15 +12,15 @@
   <div class="description">
       <div class="textsectionfirst" style="border-bottom:none"></b>Current Pages for QR Scanning</b></div><br />
 
-        <a href="/scitech/planet" class="linkbutton">Planets</a><br />
-        <a href="/scitech/stars" class="linkbutton">Constellations</a><br />
-        <a href="/scitech/asteroids" class="linkbutton">Asteroids, Comets & Meteoroids</a><br />
-        <a href="/scitech/solarsys" class="linkbutton">Our Solar System</a><br />
-        <a href="/scitech/planetsci" class="linkbutton">Planetary Science</a><br />
-        <a href="/scitech/planetsize" class="linkbutton">Planet Sizes</a><br />
-        <a href="/scitech/moons" class="linkbutton">Moons & Satellites</a><br />
-        <a href="/scitech/galaxy" class="linkbutton">Stars & Galaxies</a><br />
-        <a href="/scitech/darkmatter" class="linkbutton">Dark Matter</a><br />
+        <a href="/scitech/planet" class="linkbutton">Planets</a>
+        <a href="/scitech/stars" class="linkbutton">Constellations</a>
+        <a href="/scitech/asteroids" class="linkbutton">Asteroids, Comets & Meteoroids</a>
+        <a href="/scitech/solarsys" class="linkbutton">Our Solar System</a>
+        <a href="/scitech/planetsci" class="linkbutton">Planetary Science</a>
+        <a href="/scitech/planetsize" class="linkbutton">Planet Sizes</a>
+        <a href="/scitech/moons" class="linkbutton">Moons & Satellites</a>
+        <a href="/scitech/galaxy" class="linkbutton">Stars & Galaxies</a>
+        <a href="/scitech/darkmatter" class="linkbutton">Dark Matter</a>
 
   </div>
 </body>
