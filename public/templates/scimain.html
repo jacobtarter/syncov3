@@ -33,7 +33,8 @@
       <div class="description" ng-repeat="qr in qrData">
         <div class="qrtitle">Title: {{ qr.title }}</div>
         <div class="qrdescription">Description: {{ qr.description }}</div>
-        <div class="qrlink">Link to audio: {{ qr.link }}</div>
+        <div class="audiolink">Link to audio: {{ qr.link }}</div>
+        <div class="qrpage">Link that QR should direct to: www.synco.xyz/sciapi/v1/{{ qr.qr_id }}</div>
 
 
       </div>

@@ -75,7 +75,7 @@ hr{
 .newqr{
   flex: 1 100%;
 }
-.qrtitle, .qrdescription, .qrlink{
+.qrtitle, .qrdescription, .qraudiolink, .qrpage{
   flex: 1 100%
 }
 
