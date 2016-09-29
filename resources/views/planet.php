@@ -14,6 +14,7 @@
       var button = document.getElementById('play');
       if(sound.paused) {
         button.disabled=true;
+        button.innerText="Playing...";
         sound.play();
 
       }
@@ -24,6 +25,7 @@
     $("#sound").bind("ended", function(){
       var button = document.getElementById('play');
       button.disabled=false;
+      button.innerText="Read This To Me!";
     })
 
   </script>
