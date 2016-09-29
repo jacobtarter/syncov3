@@ -75,6 +75,8 @@ Route::get ('scitech/galaxy', 'PageController@getGalaxy');
 Route::get ('scitech/darkmatter', 'PageController@getDarkMatter');
 Route::get ('scitech/telescope', 'PageController@getTelescope');
 Route::post( '/sciapi/v1/qr', 'QRController@store' );
+Route::get( '/sciapi/v1/qr/{qrid?}', 'QRController@index' );
+
 
 
 
