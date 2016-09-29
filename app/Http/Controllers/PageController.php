@@ -55,4 +55,7 @@ class PageController extends Controller
 	public function getDarkMatter(){
 		return view('darkmatter');
 	}
+	public function getTelescope(){
+		return view('telescope');
+	}
 }

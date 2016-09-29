@@ -19,6 +19,7 @@
         <a href="/scitech/moons" class="linkbutton">Moons & Satellites</a>
         <a href="/scitech/galaxy" class="linkbutton">Stars & Galaxies</a>
         <a href="/scitech/darkmatter" class="linkbutton">Dark Matter</a>
+        <a href="/scitech/telescope" class="linkbutton">Galileo's Telescope</a>
   </div>
 </body>
 </html>
