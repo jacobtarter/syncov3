@@ -15,7 +15,7 @@ synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', f
 
   $scope.makeQR = function()
   {
-    console.log($scope.qr);
+    //console.log($scope.qr);
 
     $http({
       headers: {
