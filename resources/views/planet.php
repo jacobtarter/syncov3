@@ -9,8 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <script>
     var sound = document.getElementById('sound');
-    var button = document.getElementById('play');
+
     function playAudio(){
+      var button = document.getElementById('play');
       if(sound.paused) {
         button.disabled=true;
         sound.play();
@@ -21,6 +22,7 @@
       }
       }
     $("#sound").bind("ended", function(){
+      var button = document.getElementById('play');
       button.disabled=false;
     })
 
