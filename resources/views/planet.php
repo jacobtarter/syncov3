@@ -2,6 +2,9 @@
 <head>
   <title>Planets</title>
   <link rel="stylesheet" href="<?php echo asset('css/scitech.css')?>" type="text/css">
+  <audio id="sound" controls="controls">
+    <source src="<?php echo asset('audio/planettest.mp3')?>" type="audio/mpeg">
+  </audio>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <script>
     var sound = document.getElementById('sound');
@@ -25,9 +28,7 @@
 
     <h1 class="scitechtitle">What is a Planet?</h1>
 
-    <audio id="sound" controls="controls">
-      <source src="<?php echo asset('audio/planettest.mp3')?>" type="audio/mpeg">
-    </audio>
+
 
     <button id="play" class="play" onclick="playAudio()">Tell Me!</button><hr />
 
