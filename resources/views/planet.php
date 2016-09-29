@@ -9,6 +9,28 @@
 
     <h1 class="scitechtitle">What is a Planet?</h1>
 
+    <audio id="sound" controls="controls">
+      <source src="<?php echo asset('audio/planettest.mp3')?>" type="audio/mpeg">
+    </audio>
+
+    <button id="play" class="play" onclick="playAudio()">Tell Me!</button><hr />
+    <script>
+      var sound = document.getElementById('sound');
+      function playAudio(){
+        if(sound.paused) {
+          sound.play();
+          pButton.className = "";
+          pButton.className = "pause";
+        }
+        else {
+          sound.pause();
+          pButton.className = "";
+          pButton.className = "play";
+        }
+        }
+      }
+
+
     <div class="description">
       <div class="textsectionfirst">All planets have 4 things that describe them:</div>
       <div class="textsection">They orbit the sun</div>
