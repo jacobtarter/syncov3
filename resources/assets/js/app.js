@@ -1,8 +1,15 @@
 var synco = angular.module('synco', ['ngRoute', 'ngCookies']);
-	
+
 
 synco.config(['$routeProvider', '$locationProvider',
 	function($routeProvider, $locationProvider) {
+
+		$routeProvider.when('/', {
+			templateUrl: 'templates/scimain.html',
+			controller: 'sciController'
+		});
+
+		/*
 		$routeProvider.when('/', {
 			templateUrl: 'templates/main.html',
 			controller: 'userController'
@@ -52,6 +59,7 @@ synco.config(['$routeProvider', '$locationProvider',
 			controller: 'adminController',
 			authenticated: true
 		});
+		*/
 
 		$routeProvider.otherwise('/');
 	}
@@ -83,5 +91,5 @@ synco.run(["$rootScope", "$location", 'userModel',
 				}
 				*/
 			});
-	}	
+	}
 ]);

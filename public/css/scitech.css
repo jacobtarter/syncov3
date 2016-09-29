@@ -27,7 +27,7 @@ hr{
   border-radius: 12.5px;
 }
 .soundbutton:disabled{
-  
+
 }
 .linkbutton {
   flex: 1 100%;
@@ -70,6 +70,10 @@ hr{
   font-size: 14pt;
   display:flex;
 
+}
+
+.newqr{
+  flex: 1 100%;
 }
 
 .scitechtitle{
