@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <script>
     var sound = document.getElementById('sound');
-    button = document.getElementById('play');
+    var button = document.getElementById('play');
     function playAudio(){
       if(sound.paused) {
         button.disabled=true;
