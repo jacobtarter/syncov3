@@ -19,11 +19,11 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($pid = null)
+    public function index($qrid = null)
     {
 
         //If optional parameter of post ID is given, return that post
-        if(!is_null($pid))
+        if(!is_null($qrid))
         {
             $DATA = (array)DB::select( "SELECT * FROM qr WHERE qr_id = '$qrid'");
         }
