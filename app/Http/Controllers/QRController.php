@@ -12,7 +12,7 @@ use App\QR;
 
 use DB;
 
-class PostController extends Controller
+class QRController extends Controller
 {
     /**
      * Display a listing of the resource.
