@@ -15,7 +15,7 @@ synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', f
 
   $scope.makeQR = function()
   {
-
+    console.log($scope.qr);
 
     $http({
       headers: {
@@ -37,7 +37,7 @@ synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', f
         console.log(errors);
         // Render the errors with js ...
       }
-    
+
     });
 
   }
