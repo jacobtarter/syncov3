@@ -6,7 +6,7 @@ synco.config(['$routeProvider', '$locationProvider',
 
 		$routeProvider.when('/', {
 			templateUrl: 'templates/scimain.html',
-			controller: 'sciController'
+			controller: 'qrcontroller'
 		});
 
 		/*
