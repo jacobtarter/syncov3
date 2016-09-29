@@ -19,7 +19,11 @@ hr{
   height:1px;
 }
 
-
+.soundbutton{
+  flex: 1 100%;
+  border: 1 px solid black;
+  padding:15px;
+}
 .linkbutton {
   flex: 1 100%;
   background-color: rgb(139,187,243);

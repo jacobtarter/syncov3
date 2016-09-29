@@ -2,7 +2,7 @@
 <head>
   <title>Planets</title>
   <link rel="stylesheet" href="<?php echo asset('css/scitech.css')?>" type="text/css">
-  <audio id="sound" controls="controls">
+  <audio id="sound">
     <source src="https://dl.dropboxusercontent.com/u/39670418/planettest.mp3" type="audio/mpeg">
   </audio>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -11,13 +11,9 @@
     function playAudio(){
       if(sound.paused) {
         sound.play();
-        pButton.className = "";
-        pButton.className = "pause";
       }
       else {
         sound.pause();
-        pButton.className = "";
-        pButton.className = "play";
       }
       }
 
@@ -30,7 +26,7 @@
 
 
 
-    <button id="play" class="play" onclick="playAudio()">Tell Me!</button><hr />
+    <button id="play" class="soundbutton" onclick="playAudio()">Tell Me!</button><hr />
 
 
 
