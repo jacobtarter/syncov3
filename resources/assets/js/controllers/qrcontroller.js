@@ -1,5 +1,6 @@
 synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
   $scope.qrData = {};
+  $scope.qr = {}; 
 
 
   $scope.loadData = function()

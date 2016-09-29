@@ -551,6 +551,7 @@ synco.controller('adminController', ['$scope', '$http', '$location', '$routePara
 
 synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
   $scope.qrData = {};
+  $scope.qr = {}; 
 
 
   $scope.loadData = function()
