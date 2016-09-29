@@ -5,6 +5,7 @@
   <audio id="sound">
     <source src="https://dl.dropboxusercontent.com/u/39670418/planettest.mp3" type="audio/mpeg">
   </audio>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <script>
     var sound = document.getElementById('sound');
