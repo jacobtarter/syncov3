@@ -26,7 +26,7 @@ class PageController extends Controller
 
 
 	public function getScitechMain(){
-		return view('scitechmain');
+		return view('scitechnew');
 	}
 	public function getPlanet() {
 		return view('planet');
