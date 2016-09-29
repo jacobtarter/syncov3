@@ -20,7 +20,7 @@
         pButton.className = "play";
       }
       }
-    }
+    
   </script>
 </head>
 <body>
