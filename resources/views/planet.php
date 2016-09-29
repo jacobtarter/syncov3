@@ -3,6 +3,22 @@
   <title>Planets</title>
   <link rel="stylesheet" href="<?php echo asset('css/scitech.css')?>" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script>
+    var sound = document.getElementById('sound');
+    function playAudio(){
+      if(sound.paused) {
+        sound.play();
+        pButton.className = "";
+        pButton.className = "pause";
+      }
+      else {
+        sound.pause();
+        pButton.className = "";
+        pButton.className = "play";
+      }
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="scitechcontainer">
@@ -14,21 +30,7 @@
     </audio>
 
     <button id="play" class="play" onclick="playAudio()">Tell Me!</button><hr />
-    <script>
-      var sound = document.getElementById('sound');
-      function playAudio(){
-        if(sound.paused) {
-          sound.play();
-          pButton.className = "";
-          pButton.className = "pause";
-        }
-        else {
-          sound.pause();
-          pButton.className = "";
-          pButton.className = "play";
-        }
-        }
-      }
+
 
 
     <div class="description">
