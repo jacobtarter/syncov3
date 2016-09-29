@@ -583,7 +583,7 @@ synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', f
       console.log("post created, redirecting to home");
       $location.path('/');
 
-    }).error: function(data){
+    }).error(function(data){
         var errors = data.responseJSON;
         console.log(errors);
         // Render the errors with js ...
