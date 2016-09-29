@@ -26,7 +26,7 @@
 
 
 
-    <button id="play" class="soundbutton" onclick="playAudio()">Tell Me!</button><hr />
+    <button id="play" class="soundbutton" onclick="playAudio()">Read This To Me!</button><hr />
 
 
 

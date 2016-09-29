@@ -24,6 +24,7 @@ hr{
   border:4px solid rgb(237,90,38);
   padding:15px;
   background-color: white;
+  border-radius: 12.5px;
 }
 .linkbutton {
   flex: 1 100%;
