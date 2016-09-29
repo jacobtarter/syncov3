@@ -74,7 +74,7 @@ Route::get ('scitech/moons', 'PageController@getMoons');
 Route::get ('scitech/galaxy', 'PageController@getGalaxy');
 Route::get ('scitech/darkmatter', 'PageController@getDarkMatter');
 Route::get ('scitech/telescope', 'PageController@getTelescope');
-Route::post( '/sciapi/v1/qr', 'QRController@store' );
+
 Route::get( '/sciapi/v1/qr/{qrid?}', 'QRController@index' );
 
 
@@ -85,7 +85,7 @@ Route::get( '/sciapi/v1/qr/{qrid?}', 'QRController@index' );
 //Route::get ('/api/v1/posts/view', 'PageController@getView' );
 Route::group(['middleware' => ['web']], function () {
 
-
+Route::post( '/sciapi/v1/qr', 'QRController@store' );
 
 
 }
