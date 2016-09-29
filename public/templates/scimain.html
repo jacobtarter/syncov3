@@ -12,17 +12,17 @@
       <form name="qrForm" ng-submit="makeQR()">
 
 				<div class="form-group">
-					<TEXTAREA name="title" COLS=60 ROWS=4 ng-model ="qr.title"
+					<TEXTAREA name="title" COLS=60 ROWS=2 ng-model ="qr.title"
 					required placeholder="Title of your exhibit" class="form-control"></TEXTAREA>
 				</div>
 
 				<div class="form-group">
-					<TEXTAREA name="description" COLS=60 ROWS=12 ng-model="qr.description"
+					<TEXTAREA name="description" COLS=60 ROWS=5 ng-model="qr.description"
 					required placeholder="Description of your exhibit" class="form-control"></TEXTAREA>
 				</div>
 
         <div class="form-group">
-          <TEXTAREA name="link" COLS=60 ROWS=12 ng-model="qr.link"
+          <TEXTAREA name="link" COLS=60 ROWS=2 ng-model="qr.link"
           required placeholder="Link to the audio file" class="form-control"></TEXTAREA>
         </div>
 
@@ -31,9 +31,9 @@
     </div>
 
       <div class="description" ng-repeat="qr in qrData">
-        <div class="qrtitle">{{ qr.title }}</div>
-        <div class="qrdescription">{{ qr.description }}</div>
-        <div class="qrlink">{{ qr.link }}</div>
+        <div class="qrtitle">Title: {{ qr.title }}</div>
+        <div class="qrdescription">Description: {{ qr.description }}</div>
+        <div class="qrlink">Link to audio: {{ qr.link }}</div>
 
 
       </div>

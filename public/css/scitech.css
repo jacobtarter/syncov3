@@ -75,6 +75,9 @@ hr{
 .newqr{
   flex: 1 100%;
 }
+.qrtitle, .qrdescription, .qrlink{
+  flex: 1 100%
+}
 
 .scitechtitle{
   font-size:38pt;
