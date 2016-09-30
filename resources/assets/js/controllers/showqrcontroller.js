@@ -1,4 +1,4 @@
-synco.controller('showqrcontroller', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
+synco.controller('showqrcontroller', ['$scope', '$http', '$location', 'userModel', '$routeParams' function($scope, $http, $location, $routeParams) {
 
   $scope.qr = {};
   $scope.id = $routeParams.id;
@@ -11,7 +11,7 @@ synco.controller('showqrcontroller', ['$scope', '$http', '$location', 'userModel
     alert("error getting your json");
   });
 
-  
+
 
 
 
