@@ -618,8 +618,8 @@ synco.controller('showqrcontroller', ['$scope', '$http', '$location', 'userModel
   $scope.qr = {};
   $scope.id = $routeParams.id;
 
-
-  $http.get("http://www.synco.xyz/sciapi/v1/qr/" + $scope.qr_id )
+  console.log("http://www.synco.xyz/sciapi/v1/qr/" + $scope.id);
+  $http.get("http://www.synco.xyz/sciapi/v1/qr/" + $scope.id )
   .success(function(response){
     $scope.qr= response;
   }).error(function(response) {
