@@ -137,7 +137,7 @@ hr{
 }
 
 .scitechtitle, .description{
-  flex: 0 0 100:;
+  flex: 1 100%;
 }
 
 @media all and (max-width:750px){
