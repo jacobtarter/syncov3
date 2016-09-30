@@ -26,9 +26,7 @@ hr{
   background-color: white;
   border-radius: 12.5px;
 }
-.soundbutton:disabled{
 
-}
 .linkbutton {
   flex: 1 100%;
   background-color: rgb(139,187,243);
@@ -57,6 +55,7 @@ hr{
 	flex-flow: row wrap;
   justify-content: space-around;
   border: 1px solid purple;
+  flex: 1 100%;
 }
 
 .description {

@@ -32,11 +32,11 @@
     </div>
 
       <div class="eachqr" ng-repeat="qr in qrData">
-      <button type="button" class="qrbuttonlink" ng-click="viewQR(qr.qr_id)">
-        Title: {{ qr.title }}
-        Description: {{ qr.description }}
-        Link to audio: {{ qr.link }}
-        QR: www.synco.xyz/sciapi/v1/{{ qr.qr_id }} 
+      <button type="button" class="qrbuttonlink" ng-click="viewQR(qr.qr_id)" style="border:none">
+        Title: {{ qr.title }} <br />
+        Description: {{ qr.description }} <br />
+        Link to audio: {{ qr.link }} <br />
+        QR: www.synco.xyz/sciapi/v1/{{ qr.qr_id }} <br />
       </button>
       </div>
 	</div>
