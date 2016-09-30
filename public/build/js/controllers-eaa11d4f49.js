@@ -627,8 +627,12 @@ synco.controller('showqrcontroller', ['$scope', '$http', '$location', '$routePar
     alert("error getting your json");
   });
 
+  $scope.sound = new Audio();
+  $scope.sound.audio.src = $scope[0].qr;
+
+
   $scope.playSound = function(){
-    myAudio.play;
+    $scope.sound.play();
   }
 
 
