@@ -60,7 +60,6 @@ hr{
 
 .description {
 	border:4px solid rgb(237,90,38);
-	flex-flow: row wrap;
 	background-color: white;
 	padding:50px;
   margin-bottom: 25px;
@@ -118,27 +117,6 @@ hr{
 }
 
 
-.textsection{
-  margin-bottom: 5px;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  border-bottom: 1px solid rgb(139,187,243);
-}
-.textsectionlast{
-  margin-bottom: 5px;
-  padding-top: 25px
-
-}
-.textsectionfirst{
-  margin-bottom: 5px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid rgb(139,187,243);
-
-}
-
-.scitechtitle, .description{
-  flex: 1 100%;
-}
 
 @media all and (max-width:750px){
   body{
