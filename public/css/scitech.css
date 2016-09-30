@@ -92,6 +92,7 @@ hr{
   border-radius: 12.5px;
   padding:25px;
   margin-bottom: 25px;
+  flex: 1 100%;
 }
 
 
