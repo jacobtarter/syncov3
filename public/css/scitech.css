@@ -55,6 +55,9 @@ hr{
 	flex-flow: row wrap;
   justify-content: space-around;
   border: 1px solid purple;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
 
 }
 
