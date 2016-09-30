@@ -31,12 +31,13 @@
 			</form>
     </div>
 
-
-      <div class="eachqr" ng-click="showQR(qr.qr_id)" ng-repeat="qr in qrData">
+      <div class="eachqr" ng-repeat="qr in qrData">
+      <button type="button" class="qrbuttonlink" ng-click="viewQR(x.id)">
         Title: {{ qr.title }}<br />
         Description: {{ qr.description }} <br/>
         Link to audio: {{ qr.link }} <br />
         QR: www.synco.xyz/sciapi/v1/{{ qr.qr_id }} <br />
+      </button>
       </div>
 	</div>
 
