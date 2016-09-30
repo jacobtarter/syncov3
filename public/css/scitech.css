@@ -54,7 +54,7 @@ hr{
 .scitechcontainer {
   display:flex;
 	flex-flow: row wrap;
-  flex: 1 100%;
+
   align-content: flex-start;
   margin-top: 5%;
   margin-left: 15%;
