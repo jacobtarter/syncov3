@@ -13,6 +13,13 @@ synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', f
 
   $scope.loadData();
 
+  angular.extend($scope, {
+	viewQR: function(id) {
+
+		$location.path('/view/' + id );
+	}
+	});
+
   $scope.makeQR = function()
   {
 

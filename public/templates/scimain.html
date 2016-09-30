@@ -32,7 +32,7 @@
     </div>
 
 
-      <div class="eachqr" ng-repeat="qr in qrData">
+      <div class="eachqr" ng-click="showQR(qr.qr_id)" ng-repeat="qr in qrData">
         Title: {{ qr.title }}<br />
         Description: {{ qr.description }} <br/>
         Link to audio: {{ qr.link }} <br />

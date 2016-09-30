@@ -9,6 +9,11 @@ synco.config(['$routeProvider', '$locationProvider',
 			controller: 'qrcontroller'
 		});
 
+		$routeProvider.when('/view/:id', {
+			templateUrl: 'templates/showqr.html',
+			controller: 'showqrcontroller'
+		});
+
 		/*
 		$routeProvider.when('/', {
 			templateUrl: 'templates/main.html',
