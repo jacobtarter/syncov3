@@ -50,11 +50,13 @@ hr{
 .container {
   display: flex;
   flex-flow: row wrap;
+  border:1px solid green;
 }
 .scitechcontainer {
   display:flex;
 	flex-flow: row wrap;
   justify-content: space-around;
+  border: 1px solid purple;
 }
 
 .description {
