@@ -11,7 +11,7 @@
 
 <body>
 
-	<div class="scitechcontainer">
+	<div class="container">
 
 		<div ng-view></div>
 
