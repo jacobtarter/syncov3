@@ -47,7 +47,10 @@ hr{
 }
 
 
-
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
 .scitechcontainer {
   display:flex;
 	flex-flow: row wrap;
