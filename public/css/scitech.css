@@ -72,11 +72,28 @@ hr{
 
 }
 
+.eachqr {
+	border:4px solid rgb(237,90,38);
+	flex-flow: row wrap;
+	background-color: white;
+	padding:50px;
+  margin-bottom: 25px;
+  text-align: justify;
+  border-radius: 12.5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 14pt;
+  display:flex;
+  flex: 33%;
+
+}
+
 .newqr{
   flex: 1 100%;
   border:4px solid rgb(237,90,38);
   background-color: white;
   border-radius: 12.5px;
+  padding:25px;
+  margin-bottom: 25px;
 }
 .qrtitle, .qrdescription, .qraudiolink, .qrpage{
   flex: 1 100%
