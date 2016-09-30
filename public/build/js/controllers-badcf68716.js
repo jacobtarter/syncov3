@@ -613,7 +613,7 @@ synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', f
 
 }]);
 
-synco.controller('showqrcontroller', ['$scope', '$http', '$location', 'userModel', '$routeParams', function($scope, $http, $location, $routeParams) {
+synco.controller('showqrcontroller', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
 
   $scope.qr = {};
   $scope.id = $routeParams.id;
