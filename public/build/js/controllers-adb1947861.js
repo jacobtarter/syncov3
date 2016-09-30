@@ -630,6 +630,8 @@ synco.controller('showqrcontroller', ['$scope', '$http', '$location', 'userModel
 
 
 
+
+
 }]);
 
 //# sourceMappingURL=controllers.js.map

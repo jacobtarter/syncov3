@@ -15,4 +15,6 @@ synco.controller('showqrcontroller', ['$scope', '$http', '$location', 'userModel
 
 
 
+
+
 }]);
