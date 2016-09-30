@@ -8,7 +8,8 @@
 
     <h1 class="scitechtitle"> {{ qr[0].title }} </h1>
 
-    <audio id="sound" class="qrsound" ng-src="{{ qr[0].link }}" type="audio/mpeg"></audio>
+    <audio id="mySound" class="qrsound" ng-src="{{ qr[0].link }}" type="audio/mpeg"></audio>
+    <button class="soundbutton" onclick="playSound()">CLICK</button>
 
 
     <div class="description"> {{ qr[0].description }} </div>
