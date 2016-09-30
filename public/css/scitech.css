@@ -55,7 +55,7 @@ hr{
 	flex-flow: row wrap;
   justify-content: space-around;
   border: 1px solid purple;
-  flex: 1 100%;
+
 }
 
 .description {
