@@ -622,14 +622,12 @@ synco.controller('showqrcontroller', ['$scope', '$http', '$location', '$routePar
   $http.get("http://www.synco.xyz/sciapi/v1/qr/" + $scope.id )
   .success(function(response){
     $scope.qr= response;
+    $scope.sound = new Audio();
+    $scope.sound.audio.src = $scope.qr[0].link;
       console.log("response: " + response);
   }).error(function(response) {
     alert("error getting your json");
   });
-
-  $scope.sound = new Audio();
-  $scope.sound.audio.src = $scope[0].qr;
-
 
   $scope.playSound = function(){
     $scope.sound.play();
