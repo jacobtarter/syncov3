@@ -104,6 +104,7 @@ hr{
 
 .soundbutton{
   flex: 1 100%;
+  margin-bottom: 25px;
 }
 .scitechtitle{
   font-size:38pt;
