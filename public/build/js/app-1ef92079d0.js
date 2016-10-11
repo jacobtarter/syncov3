@@ -14,6 +14,11 @@ synco.config(['$routeProvider', '$locationProvider',
 			controller: 'showqrcontroller'
 		});
 
+		$routeProvider.when('/print/:id', {
+			templateUrl: 'templates/showqr.html',
+			controller: 'printqrcontroller'
+		});
+
 		/*
 		$routeProvider.when('/', {
 			templateUrl: 'templates/main.html',

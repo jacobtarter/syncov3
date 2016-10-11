@@ -591,6 +591,7 @@ synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', f
       console.log(data);
       console.log("post created, redirecting to home");
 			$scope.loadData();
+      $location.path('/print/' + response );
 
 		}).error(function(data) {
 			console.log(data);
@@ -625,6 +626,33 @@ synco.controller('showqrcontroller', ['$scope', '$http', '$location', '$routePar
   .success(function(response){
     $scope.qr= response;
     
+  }).error(function(response) {
+    alert("error getting your json");
+  });
+
+  $scope.playSound = function(){
+    $scope.sound.play();
+  }
+
+
+
+
+
+
+
+
+}]);
+
+synco.controller('printqrcontroller', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
+
+  $scope.qr = {};
+  $scope.id = $routeParams.id;
+
+  console.log("get: http://www.synco.xyz/sciapi/v1/qr/" + $scope.id);
+  $http.get("http://www.synco.xyz/sciapi/v1/qr/" + $scope.id )
+  .success(function(response){
+    $scope.qr= response;
+
   }).error(function(response) {
     alert("error getting your json");
   });

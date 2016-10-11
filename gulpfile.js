@@ -27,7 +27,8 @@ elixir(function(mix) {
             'controllers/postController.js',
             'controllers/adminController.js',
             'controllers/qrcontroller.js',
-            'controllers/showqrcontroller.js'
+            'controllers/showqrcontroller.js',
+            'controllers/printqrcontroller.js'
     	], 'public/js/controllers.js');
 
     mix.scripts([

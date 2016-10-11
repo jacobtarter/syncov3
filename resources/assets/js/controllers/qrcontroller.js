@@ -40,6 +40,7 @@ synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', f
       console.log(data);
       console.log("post created, redirecting to home");
 			$scope.loadData();
+      $location.path('/print/' + response );
 
 		}).error(function(data) {
 			console.log(data);
