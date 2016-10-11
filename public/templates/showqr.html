@@ -1,8 +1,11 @@
 <div class="scitechcontainer">
+  <audio class="pagesound"></audio>
 
   <h1 class="scitechtitle"> {{ qr[0].title }} </h1>
 
-  <button class="soundbutton" onclick="playSound()">CLICK</button>
+  <button id="soundbutton" data-value="{{ qr[0]}}" class="soundbutton" onclick="playSound()">CLICK</button>
+
+
 
   <div class="description"> {{ qr[0].description }} </div>
 

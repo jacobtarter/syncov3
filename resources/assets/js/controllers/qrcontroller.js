@@ -35,8 +35,9 @@ synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', f
 				description: $scope.qr.description,
 				link: $scope.qr.link
 			}
-		}).success(function(response) {
-			console.log("post created, redirecting to home");
+		}).success(function(response, data) {
+      console.log(data);
+      console.log("post created, redirecting to home");
 			$scope.loadData();
 
 		}).error(function(data) {
