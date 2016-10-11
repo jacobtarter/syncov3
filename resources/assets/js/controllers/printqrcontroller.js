@@ -4,7 +4,7 @@ synco.controller('printqrcontroller', ['$scope', '$http', '$location', '$routePa
   $scope.id = $routeParams.id;
   $scope.size=500;
 
-
+  console.log("http://api.qrserver.com/v1/create-qr-code/?data=" + "http://www.synco.xyz/sciapi/v1/qr/" + $scope.id + "&size=" + $scope.size + "x" + $scope.size);
   $scope.qrsource= "http://api.qrserver.com/v1/create-qr-code/?data=" + "http://www.synco.xyz/sciapi/v1/qr/" + $scope.id + "&size=" + $scope.size + "x" + $scope.size;
 
 
