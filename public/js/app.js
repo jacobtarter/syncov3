@@ -72,6 +72,7 @@ synco.config(['$routeProvider', '$locationProvider',
 		*/
 
 		$routeProvider.otherwise('/');
+		$locationProvider.html5Mode(true);
 	}
 
 	]);
