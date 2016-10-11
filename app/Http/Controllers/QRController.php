@@ -72,6 +72,7 @@ class QRController extends Controller
         $qr->description = $request->input('description');
         $qr->link = $request->input('link');
         $qr->save();
+        return $qr->id;
     }
 
     /**
