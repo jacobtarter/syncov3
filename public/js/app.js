@@ -54,7 +54,7 @@ synco.config(['$routeProvider', '$locationProvider',
 			controller: 'adminController',
 			authenticated: true
 		});
-		
+
 
 		$routeProvider.otherwise('/');
 		$locationProvider.html5Mode(true);
@@ -66,7 +66,7 @@ synco.run(["$rootScope", "$location", 'userModel',
 	function($rootScope, $location, userModel) {
 		$rootScope.$on("$routeChangeStart",
 			function(event, next, current) {
-				/*
+				
 				if (next.$$route.originalPath == '/logout') {
 					if(!userModel.getAuthStatus()) {
 						$location.path(current.$$route.originalPath);
@@ -84,8 +84,7 @@ synco.run(["$rootScope", "$location", 'userModel',
 					if (userModel.getAuthStatus()) {
 						$location.path(current.$$route.originalPath);
 					}
-				}
-				*/
+
 			});
 	}
 ]);

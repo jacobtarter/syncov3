@@ -339,12 +339,12 @@ synco.controller('editController', ['$scope', '$http', '$location', '$routeParam
 			alert("error getting your json");
 		});
 
-		//Function for editing the post that was pulled - use the current value as ng-model of form so that it 
+		//Function for editing the post that was pulled - use the current value as ng-model of form so that it
 		//autopopulates with current data
 		angular.extend($scope, {
 		editPost: function(editForm) {
 		//alert($scope.post[0].about.title + " , " + $scope.post[0].about.ptext);
-		$http({	
+		$http({
 			headers: {
 				'Content-Type': 'application/json'
 			},
@@ -363,7 +363,7 @@ synco.controller('editController', ['$scope', '$http', '$location', '$routeParam
 		});
 	}
 	});
-	
+
 
 }]);
 synco.controller('showController', ['$scope', '$http', '$location', '$routeParams', 'userModel', function($scope, $http, $location, $routeParams, userModel) {
@@ -443,11 +443,11 @@ synco.controller('commentController', ['$scope', '$http', '$location', '$routePa
 
 	//get route param for post id, so we know what post is being commented on
 	$scope.id = $routeParams.id;
-	
+
 	//function for making the post request
 	angular.extend($scope, {
 	makeComment: function(commentForm) {
-		$http({	
+		$http({
 			headers: {
 				'Content-Type': 'application/json'
 			},
@@ -471,13 +471,13 @@ synco.controller('commentController', ['$scope', '$http', '$location', '$routePa
 }]);
 synco.controller('postController', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
 	$scope.post = {};
-	
-	
+
+
 	$scope.makePost = function()
 	{
 
-		
-		$http({	
+
+		$http({
 			headers: {
 				'Content-Type': 'application/json'
 			},
@@ -492,12 +492,12 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 		}).success(function(response) {
 			console.log("post created, redirecting to home");
 			$location.path('/');
-			
+
 		}).error(function(data,status,headers) {
 			console.log(status);
 			console.log(data);
 			console.log(headers);
-			
+
 			if(status==429)
 			{
 				//alert("Too many API hits, throttle limit hit.")
@@ -513,20 +513,20 @@ synco.controller('postController', ['$scope', '$http', '$location', 'userModel',
 			alert("Error Making Post - Make sure form is filled.");
 			}
 		});
-		
+
 	}
-	
+
 }]);
-synco.controller('adminController', ['$scope', '$http', '$location', '$routeParams', 'userModel', function($scope, $http, $location, $routeParams, userModel) 
+synco.controller('adminController', ['$scope', '$http', '$location', '$routeParams', 'userModel', function($scope, $http, $location, $routeParams, userModel)
 {
 	$scope.user = {};
-	
-	
+
+
 	$scope.deleteFromUser = function()
 	{
 
-		
-		$http({	
+
+		$http({
 			headers: {
 				'Content-Type': 'application/json'
 			},
@@ -542,124 +542,13 @@ synco.controller('adminController', ['$scope', '$http', '$location', '$routePara
 			console.log(data);
 			alert("Error deleting posts");
 		});
-		
-	}
-
-
-
-}]);
-
-synco.controller('qrcontroller', ['$scope', '$http', '$location', 'userModel', function($scope, $http, $location, userModel) {
-  $scope.qrData = {};
-  $scope.qr = {};
-
-
-  $scope.loadData = function()
-	{
-		$http.get("http://www.synco.xyz/sciapi/v1/qr")
-		.success(function(response) {
-			$scope.qrData = response;
-		});
-	};
-
-  $scope.loadData();
-
-  angular.extend($scope, {
-	viewQR: function(id) {
-
-		$location.path('/view/' + id );
-	}
-	});
-
-  $scope.makeQR = function()
-  {
-
-
-		$http({
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			url: "http://www.synco.xyz/sciapi/v1/qr",
-			method: "POST",
-			data: {
-				title: $scope.qr.title,
-				description: $scope.qr.description,
-				link: $scope.qr.link
-			}
-		}).success(function(response, data) {
-      console.log(response);
-      console.log(data);
-      console.log("post created, redirecting to home");
-			//$scope.loadData();
-      $location.path('/print/' + response );
-
-		}).error(function(data) {
-			console.log(data);
-
-			if(status==429)
-			{
-				//alert("Too many API hits, throttle limit hit.")
-				console.log(data);
-				var json = 'http://ipv4.myexternalip.com/json';
-				$http.get(json).then(function(result) {
-				    console.log(result.data.ip)
-				    alert("You have hit the API's post limit. Your ip address has been logged: " + result.data.ip);
-				});
-
-			}
-			else{
-			alert("Error Making Post - Make sure form is filled.");
-			}
-		});
 
 	}
 
-}]);
-
-synco.controller('showqrcontroller', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
-
-  $scope.qr = {};
-  $scope.id = $routeParams.id;
-
-  console.log("get: http://www.synco.xyz/sciapi/v1/qr/" + $scope.id);
-  $http.get("http://www.synco.xyz/sciapi/v1/qr/" + $scope.id )
-  .success(function(response){
-    $scope.qr= response;
-    
-  }).error(function(response) {
-    alert("error getting your json");
-  });
-
-  $scope.playSound = function(){
-    $scope.sound.play();
-  }
-
-
-
-
-
-
 
 
 }]);
 
-synco.controller('printqrcontroller', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
-
-  $scope.qr = {};
-  $scope.id = $routeParams.id;
-  $scope.size=1000;
-  $scope.linkforqr = "http://www.synco.xyz/view/" + $scope.id;
-  console.log("http://www.synco.xyz/#/view/" + $scope.id);
-  $scope.qrapi = "http://api.qrserver.com/v1/create-qr-code/?data=";
-  $scope.qrsize = "&amp;size=" + $scope.size + "x" + $scope.size;
-
-  console.log($scope.qrapi + $scope.linkforqr + $scope.qrsize);
-  $scope.qrsource= $scope.qrapi + $scope.linkforqr + $scope.qrsize;
-
-
-  $scope.playSound = function(){
-    $scope.sound.play();
-  }
 
 
 
@@ -668,6 +557,6 @@ synco.controller('printqrcontroller', ['$scope', '$http', '$location', '$routePa
 
 
 
-}]);
+
 
 //# sourceMappingURL=controllers.js.map
