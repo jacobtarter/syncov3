@@ -86,7 +86,7 @@ synco.run(["$rootScope", "$location", 'userModel',
 					if (userModel.getAuthStatus()) {
 						$location.path(current.$$route.originalPath);
 
-				}
+
 
 			});
 	}
