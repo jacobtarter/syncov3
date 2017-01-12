@@ -88,7 +88,7 @@ synco.run(["$rootScope", "$location", 'userModel',
 
 
 
-			});
+			};
 	}
 ]);
 
