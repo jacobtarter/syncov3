@@ -17,7 +17,7 @@
 //Route::resource('posts', 'PostController');
 //Route::resource('user', 'UserController');
 
-/*
+
 
 //Home route, directs to main template page
 Route::get('/', 'PageController@getMaster');
@@ -61,22 +61,9 @@ Route::controllers([
 
 Route::delete( '/admin/posts', 'PostController@destroyByUser' );
 
-*/
 
-Route::get('/', 'PageController@getScitechMain');
-Route::get ('scitech/planet', 'PageController@getPlanet');
-Route::get ('scitech/stars', 'PageController@getStars');
-Route::get ('scitech/asteroids', 'PageController@getAsteroids');
-Route::get ('scitech/solarsys', 'PageController@getSolarSys');
-Route::get ('scitech/planetsci', 'PageController@getPlanetSci');
-Route::get ('scitech/planetsize', 'PageController@getPlanetSize');
-Route::get ('scitech/moons', 'PageController@getMoons');
-Route::get ('scitech/galaxy', 'PageController@getGalaxy');
-Route::get ('scitech/darkmatter', 'PageController@getDarkMatter');
-Route::get ('scitech/telescope', 'PageController@getTelescope');
 
-Route::get( '/sciapi/v1/qr/{qrid?}', 'QRController@index' );
-Route::post( '/sciapi/v1/qr', 'QRController@store' );
+
 
 
 
