@@ -58,7 +58,11 @@ button[disabled=disabled], button:disabled {
 	display:flex;
 	justify-content:center;
 	flex-flow: row wrap;
+<<<<<<< HEAD
 
+=======
+	width:75%;
+>>>>>>> parent of 4e67d31... show page width
 
 }
 
