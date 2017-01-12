@@ -90,6 +90,6 @@ synco.run(["$rootScope", "$location", 'userModel',
 
 			};
 	}
-]);
+];
 
 //# sourceMappingURL=app.js.map
