@@ -4,22 +4,7 @@ var synco = angular.module('synco', ['ngRoute', 'ngCookies']);
 synco.config(['$routeProvider', '$locationProvider',
 	function($routeProvider, $locationProvider) {
 
-		$routeProvider.when('/', {
-			templateUrl: 'templates/scimain.html',
-			controller: 'qrcontroller'
-		});
 
-		$routeProvider.when('/view/:id', {
-			templateUrl: 'templates/showqr.html',
-			controller: 'showqrcontroller'
-		});
-
-		$routeProvider.when('/print/:id', {
-			templateUrl: 'templates/printqr.html',
-			controller: 'printqrcontroller'
-		});
-
-		/*
 		$routeProvider.when('/', {
 			templateUrl: 'templates/main.html',
 			controller: 'userController'
@@ -69,7 +54,7 @@ synco.config(['$routeProvider', '$locationProvider',
 			controller: 'adminController',
 			authenticated: true
 		});
-		*/
+		
 
 		$routeProvider.otherwise('/');
 		$locationProvider.html5Mode(true);
