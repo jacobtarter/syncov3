@@ -56,7 +56,7 @@ synco.config(['$routeProvider', '$locationProvider',
 			controller: 'adminController',
 			authenticated: true
 		});
-		*/
+
 
 		$routeProvider.otherwise('/');
 
