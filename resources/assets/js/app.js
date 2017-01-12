@@ -59,10 +59,7 @@ synco.config(['$routeProvider', '$locationProvider',
 		*/
 
 		$routeProvider.otherwise('/');
-		$locationProvider.html5Mode(true{
-			enabled: true,
-			requireBase: false
-		});
+
 	}
 
 	]);
@@ -88,7 +85,7 @@ synco.run(["$rootScope", "$location", 'userModel',
 					console.log('login page');
 					if (userModel.getAuthStatus()) {
 						$location.path(current.$$route.originalPath);
-					}
+
 				}
 
 			});

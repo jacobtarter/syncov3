@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
 	<script>var baseUrl = "http://www.synco.xyz/";</script>
 	<script>var api = "api/v1/"; </script>
-	<base href="">
 	<link rel="stylesheet" href="<?php echo asset('css/synco.css')?>" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>

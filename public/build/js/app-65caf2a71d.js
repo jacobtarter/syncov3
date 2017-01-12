@@ -4,22 +4,9 @@ var synco = angular.module('synco', ['ngRoute', 'ngCookies']);
 synco.config(['$routeProvider', '$locationProvider',
 	function($routeProvider, $locationProvider) {
 
-		$routeProvider.when('/', {
-			templateUrl: 'templates/scimain.html',
-			controller: 'qrcontroller'
-		});
 
-		$routeProvider.when('/view/:id', {
-			templateUrl: 'templates/showqr.html',
-			controller: 'showqrcontroller'
-		});
 
-		$routeProvider.when('/print/:id', {
-			templateUrl: 'templates/printqr.html',
-			controller: 'printqrcontroller'
-		});
 
-		/*
 		$routeProvider.when('/', {
 			templateUrl: 'templates/main.html',
 			controller: 'userController'
@@ -72,7 +59,7 @@ synco.config(['$routeProvider', '$locationProvider',
 		*/
 
 		$routeProvider.otherwise('/');
-		$locationProvider.html5Mode(true);
+
 	}
 
 	]);
@@ -81,7 +68,7 @@ synco.run(["$rootScope", "$location", 'userModel',
 	function($rootScope, $location, userModel) {
 		$rootScope.$on("$routeChangeStart",
 			function(event, next, current) {
-				/*
+
 				if (next.$$route.originalPath == '/logout') {
 					if(!userModel.getAuthStatus()) {
 						$location.path(current.$$route.originalPath);
@@ -98,9 +85,9 @@ synco.run(["$rootScope", "$location", 'userModel',
 					console.log('login page');
 					if (userModel.getAuthStatus()) {
 						$location.path(current.$$route.originalPath);
-					}
+
 				}
-				*/
+
 			});
 	}
 ]);
